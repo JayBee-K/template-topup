@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;900&display=swap');
+
+:root {
+    --color-main: #065cab;
+    --color-hover: #02325f;
+    --text-dark: #343a40;
+    --text-gray: #A0AEC0;
+}
+
+body {
+    background: #F7F7F7;
+    font-size: 14px;
+    overflow-x: hidden;
+    font-family: 'Mulish', sans-serif;
+}
+
+a, a:hover, a:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+    -webkit-transition: 0.3s all ease-out;
+}
+
+input,
+select,
+textarea {
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+    -webkit-transition: 0.3s all ease-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Customize */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-2-5 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+.row.row-10 {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row.row-10 [class*=col] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row.row-col-10 {
+    margin: 0 -10px;
+}
+
+.row.row-col-10 [class*=col] {
+    padding: 10px;
+}
+
+.row.row-5 {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row.row-5 [class*=col] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card .link-cover::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+.color-main {
+    color: var(--color-main);
+}
+
+.color-hover {
+    color: var(--color-hover);
+}
+
+.background-main {
+    background-color: var(--color-main);
+}
+
+.background-hover {
+    background-color: var(--color-hover);
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.text-09 {
+    font-size: .9em;
+}
