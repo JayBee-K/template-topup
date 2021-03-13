@@ -25,2926 +25,746 @@
 	<meta name="twitter:image" content="">
 	<meta name="twitter:creator" content="">
 	
-	<title>Home - Template Document 123doc.net</title>
+	<title>Home - Template Topup</title>
 	
 	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
-	<link rel="stylesheet" href="./assets/plugin/slick/slick.css">
 	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/plugin/animate.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<style>
+		:root {
+			--color-main: #2F822F;
+			--color-hover: #135b13;
+			--text-dark: #343a40;
+			--text-gray: #A0AEC0;
+			--bg-body: #F7F7F7;
+			--bg-light: #f8f9fa;
+			--color-border: #e9e9e9;
+		}
+	
+	</style>
 </head>
 <body>
-<div class="popup-theme">
-	<div class="modal fade" id="modalLogin" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content rounded-0 border-0">
-				<div class="modal-header text-center p-0">
-					<h5 class="modal-title d-block py-3 w-100 font-weight-bold text-center">Đăng nhập tài khoản</h5>
-					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
-						<i class="fal fa-times"></i>
-					</button>
+
+<header class="template-1-header"></header>
+<div class="main">
+	<section class="template-1-banner bg-white">
+		<div class="swiper-container" id="swiper-banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-image" style="background-image: url('./assets/images/banner/1.jpg')">
+						<a href="#"></a>
+					</div>
 				</div>
-				<div class="modal-body">
-					<form class="form-effect" action="">
-						<div class="group-effect">
-							<input type="email" id="emailLogin" class="input-effect">
-							<label class="label-effect" for="emailLogin">
-								<i class="fas fa-envelope"></i>
-								<span>Email</span>
-							</label>
+				<div class="swiper-slide">
+					<div class="swiper-image" style="background-image: url('./assets/images/banner/2.jpg')">
+						<a href="#"></a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-image" style="background-image: url('./assets/images/banner/1.jpg')">
+						<a href="#"></a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-image" style="background-image: url('./assets/images/banner/2.jpg')">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</section>
+	<section class="py-5 bg-white border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card rounded-0 bg-white border-0 card-gioithieu">
+						<div class="card-header bg-transparent position-relative border-bottom-0 rounded-0">
+							<span>
+								<i class="far fa-mobile"></i>
+							</span>
 						</div>
-						<div class="group-effect">
-							<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
-							       autocomplete="off" required="">
-							<label class="label-effect" for="passwordLogin">
-								<i class="fas fa-lock"></i>
-								<span>Mật khẩu</span>
-							</label>
-						</div>
-						<div class="custom-control custom-checkbox">
-							<input type="checkbox" class="custom-control-input" id="saveLogin">
-							<label class="custom-control-label" for="saveLogin">Nhớ mật khẩu</label>
-						</div>
-						<div class="divider"></div>
-						<div class="form-group">
-							<div class="row row-5">
-								<div class="col-md-6 mb-3 mb-md-0">
-									<a href="javascript:void(0)" class="btn btn-facebook">
-										<i class="fab fa-facebook-f"></i>
-										<span>Đăng nhập bằng Facebook</span>
-									</a>
-								</div>
-								<div class="col-md-6">
-									<a href="javascript:void(0)" class="btn btn-google">
-										<i class="fab fa-google"></i>
-										<span>Đăng nhập bằng Google</span>
-									</a>
-								</div>
+						<div class="card-body">
+							<h5 class="card-title">
+								Kiểm tra tự động
+							</h5>
+							<div class="card-text">
+								Nghi ngờ đang phải trả phí cho các dịch vụ mình không đăng ký dùng?
 							</div>
 						</div>
-						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
-							<button type="submit" class="btn btn-primary btn-customize">
-								<span>
-									Đăng nhập
-									<i class="fas fa-sign-in-alt"></i>
-								</span>
-							</button>
-							<a href="#modalForgot" data-toggle="modal" data-dismiss="modal"
-							   class="d-inline-block mt-3 text-muted text-09">Quên
-								mật khẩu</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card rounded-0 bg-white border-0 card-gioithieu">
+						<div class="card-header bg-transparent position-relative border-bottom-0 rounded-0">
+							<span>
+								<i class="far fa-money-bill"></i>
+							</span>
 						</div>
-					</form>
+						<div class="card-body">
+							<h5 class="card-title">
+								Thống kê
+							</h5>
+							<div class="card-text">
+								<b>Nencer</b> sẽ tính toán ngay ra số tiền hàng tháng, thống kê cuộc gọi dài nhất...
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card rounded-0 bg-white border-0 card-gioithieu">
+						<div class="card-header bg-transparent position-relative border-bottom-0 rounded-0">
+							<span>
+								<i class="far fa-cogs"></i>
+							</span>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">
+								Tiện ích
+							</h5>
+							<div class="card-text">
+								Trợ lý đắc lực trong những tình huống khó khăn như khi sim hết tiền và cần gọi gấp...
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="modal fade" id="modalRegister" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content rounded-0 border-0">
-				<div class="modal-header text-center p-0">
-					<h5 class="modal-title d-block py-3 w-100 font-weight-bold text-center">Đăng ký tài khoản</h5>
-					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
-						<i class="fal fa-times"></i>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form class="form-effect" action="">
-						<div class="group-effect">
-							<input type="email" id="emailRegister" class="input-effect">
-							<label class="label-effect" for="emailRegister">
-								<i class="fas fa-envelope"></i>
-								<span>Email</span>
-							</label>
-						</div>
-						<div class="group-effect">
-							<input type="password" tabindex="1" name="" id="passwordRegister" class="input-effect"
-							       autocomplete="off" required="">
-							<label class="label-effect" for="passwordRegister">
-								<i class="fas fa-lock"></i>
-								<span>Mật khẩu</span>
-							</label>
-						</div>
-						<div class="group-effect">
-							<input type="password" tabindex="1" name="" id="passwordConfirmRegister"
-							       class="input-effect"
-							       autocomplete="off" required="">
-							<label class="label-effect" for="passwordConfirmRegister">
-								<i class="fas fa-lock"></i>
-								<span>Nhập lại mật khẩu</span>
-							</label>
-						</div>
-						<div class="row row-5">
-							<div class="col-md-6">
-								<div class="group-effect">
-									<input type="text" id="fullnameRegister" class="input-effect">
-									<label class="label-effect" for="fullnameRegister">
-										<i class="fas fa-address-card"></i>
-										<span>Họ & tên</span>
-									</label>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="group-effect">
-									<input type="tel" id="phoneRegister" class="input-effect">
-									<label class="label-effect" for="phoneRegister">
-										<i class="fas fa-phone-alt"></i>
-										<span>Số điện thoại</span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
-							<button type="submit" class="btn btn-primary btn-customize">
-								<span>
-									Đăng ký
-									<i class="fas fa-sign-out-alt"></i>
-								</span>
-							</button>
-						</div>
-						<div class="divider"></div>
-						<p class="text-muted text-09 text-center">
-							Bằng cách nhập vào Đăng ký, bạn đồng ý với <a href="#" class="text-underline color-main">Điều
-							khoản</a> và <a href="#" class="text-underline color-main">Chính sách bảo mật thông tin</a>
-							của chúng tôi
+	</section>
+	<section class="py-5 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="template-1-heading">
+						<h4>
+							Mua mã thẻ
+						</h4>
+						<p class="mb-0 text-dark lh-18">
+							Các loại thẻ cào điện thoại, thẻ game trực tuyến, hỗ trợ thanh toán bằng ví điện tử, các
+							ngân hàng của Việt Nam, thẻ Visa/Master, Paypal, Coins, PM, Webmoney. Sau khi thanh toán
+							thành công, thẻ sẽ đc trả ngay lập tức trên website và gửi vào điện chỉ email của bạn.
 						</p>
-						<p class="text-muted text-09 text-center mb-0">
-							Đã có tài khoản? <a href="#modalLogin" class="text-underline color-main" data-toggle="modal"
-							                    data-dismiss="modal">Đăng nhập</a>
-						</p>
-					</form>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="modalForgot" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content rounded-0 border-0">
-				<div class="modal-header text-center p-0">
-					<h5 class="modal-title d-block py-3 w-100 font-weight-bold text-center">Quên mật khẩu</h5>
-					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
-						<i class="fal fa-times"></i>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form class="form-effect" action="">
-						<div class="group-effect">
-							<input type="email" id="emailForgot" class="input-effect">
-							<label class="label-effect" for="emailForgot">
-								<i class="fas fa-envelope"></i>
-								<span>Email</span>
-							</label>
+			<div class="row row-col-10">
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-viettel.png">
 						</div>
-						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
-							<button type="submit" class="btn btn-primary btn-customize">
-								<span>
-									Gửi yêu cầu
-									<i class="fas fa-paper-plane"></i>
-								</span>
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade modal-price" id="modalPrice" tabindex="-1">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content rounded-0 border-0">
-				<div class="user-info">
-					<div class="user-left">
-						<div class="user-image">
-							<a href="#">
-								<img src="./assets/images/user.png" alt="">
-							</a>
-						</div>
-						<div class="user-content">
-							<h6 class="mb-1 text-main font-weight-bold">
-								Hoàng Tấn
-							</h6>
-							<p class="mb-1 text-muted text-09">
-								thtan0407@gmail.com
-							</p>
-							<a href="#" class="d-inline-block text-main font-weight-bold text-09">
-								Lịch sử giao dịch
-							</a>
-						</div>
-					</div>
-					<div class="user-right">
-						<p class="mb-1 text-muted">Tài khoản: <span class="color-main">0 <sup>đ</sup></span></p>
-						<p class="mb-0 text-muted">Doanh thu: <span class="color-main">0 <sup>đ</sup></span></p>
-					</div>
-				</div>
-				<div class="modal-header rounded-0 p-0">
-					<h5 class="modal-title d-block py-3 px-4 w-100 font-weight-bold">Nạp tiền vào tài khoản</h5>
-					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
-						<i class="fal fa-times"></i>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="modal-tab">
-						<ul class="nav nav-tabs border-bottom-0">
-							<li class="nav-item" role="presentation">
-								<a class="nav-link active" data-toggle="tab"
-								   href="#qrcode" type="button">
-									<img src="./assets/images/qr-code.png">
-									<p class="mb-0">QR code</p>
-								</a>
-							</li>
-							<li class="nav-item" role="presentation">
-								<a class="nav-link" data-toggle="tab"
-								   href="#momo"
-								   type="button">
-									<img src="./assets/images/momo.png">
-									<p class="mb-0">Ví momo</p>
-								</a>
-							</li>
-							<li class="nav-item" role="presentation">
-								<a class="nav-link" data-toggle="tab"
-								   href="#atm"
-								   type="button">
-									<img src="./assets/images/atm.png">
-									<p class="mb-0">Thẻ ATM online</p>
-								</a>
-							</li>
-							<li class="nav-item" role="presentation">
-								<a class="nav-link" data-toggle="tab"
-								   href="#card"
-								   type="button">
-									<img src="./assets/images/card.png">
-									<p class="mb-0">Thẻ điện thoại</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="tab-content mt-3">
-						<div class="tab-pane fade show active" id="qrcode">
-							<div class="py-4 px-lg-3">
-								<div class="row">
-									<div class="col-lg-6">
-										<form class="form-effect my-0 pb-0" action="">
-											<div class="group-effect">
-												<select name="" class="input-effect" id="money">
-													
-													<option value=""></option>
-													<option value="50000">50.000 đ</option>
-													<option value="100000">100.000 đ</option>
-													<option value="150000">150.000 đ</option>
-													<option value="200000">200.000 đ</option>
-												</select>
-												<label class="label-effect" for="money">
-													<i class="fas fa-money-bill"></i>
-													<span>Lựa chọn số tiền cần nạp</span>
-												</label>
-											</div>
-											<div class="group-effect">
-												<input type="email" id="phonePrice" class="input-effect">
-												<label class="label-effect" for="phonePrice">
-													<i class="fas fa-phone-alt"></i>
-													<span>Số điện thoại</span>
-												</label>
-											</div>
-											<div class="form-button">
-												<button type="submit"
-												        class="btn btn-primary btn-customize w-100 py-2">
-														<span>
-															Nạp tiền
-														</span>
-												</button>
-											</div>
-											<div class="form-desc mt-3">
-												<ul class="pl-3 mb-0">
-													<li class="mb-2">
-														Thanh toán bằng QRCode trên ứng dụng Mobile Banking của các
-														ngân
-														hàng
-													</li>
-													<li>
-														Nếu gặp lỗi thì
-														<a href="#" class="color-main font-weight-bold">Click vào
-															đây</a>
-													</li>
-												</ul>
-											</div>
-										</form>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-desc px-3 px-lg-0 mt-4 mt-lg-0">
-											<ul class="list-unstyled mb-0">
-												<li class="mb-3">
-													<i class="fas fa-check"></i>
-													Thanh toán bằng QR code bảo mật tiện lợi hơn so với ATM Online
-												</li>
-												<li class="mb-3">
-													<i class="fas fa-check"></i>
-													Sử dụng QR Code trên ứng dụng Mobile Banking của các ngân hàng
-												</li>
-												<li class="mb-3">
-													<i class="fas fa-hand-point-right"></i>
-													Xem hướng dẫn quét QR với <a href=""
-													                             class="color-main text-uppercase">AGRIBANK</a>
-												</li>
-												<li class="mb-3">
-													<i class="fas fa-hand-point-right"></i>
-													Xem hướng dẫn quét QR với <a href=""
-													                             class="color-main text-uppercase">VIETINBANK</a>
-												</li>
-												<li class="mb-3">
-													<i class="fas fa-hand-point-right"></i>
-													Xem hướng dẫn quét QR với <a href=""
-													                             class="color-main text-uppercase">VIETCOMBANK</a>
-												</li>
-												<li class="mb-3">
-													<i class="fas fa-hand-point-right"></i>
-													Xem hướng dẫn quét QR với <a href=""
-													                             class="color-main text-uppercase">BIDV</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Viettel</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="momo">
-							<div class="py-4 px-lg-3">
-								<form class="form-effect my-0 pb-0" action="">
-									<div class="row">
-										<div class="col-lg-6">
-											<div class="group-effect">
-												<select name="" class="input-effect" id="money">
-													
-													<option value=""></option>
-													<option value="50000">50.000 đ</option>
-													<option value="100000">100.000 đ</option>
-													<option value="150000">150.000 đ</option>
-													<option value="200000">200.000 đ</option>
-												</select>
-												<label class="label-effect" for="money">
-													<i class="fas fa-money-bill"></i>
-													<span>Lựa chọn số tiền cần nạp</span>
-												</label>
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div class="group-effect">
-												<input type="email" id="phonePrice" class="input-effect">
-												<label class="label-effect" for="phonePrice">
-													<i class="fas fa-phone-alt"></i>
-													<span>Số điện thoại</span>
-												</label>
-											</div>
-										</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-vinaphone.jpeg">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Vinaphone</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-mobifone.jpeg">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Mobiphone</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-vietnamobile.jpeg">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Vietnamobile</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-gmobile.jpg">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ GMobile</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-garena.png">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Garena</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-appota.png">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Appota</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-zing.png">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Zing</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-vcoin.png">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Vcoin</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-gate.png">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Gate</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-ca-rot.jpg">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Carot</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="card shadow-sm rounded-0 card-the">
+						<div class="card-header bg-white rounded-0">
+							<img class="img-fluid" src="./assets/images/logo-card/the-funcard.jpg">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title mb-0">Thẻ Funcard</h5>
+							<div class="card-icon rounded-circle bg-light border position-absolute">
+								<i class="fas fa-info"></i>
+							</div>
+						</div>
+						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="py-5 bg-white border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-12">
+							<div class="template-1-heading template-1-minheight">
+								<h4>
+									Đổi thẻ cào
+								</h4>
+								<p class="mb-0 text-dark lh-18">
+									Đổi thẻ cào chiết khẩu tốt nhất thị trường. Cam kết không nuốt thẻ, không làm lag
+									web đối tác khi kết nối API. Vào mùa cước điện thoại giá đổi thẻ sẽ tốt hơn, có hỗ
+									trợ phí (chiết khấu) đổi thẻ 1 giá cả tháng
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="bg-light rounded-sm border p-4">
+								<form action="">
+									<div class="form-group">
+										<label for="network" class="template-1-label text-dark">Nhà mạng</label>
+										<select class="form-control" id="network">
+											<option name="viettel">Viettel</option>
+											<option name="vinaphone">Vinaphone</option>
+											<option name="mobile">Mobile</option>
+											<option name="gate">Gate</option>
+											<option name="zing">Zing</option>
+										</select>
 									</div>
-									<div class="form-button mt-0">
-										<button type="submit"
-										        class="btn btn-primary btn-customize w-100 py-2">
-												<span>
-													Nạp tiền
-												</span>
+									<div class="form-group">
+										<label for="code" class="template-1-label text-dark">Mã thẻ</label>
+										<input type="text" class="form-control" id="code" placeholder="XXXXXXXXXXXXX">
+									</div>
+									<div class="form-group">
+										<label for="seri" class="template-1-label text-dark">Mã Seri</label>
+										<input type="text" class="form-control" id="seri" placeholder="XXXXXXXXXXXXX">
+									</div>
+									<div class="form-group">
+										<label for="price" class="template-1-label text-dark">Mệnh giá</label>
+										<select class="form-control" id="price">
+											<option name="-1">--- Mệnh giá ---</option>
+											<option name="10000">10.000 đ</option>
+											<option name="20000">20.000 đ</option>
+											<option name="30000">30.000 đ</option>
+											<option name="50000">50.000 đ</option>
+											<option name="100000">100.000 đ</option>
+											<option name="200000">200.000 đ</option>
+											<option name="300000">300.000 đ</option>
+											<option name="500000">500.000 đ</option>
+											<option name="1000000">1.000.000 đ</option>
+										</select>
+									</div>
+									<div class="form-group mb-0 mt-4">
+										<button class="btn btn-success template-1-btn">
+											Gửi thẻ cào
 										</button>
 									</div>
 								</form>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="atm">
-							<div class="py-4 px-lg-3">
-								<div class="row">
-									<div class="col-lg-6">
-										<form class="form-effect my-0 pb-0" action="">
-											<div class="group-effect">
-												<select name="" class="input-effect" id="bank">
-													
-													<option value=""></option>
-													<option value="1">Vietcombank (VCB)</option>
-													<option value="2">BIDV</option>
-													<option value="3">Agribank</option>
-													<option value="4">Sacombank</option>
-													<option value="1">Vietcombank (VCB)</option>
-													<option value="2">BIDV</option>
-													<option value="3">Agribank</option>
-													<option value="4">Sacombank</option>
-													<option value="1">Vietcombank (VCB)</option>
-													<option value="2">BIDV</option>
-													<option value="3">Agribank</option>
-													<option value="4">Sacombank</option>
-												</select>
-												<label class="label-effect" for="bank">
-													<i class="fas fa-university"></i>
-													<span>Lựa chọn ngân hàng</span>
-												</label>
-											</div>
-											<div class="group-effect">
-												<select name="" class="input-effect" id="money">
-													
-													<option value=""></option>
-													<option value="50000">50.000 đ</option>
-													<option value="100000">100.000 đ</option>
-													<option value="150000">150.000 đ</option>
-													<option value="200000">200.000 đ</option>
-												</select>
-												<label class="label-effect" for="money">
-													<i class="fas fa-money-bill"></i>
-													<span>Lựa chọn số tiền cần nạp</span>
-												</label>
-											</div>
-											<div class="group-effect">
-												<input type="email" id="phonePrice" class="input-effect">
-												<label class="label-effect" for="phonePrice">
-													<i class="fas fa-phone-alt"></i>
-													<span>Số điện thoại</span>
-												</label>
-											</div>
-											<div class="form-button">
-												<button type="submit"
-												        class="btn btn-primary btn-customize w-100 py-2">
-														<span>
-															Nạp tiền
-														</span>
-												</button>
-											</div>
-										</form>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-desc px-3 px-lg-0 mt-4 mt-lg-0">
-											<ul class="list-unstyled mb-0">
-												<li class="mb-3">
-													<i class="fas fa-check"></i>
-													Nạp sai 5 lần liên tiếp, tài khoản của bạn không thể sử dụng
-													hình thức nạp trong 24h
-												</li>
-												<li class="mb-3">
-													<i class="fas fa-check"></i>
-													Nếu gặp lỗi thì <a href="">Click vào đây</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="card">
-							<div class="py-4 px-lg-3">
-								<div class="row">
-									<div class="col-lg-6">
-										<form class="form-effect my-0 pb-0" action="">
-											<div class="group-effect">
-												<select name="" class="input-effect" id="money">
-													
-													<option value=""></option>
-													<option value="50000">50.000 đ</option>
-													<option value="100000">100.000 đ</option>
-													<option value="150000">150.000 đ</option>
-													<option value="200000">200.000 đ</option>
-												</select>
-												<label class="label-effect" for="money">
-													<i class="fas fa-money-bill"></i>
-													<span>Lựa chọn số tiền cần nạp</span>
-												</label>
-											</div>
-											<div class="group-effect">
-												<input type="email" id="seriPrice" class="input-effect">
-												<label class="label-effect" for="seriPrice">
-													<i class="fas fa-phone-alt"></i>
-													<span>Mã số thẻ</span>
-												</label>
-											</div>
-											<div class="group-effect">
-												<input type="email" id="seriPrice" class="input-effect">
-												<label class="label-effect" for="seriPrice">
-													<i class="fas fa-phone-alt"></i>
-													<span>Seri thẻ</span>
-												</label>
-											</div>
-											<div class="group-effect">
-												<input type="email" id="phonePrice" class="input-effect">
-												<label class="label-effect" for="phonePrice">
-													<i class="fas fa-phone-alt"></i>
-													<span>Số điện thoại</span>
-												</label>
-											</div>
-											<div class="form-button">
-												<button type="submit"
-												        class="btn btn-primary btn-customize w-100 py-2">
-														<span>
-															Nạp tiền
-														</span>
-												</button>
-											</div>
-											<div class="form-desc mt-3">
-												<ul class="pl-3 mb-0">
-													<li class="mb-2">
-														Phí nạp thẻ <span class="text-danger">35%</span> cho nhà
-														mạng. <span class="color-main font-italic">(Ví dụ: Nạp thẻ 20.000 bạn sẽ nhận được 13.000 vào tài khoản)</span>
-													</li>
-													<li>
-														Nạp sai 5 lần liên tiếp, tài khoản của bạn không thể sử dụng
-														hình thức nạp trong 24h.
-													</li>
-													<li>
-														Mua thẻ nạp online
-														<a href="#" class="color-main font-weight-bold">tại đây</a>
-													</li>
-													<li>
-														Nếu gặp lỗi thì
-														<a href="#" class="color-main font-weight-bold">Click vào
-															đây</a> hoặc liên hệ <a
-															href="mailto:thtan0407@gmail.com"
-															class="color-main font-weight-bold">thtan0407@gmail.com</a>
-													</li>
-												</ul>
-											</div>
-										</form>
-									</div>
-									<div class="col-lg-6">
-										<div class="p-3 p-lg-0">
-											<img src="./assets/images/hd_mobile.png" alt="" class="w-100">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<header class="position-relative shadow-sm bg-white">
-	<div class="header-overlay"></div>
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6">
-				<div class="row align-items-center justify-content-lg-start">
-					<div class="col-lg-4">
-						<div class="d-flex align-items-center justify-content-start">
-							<div class="header-logo">
-								<a href="index.html" class="d-inline-block">
-									<img class="w-100" src="./assets/images/logo.png"
-									     alt="Template Document 123doc.net">
-								</a>
-							</div>
-							<div class="header-navigation">
-								<a href="javascript:void(0)"><i class="fas fa-th"></i></a>
-								<ul class="list-unstyled mb-0" id="hasMenu">
-									<li class="d-block d-lg-none border-bottom">
-										<div class="row row-10">
-											<div class="col-6 mb-3">
-												<a href="#modalPrice" data-toggle="modal"
-												   class="btn btn-warning btn-customize w-100">
-													Nạp tiền
-												</a>
-											</div>
-											<div class="col-6 mb-3">
-												<a href="/upload-file.html" class="btn btn-primary btn-customize w-100">
-													Tải lên
-												</a>
-											</div>
-											<div class="col-6 d-none">
-												<a href="#modalRegister" data-toggle="modal"
-												   class="btn btn-outline-light w-100">
-													Đăng ký
-												</a>
-											</div>
-											<div class="col-6 d-none">
-												<a href="#modalLogin" data-toggle="modal"
-												   class="btn btn-outline-light w-100">
-													Đăng nhập
-												</a>
-											</div>
-											<div class="col-12 mb-2">
-												<div class="login-inner d-flex align-items-center justify-content-between">
-													<div class="login-info w-100 d-flex align-items-start justify-content-start">
-														<a href="javascript:void(0)">
-															<!-- Sử dụng hình hoặc icon đều được -->
-															<!--															<img src="./assets/images/user.png" alt="">-->
-															<span class="fal fa-user"></span>
-														</a>
-														<div class="login-info-right w-100 ml-3">
-															<a href="javascript:void(0)">
-																<b class="text-dark">Hoàng Tấn</b>
-															</a>
-															<p class="mb-1">
-																<span>Tải lên:</span>
-																<b class="text-dark">0 tài liệu</b>
-															</p>
-															<p class="mb-1">
-																<span>Doanh thu:</span>
-																<b class="text-dark">0 <sup>đ</sup></b>
-															</p>
-															<p class="mb-1">
-																<span>Số dư:</span>
-																<b class="text-dark">0 <sup>đ</sup></b>
-															</p>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-12 mb-2">
-												<a href="#"
-												   class="btn btn-outline-light w-100">
-													Thông báo (0)
-												</a>
-											</div>
-											<div class="col-12">
-												<a href="#"
-												   class="btn btn-outline-light w-100">
-													Đăng xuất
-												</a>
-											</div>
-										</div>
-									</li>
-									<li>
-										<a href="">
-											<span>
-												Luận văn - báo cáo
-											</span>
-											<i class="fal fa-angle-right"></i>
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="">
-											<span>
-												Kỹ năng mềm
-											</span>
-											<i class="fal fa-angle-right"></i>
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="">
-											<span>
-												Mẫu slide
-											</span>
-										</a>
-									</li>
-									<li>
-										<a href="">
-											<span>
-												Kinh doanh - tiếp thị
-											</span>
-											<i class="fal fa-angle-right"></i>
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="">
-											<span>
-												Kinh tế - quản lí thị trường
-											</span>
-											<i class="fal fa-angle-right"></i>
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="">
-											<span>
-												Tài chính - ngân hàng
-											</span>
-										</a>
-									</li>
-									<li>
-										<a href="">
-											<span>
-												Kinh doanh - tiếp thị
-											</span>
-											<i class="fal fa-angle-right"></i>
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="">
-											<span>
-												Kinh tế - quản lí thị trường
-											</span>
-											<i class="fal fa-angle-right"></i>
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-											<li>
-												<a href="">
-													Sub menu 01
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="">
-											<span>
-												Tài chính - ngân hàng
-											</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="header-mobilesearch d-block d-lg-none">
-								<a href="javascript:void(0)">
-									<i class="fal fa-search"></i>
-								</a>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-12">
+							<div class="template-1-heading template-1-minheight">
+								<h4>
+									Nạp cước
+								</h4>
+								<p class="mb-0 text-dark lh-18">
+									Nạp ƯU ĐÃI trả trước, trả sau Vinaphone, Mobifone, Viettel chiết khấu từ 15-20% sau
+									10 phút sẽ thành công (có thể sẽ không có khuyến mãi)
+								</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-8">
-						<div class="header-form">
-							<form action="" id="js-form_search" class="mb-0">
-								<div class="input-group mb-0">
-									<div class="input-group-prepend">
-										<select name="" id="" class="form-control">
-											<option value="1" selected>Tài liệu</option>
-											<option value="2">Bộ sưu tập</option>
-											<option value="3">Thành viên</option>
+					<div class="row">
+						<div class="col-12">
+							<div class="bg-light rounded-sm border p-4">
+								<form action="">
+									<div class="form-group">
+										<label for="phone" class="template-1-label text-dark">Số điện thoại</label>
+										<input type="text" class="form-control" id="phone" placeholder="0909xxxxxx">
+									</div>
+									<div class="form-group">
+										<label for="network" class="template-1-label text-dark">Nhà mạng</label>
+										<select class="form-control" id="network">
+											<option name="viettel">Viettel</option>
+											<option name="vinaphone">Vinaphone</option>
+											<option name="mobile">Mobile</option>
+											<option name="gate">Gate</option>
+											<option name="zing">Zing</option>
 										</select>
 									</div>
-									<input type="text" class="form-control" name="" id="" placeholder="Tìm kiếm...">
-									<button type="submit"><i class="fal fa-search"></i></button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 d-none d-lg-block">
-				<div class="d-flex align-items-center justify-content-lg-end">
-					<div class="d-flex align-items-center justify-content-lg-end">
-						<a href="#modalPrice" data-toggle="modal" class="btn btn-warning btn-customize">
-							Nạp tiền
-						</a>
-						<a href="/upload-file.html" class="btn btn-primary btn-customize">
-							Tải lên
-						</a>
-					</div>
-					<div class="header-link">
-						<a href="/gioi-thieu.html">
-							<i class="fal fa-star"></i>
-						</a>
-					</div>
-					<div class="d-flex align-items-center justify-content-lg-end">
-						<a href="#modalRegister" data-toggle="modal" class="d-none btn btn-outline-light">
-							Đăng ký
-						</a>
-						<a href="#modalLogin" data-toggle="modal" class="d-none btn btn-outline-light">
-							Đăng nhập
-						</a>
-						<div class="login-inner d-flex align-items-center justify-content-between">
-							<div class="login-info mr-3">
-								<a href="javascript:void(0)" class="d-flex align-items-center justify-content-start">
-									<!-- Sử dụng hình hoặc icon đều được -->
-									<img src="./assets/images/user.png" alt="">
-									<!--<span class="fal fa-user"></span>-->
-									<b class="text-09 text-dark ml-2">Hoàng Tấn</b>
-								</a>
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="javascript:void(0)">
-											Thông tin tài khoản
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											Hòm thư
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											Quản lý tài liệu
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											Doanh thu <span>0 <sup>đ</sup></span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											Số dư <span>0 <sup>đ</sup></span>
-										</a>
-									</li>
-									<li>
-										<a href="#modalPrice" data-toggle="modal">
-											Nạp tiền
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											Chuyển tiền
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											<span>
-												Đăng xuất
-											</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="login-notification">
-								<i class="fal fa-bell"></i>
-								<div class="card card-notification">
-									<div class="card-header py-2">
-										<div class="card-title mb-0 font-weight-bold text-dark h6">Bạn có
-											<span>0</span> thông báo
+									<div class="form-group">
+										<label for="code" class="template-1-label text-dark">Mã thẻ</label>
+										<input type="text" class="form-control" id="code" placeholder="">
+									</div>
+									<div class="form-group">
+										<label for="mess" class="template-1-label text-dark">Ghi chú</label>
+										<textarea class="form-control" id="mess" rows="3"></textarea>
+									</div>
+									<div class="form-group">
+										<label for="code" class="template-1-label text-dark">Phương thức thanh
+											toán</label>
+										<div class="d-flex align-items-center flex-wrap">
+											<div class="custom-control custom-radio custom-control-inline">
+												<input type="radio" id="1"
+												       class="custom-control-input">
+												<label class="custom-control-label" for="1">Techcombank</label>
+											</div>
+											<div class="custom-control custom-radio custom-control-inline">
+												<input type="radio" id="2"
+												       class="custom-control-input">
+												<label class="custom-control-label" for="2">Vietcombank</label>
+											</div>
+											<div class="custom-control custom-radio custom-control-inline">
+												<input type="radio" id="3"
+												       class="custom-control-input">
+												<label class="custom-control-label" for="3">BIDV</label>
+											</div>
 										</div>
 									</div>
-									<div class="card-body p-2">
-										<ul class="list-unstyled mb-0">
-											<li class="text-muted text-center text-09 no-notification">Chưa có thông báo
-												mới
-											</li>
-											<li>
-												<div class="image">
-													<a href="#">
-														<i class="fal fa-bell"></i>
-													</a>
-												</div>
-												<div class="content">
-													<a href="#">
-														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
-													</a>
-												</div>
-												<div class="action">
-													<a href="javascript:void(0)" class="js_remove-notification">
-														<i class="fal fa-times"></i>
-													</a>
-												</div>
-											</li>
-											<li>
-												<div class="image">
-													<a href="#">
-														<i class="fal fa-bell"></i>
-													</a>
-												</div>
-												<div class="content">
-													<a href="#">
-														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
-													</a>
-												</div>
-												<div class="action">
-													<a href="javascript:void(0)" class="js_remove-notification">
-														<i class="fal fa-times"></i>
-													</a>
-												</div>
-											</li>
-											<li>
-												<div class="image">
-													<a href="#">
-														<i class="fal fa-bell"></i>
-													</a>
-												</div>
-												<div class="content">
-													<a href="#">
-														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
-													</a>
-												</div>
-												<div class="action">
-													<a href="javascript:void(0)" class="js_remove-notification">
-														<i class="fal fa-times"></i>
-													</a>
-												</div>
-											</li>
-											<li>
-												<div class="image">
-													<a href="#">
-														<i class="fal fa-bell"></i>
-													</a>
-												</div>
-												<div class="content">
-													<a href="#">
-														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
-													</a>
-												</div>
-												<div class="action">
-													<a href="javascript:void(0)" class="js_remove-notification">
-														<i class="fal fa-times"></i>
-													</a>
-												</div>
-											</li>
-											<li>
-												<div class="image">
-													<a href="#">
-														<i class="fal fa-bell"></i>
-													</a>
-												</div>
-												<div class="content">
-													<a href="#">
-														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
-													</a>
-												</div>
-												<div class="action">
-													<a href="javascript:void(0)" class="js_remove-notification">
-														<i class="fal fa-times"></i>
-													</a>
-												</div>
-											</li>
-											<li>
-												<div class="image">
-													<a href="#">
-														<i class="fal fa-bell"></i>
-													</a>
-												</div>
-												<div class="content">
-													<a href="#">
-														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
-													</a>
-												</div>
-												<div class="action">
-													<a href="javascript:void(0)" class="js_remove-notification">
-														<i class="fal fa-times"></i>
-													</a>
-												</div>
-											</li>
-											<li>
-												<div class="image">
-													<a href="#">
-														<i class="fal fa-bell"></i>
-													</a>
-												</div>
-												<div class="content">
-													<a href="#">
-														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
-													</a>
-												</div>
-												<div class="action">
-													<a href="javascript:void(0)" class="js_remove-notification">
-														<i class="fal fa-times"></i>
-													</a>
-												</div>
-											</li>
-											<li>
-												<div class="image">
-													<a href="#">
-														<i class="fal fa-bell"></i>
-													</a>
-												</div>
-												<div class="content">
-													<a href="#">
-														Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit.
-													</a>
-												</div>
-												<div class="action">
-													<a href="javascript:void(0)" class="js_remove-notification">
-														<i class="fal fa-times"></i>
-													</a>
-												</div>
-											</li>
-										</ul>
+									<div class="form-group mb-0 mt-4">
+										<button class="btn btn-success template-1-btn">
+											Gửi thẻ cào
+										</button>
 									</div>
-									<div class="card-footer text-center">
-										<a href="thong-bao.html" class="color-main text-09">Xem tất cả thông báo</a>
-									</div>
-								</div>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</header>
-
-<div class="main">
-	<div class="position-relative overflow-hidden">
-		<div class="wrapper-banner">
-			<div class="swiper-container" id="swiper-banner">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="swiper-image" style="background-image: url('./assets/images/banner/1.jpg')">
-							<a href="#"></a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="swiper-image" style="background-image: url('./assets/images/banner/2.jpg')">
-							<a href="#"></a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="swiper-image" style="background-image: url('./assets/images/banner/1.jpg')">
-							<a href="#"></a>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</div>
-		<div class="wrapper-side--left d-none d-lg-block shadow-sm bg-white">
-			<ul class="list-unstyled mb-0">
-				<li class="side-item-1">
-					<a href="#">
-						<h5 class="font-weight-bold">Báo cáo thực tập</h5>
-						<p class="text-muted mb-0 text-09">
-							Tổng hợp báo cáo thực tập điện cơ khí, đồ án, doanh nghiệp và công ty, kế toán, marketing
-						</p>
-					</a>
-				</li>
-				<li class="side-item-2">
-					<a href="#">
-						<h5 class="font-weight-bold">Giáo Dục - Đào Tạo</h5>
-						<p class="text-muted mb-0 text-09">
-							Tổng hợp 334,200 giáo án, bài giảng, tài liệu tham khảo của tất cả các cấp học.
-						</p>
-					</a>
-				</li>
-				<li class="side-item-3">
-					<a href="#">
-						<h5 class="font-weight-bold">Ngoại ngữ</h5>
-						<p class="text-muted mb-0 text-09">
-							Tổng hợp 139,500 tài liệu tiếng anh chất lượng cao.
-						</p>
-					</a>
-				</li>
-				<li class="side-item-4">
-					<a href="#">
-						<h5 class="font-weight-bold">Tài Chính - Ngân Hàng</h5>
-						<p class="text-muted mb-0 text-09">
-							Tổng hợp 67,905 tài liệu chuyên sâu đa dạng về lĩnh vực Tài Chính - Ngân Hàng
-						</p>
-					</a>
-				</li>
-				<li class="side-item-5">
-					<a href="#">
-						<h5 class="font-weight-bold">Kỹ Năng Mềm</h5>
-						<p class="text-muted mb-0 text-09">
-							Tổng hợp 44,098 tài liệu chuyên sâu đa dạng về lĩnh vực Kỹ Năng Mềm
-						</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="wrapper-side--right d-none d-lg-block rounded shadow-sm bg-white p-3">
-			<h5 class="text-dark font-weight-bold text-09">Hoạt động gần đây</h5>
-			<ul class="list-unstyled mb-0 position-relative" id="slide-sideRight">
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="side-item--content">
-						<div class="side-item--top">
-							<a href="trang-ca-nhan.html">
-								<div class="icon">
-									<i class="fad fa-book-alt"></i>
-								</div>
-								<div class="text">
-									<h6>Trung Nguyễn</h6>
-									<small class="mb-0 text-gray">
-										Vừa đăng bán tài liệu
-									</small>
-								</div>
-							</a>
-						</div>
-						<div class="side-item--bottom">
-							<a href="chi-tiet-tai-lieu.html">
-								Nghiên cứu sự hài lòng của khách hàng đối với việc mua nhà dành cho người có thu ...
-							</a>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="wrapper-new bg-light py-5 border-bottom">
+	</section>
+	<section class="py-5 bg-light border-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="heading h4 mb-4 text-dark font-weight-bolder">
-						Tài liệu mới update
+					<div class="template-1-heading">
+						<h4>
+							Tin tức & sự kiện
+						</h4>
+						<p class="mb-0 text-dark lh-18">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure maiores molestias
+							repellendus reprehenderit sunt vitae. Debitis harum quibusdam voluptates.
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="row row-10">
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-pdf">
-									<i class="fal fa-file-pdf"></i>
-								</span>
-							</div>
-						</a>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 row-col-10 justify-content-center">
+				<div class="col">
+					<div class="card rounded-0 card-tintuc">
+						<a href="chi-tiet-bai-viet.html"
+						   class="link-cover"></a>
+						<div class="card-header rounded-0">
+							<span class="card-image"
+							      style="background-image:url('./assets/images/Top215123.jpg')">
+							</span>
+						</div>
 						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Trần Quang
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 2
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 316,644
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 10,117
-								</li>
-							</ul>
+							<div class="card-meta text-muted">
+								<i class="fal fa-calendar-alt"></i>
+								13-02-2021
+							</div>
+							<h5 class="card-title">
+								Top những tựa game mobile 2021
+							</h5>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-ppt">
-									<i class="fal fa-file-powerpoint"></i>
-								</span>
-							</div>
-						</a>
+				<div class="col">
+					<div class="card rounded-0 card-tintuc">
+						<a href="chi-tiet-bai-viet.html"
+						   class="link-cover"></a>
+						<div class="card-header rounded-0">
+							<span class="card-image"
+							      style="background-image:url('./assets/images/Top215123.jpg')">
+							</span>
+						</div>
 						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
+							<div class="card-meta text-muted">
+								<i class="fal fa-calendar-alt"></i>
+								13-02-2021
+							</div>
+							<h5 class="card-title">
+								Top những tựa game mobile 2021 hay nhất không thể không chơi
+							</h5>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-word">
-									<i class="fal fa-file-word"></i>
-								</span>
-							</div>
-						</a>
+				<div class="col">
+					<div class="card rounded-0 card-tintuc">
+						<a href="chi-tiet-bai-viet.html"
+						   class="link-cover"></a>
+						<div class="card-header rounded-0">
+							<span class="card-image"
+							      style="background-image:url('./assets/images/Top215123.jpg')">
+							</span>
+						</div>
 						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
+							<div class="card-meta text-muted">
+								<i class="fal fa-calendar-alt"></i>
+								13-02-2021
+							</div>
+							<h5 class="card-title">
+								Top những tựa game mobile 2021 hay nhất không thể không chơi
+							</h5>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-excel">
-									<i class="fal fa-file-excel"></i>
-								</span>
-							</div>
-						</a>
+				<div class="col">
+					<div class="card rounded-0 card-tintuc">
+						<a href="chi-tiet-bai-viet.html"
+						   class="link-cover"></a>
+						<div class="card-header rounded-0">
+							<span class="card-image"
+							      style="background-image:url('./assets/images/Top215123.jpg')">
+							</span>
+						</div>
 						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
+							<div class="card-meta text-muted">
+								<i class="fal fa-calendar-alt"></i>
+								13-02-2021
+							</div>
+							<h5 class="card-title">
+								Top những tựa game mobile 2021 hay nhất không thể không chơi
+							</h5>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-pdf">
-									<i class="fal fa-file-pdf"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Trần Quang
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 2
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 316,644
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 10,117
-								</li>
-							</ul>
+				<div class="col">
+					<div class="card rounded-0 card-tintuc">
+						<a href="chi-tiet-bai-viet.html"
+						   class="link-cover"></a>
+						<div class="card-header rounded-0">
+							<span class="card-image"
+							      style="background-image:url('./assets/images/Top215123.jpg')">
+							</span>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-ppt">
-									<i class="fal fa-file-powerpoint"></i>
-								</span>
-							</div>
-						</a>
 						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-word">
-									<i class="fal fa-file-word"></i>
-								</span>
+							<div class="card-meta text-muted">
+								<i class="fal fa-calendar-alt"></i>
+								13-02-2021
 							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-excel">
-									<i class="fal fa-file-excel"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-pdf">
-									<i class="fal fa-file-pdf"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Trần Quang
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 2
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 316,644
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 10,117
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-ppt">
-									<i class="fal fa-file-powerpoint"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-word">
-									<i class="fal fa-file-word"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-excel">
-									<i class="fal fa-file-excel"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-pdf">
-									<i class="fal fa-file-pdf"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Trần Quang
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 2
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 316,644
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 10,117
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-ppt">
-									<i class="fal fa-file-powerpoint"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-word">
-									<i class="fal fa-file-word"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-excel">
-									<i class="fal fa-file-excel"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-pdf">
-									<i class="fal fa-file-pdf"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Trần Quang
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 2
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 316,644
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 10,117
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-ppt">
-									<i class="fal fa-file-powerpoint"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/2.jpg" class="border"
-								     alt="Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản">
-								<span class="document-word">
-									<i class="fal fa-file-word"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Luyện tập: Giải bài toán bằng cách lập phương trình cơ bản
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2-5 col-md-3 col-6 mb-3">
-					<div class="card rounded-0 border-0 shadow-sm position-relative card-document">
-						<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-							<div class="card-header border-bottom-0 bg-white text-center position-relative">
-								<img src="./assets/images/tai-lieu/1.jpg" class="border"
-								     alt="Bảng công thức tích phân - đạo hàm - Mũ - logarit">
-								<span class="document-excel">
-									<i class="fal fa-file-excel"></i>
-								</span>
-							</div>
-						</a>
-						<div class="card-body">
-							<a class="d-inline-block" href="chi-tiet-tai-lieu.html">
-								<div class="card-title">
-									Bảng công thức tích phân - đạo hàm - Mũ - logarit
-								</div>
-							</a>
-							<a class="d-inline-block" href="trang-ca-nhan.html">
-								<div class="card-text text-09">
-									Fritjof Capra
-								</div>
-							</a>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-								<li>
-									<i class="fal fa-file-alt"></i> 6
-								</li>
-								<li>
-									<i class="fal fa-eye"></i> 46,616
-								</li>
-								<li>
-									<i class="fal fa-arrow-to-bottom"></i> 836
-								</li>
-							</ul>
+							<h5 class="card-title">
+								Top những tựa game mobile 2021 hay nhất không thể không chơi
+							</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="wrapper-category bg-white py-5">
+	</section>
+	<section class="py-5 bg-white border-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="heading h4 mb-4 text-dark font-weight-bolder">
-						Tài liệu chung
+					<div class="template-1-heading">
+						<h4>
+							Đối tác của chúng tôi
+						</h4>
+						<p class="mb-0 text-dark lh-18">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure maiores molestias
+							repellendus reprehenderit sunt vitae. Debitis harum quibusdam voluptates.
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="row row-10">
-				<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-					<div class="card rounded-0 position card-category">
-						<div class="card-header border-bottom-0 text-white font-weight-bold"
-						     style="background-image: url('./assets/images/category-bg.png')">
-							Ngoại ngữ
+			<div class="row">
+				<div class="col-12">
+					<div class="swiper-container" id="swiper-partner">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="doitac">
+									<img src="./assets/images/partner/creditcard.png">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doitac">
+									<img src="./assets/images/partner/moneybooker.png">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doitac">
+									<img src="./assets/images/partner/nganluong.png">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doitac">
+									<img src="./assets/images/partner/onepay.png">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doitac">
+									<img src="./assets/images/partner/paypal.png">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doitac">
+									<img src="./assets/images/partner/perfect-money.png">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doitac">
+									<img src="./assets/images/partner/techcombank.png">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doitac">
+									<img src="./assets/images/partner/vietcombank.png">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doitac">
+									<img src="./assets/images/partner/webmoney.png">
+								</div>
+							</div>
 						</div>
-						<div class="card-body">
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-excel">
-											<i class="fal fa-file-excel"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-					<div class="card rounded-0 position card-category">
-						<div class="card-header border-bottom-0 text-white font-weight-bold"
-						     style="background-image: url('./assets/images/category-bg.png')">
-							Giáo Dục - Đào Tạo
-						</div>
-						<div class="card-body">
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-excel">
-											<i class="fal fa-file-excel"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-					<div class="card rounded-0 position card-category">
-						<div class="card-header border-bottom-0 text-white font-weight-bold"
-						     style="background-image: url('./assets/images/category-bg.png')">
-							Kỹ Thuật - Công Nghệ
-						</div>
-						<div class="card-body">
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-excel">
-											<i class="fal fa-file-excel"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-					<div class="card rounded-0 position card-category">
-						<div class="card-header border-bottom-0 text-white font-weight-bold"
-						     style="background-image: url('./assets/images/category-bg.png')">
-							Công Nghệ Thông Tin
-						</div>
-						<div class="card-body">
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-excel">
-											<i class="fal fa-file-excel"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-ppt">
-											<i class="fal fa-file-powerpoint"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-pdf">
-											<i class="fal fa-file-pdf"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-								<li class="list-group-item p-0">
-									<a href="chi-tiet-tai-lieu.html">
-										<span class="document-word">
-											<i class="fal fa-file-word"></i>
-										</span>
-										Viết đoạn văn ngắn tiếng anh về các chủ đề cho trước
-									</a>
-									<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-gray text-09">
-										<li>
-											<i class="fal fa-file-alt"></i> 2
-										</li>
-										<li>
-											<i class="fal fa-eye"></i> 316,644
-										</li>
-										<li>
-											<i class="fal fa-arrow-to-bottom"></i> 10,117
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
+						<div class="swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </div>
-
-<footer>
-	<div class="footer-top bg-light border-top py-5">
+<footer class="template-1-footer">
+	<div class="top py-5 position-relative">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 text-center">
-					<a href="index.html" class="d-inline-block">
-						<img class="w-100" src="./assets/images/logo.png" alt="Template Document 123doc.net">
-					</a>
-				</div>
-			</div>
-			<div class="row py-5">
-				<div class="col-12">
-					<div class="d-flex align-items-center justify-content-center flex-wrap list-tags">
-						<a href="#" class="d-inline-block">Tai lieu</a>
-						<a href="#" class="d-inline-block">Mục lục</a>
-						<a href="#" class="d-inline-block">Bài viết</a>
-						<a href="#" class="d-inline-block">Tìm kiếm mới</a>
-						<a href="#" class="d-inline-block">Luận văn</a>
-						<a href="#" class="d-inline-block">Tài liệu mới</a>
-						<a href="#" class="d-inline-block">Chủ đề tài liệu mới đăng</a>
-						<a href="#" class="d-inline-block">Tạo cv xin việc</a>
-						<a href="#" class="d-inline-block">nencer.vn</a>
-						<a href="#" class="d-inline-block">tìm kiếm mua bán nhà đất</a>
-						<a href="#" class="d-inline-block">Tai lieu</a>
-						<a href="#" class="d-inline-block">Mục lục</a>
-						<a href="#" class="d-inline-block">Bài viết</a>
-						<a href="#" class="d-inline-block">Tìm kiếm mới</a>
-						<a href="#" class="d-inline-block">Luận văn</a>
-						<a href="#" class="d-inline-block">Tài liệu mới</a>
-						<a href="#" class="d-inline-block">Chủ đề tài liệu mới đăng</a>
-						<a href="#" class="d-inline-block">Tạo cv xin việc</a>
-						<a href="#" class="d-inline-block">nencer.vn</a>
-						<a href="#" class="d-inline-block">tìm kiếm mua bán nhà đất</a>
-						<a href="#" class="d-inline-block">Tai lieu</a>
-						<a href="#" class="d-inline-block">Mục lục</a>
-						<a href="#" class="d-inline-block">Bài viết</a>
-						<a href="#" class="d-inline-block">Tìm kiếm mới</a>
-						<a href="#" class="d-inline-block">Luận văn</a>
-						<a href="#" class="d-inline-block">Tài liệu mới</a>
-						<a href="#" class="d-inline-block">Chủ đề tài liệu mới đăng</a>
-						<a href="#" class="d-inline-block">Tạo cv xin việc</a>
-						<a href="#" class="d-inline-block">nencer.vn</a>
-						<a href="#" class="d-inline-block">tìm kiếm mua bán nhà đất</a>
-					</div>
-				</div>
-			</div>
-			<div class="footer-small">
-				<div class="row">
-					<div class="col-md-4 mb-3 mb-md-0 text-center text-md-left">
-						<div class="footer-inner">
-							<div class="footer-title mb-3 font-weight-bold text-black">
-								Hỗ trợ khách hàng
-							</div>
-							<div class="footer-list">
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="#">
-											<i class="fal fa-envelope"></i>
-											info@123doc.org
-										</a>
-									</li>
-								</ul>
-							</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-inner">
+						<div class="footer-logo">
+							<a href="index.html" class="d-inline-block">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="footer-heading text-dark">
+							CÔNG TY DỊCH VỤ TRỰC TUYẾN AN HƯNG
+						</div>
+						<div class="footer-desc text-muted">
+							Bán thẻ cào, đổi thẻ cào, nạp tiền topup
 						</div>
 					</div>
-					<div class="col-md-4 mb-3 mb-md-0 text-center text-md-left">
-						<div class="footer-inner">
-							<div class="footer-title mb-3 font-weight-bold text-black">
-								Giúp đỡ
-							</div>
-							<div class="footer-list">
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="#">
-											Câu hỏi thường gặp
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Điều khoản sử dựng
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Quy định chính sách bán tài liệu
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Hướng dẫn thanh toán
-										</a>
-									</li>
-								</ul>
-							</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-inner">
+						<div class="footer-title text-dark">
+							Chính sách
+						</div>
+						<div class="footer-list footer-link">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										Về chúng tôi
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Chính sách bảo mật
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-md-4 mb-3 mb-md-0 text-center text-md-left">
-						<div class="footer-inner">
-							<div class="footer-title mb-3 font-weight-bold text-black">
-								Giới thiệu
-							</div>
-							<div class="footer-list">
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="#">
-											123doc là gì?
-										</a>
-									</li>
-								</ul>
-							</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-inner">
+						<div class="footer-title text-dark">
+							Hướng dẫn
+						</div>
+						<div class="footer-list footer-link">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										Chính sách bảo mật
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-inner">
+						<div class="footer-title mb-3 text-dark">
+							Liên kết mạng xã hội
+						</div>
+						<div class="footer-list footer-social">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="" class="facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="twitter">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="youtube">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="linkedin">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="instagram">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="contact">
+										<i class="fal fa-at"></i>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer-bottom bg-white py-2 border-top position-relative">
+	<div class="bottom bg-light py-3 border-top position-relative">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 text-center text-muted">
-					<p class="mb-1">Bản quyền năm 2021 nencer. Design by Nencer.</p>
+				<div class="col-12 col-md-6 text-muted">
+					<p class="mb-0">Software by An Hung.,</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<ul class="list-unstyled mb-0 d-md-flex align-items-center justify-content-end">
+						<li><a href="">English</a></li>
+						<li><a href="">Tiếng Việt</a></li>
+						<li><a href="">中文</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -2954,7 +774,6 @@
 <script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
-<script type="text/javascript" src="./assets/plugin/slick/slick.js"></script>
 <script type="text/javascript" src="./assets/js/theme-script.js"></script>
 
 </body>

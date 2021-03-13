@@ -30,8 +30,20 @@ $(document).ready(function () {
 	const myBanner = new Swiper('#swiper-banner', {
 		loop: true,
 		spaceBetween: 50,
-		speed: 250,
+		speed: 1500,
 		effect: 'fade',
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		}
+	});
+	
+	const myPartner = new Swiper('#swiper-partner', {
+		slidesPerView: 6,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
@@ -39,6 +51,19 @@ $(document).ready(function () {
 		autoplay: {
 			delay: 10000,
 			disableOnInteraction: false,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 4,
+				spaceBetween: 20,
+			},
+			1024: {
+				slidesPerView: 6,
+				spaceBetween: 20,
+			},
 		}
 	});
 })
