@@ -507,6 +507,7 @@ textarea:focus {
 
 .template-1-header .top {
     padding: 5px 0;
+    background: var(--color-main);
 }
 
 .template-1-header .top .template-1-login > ul {
@@ -971,7 +972,7 @@ textarea:focus {
 
 .card-the .card-header {
     padding: 0;
-    width: 30%;
+    width: 37%;
     flex-shrink: 0;
     border-bottom: 0;
     display: flex;
