@@ -1,0 +1,1432 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Template Topup</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<style>
+		:root {
+			--color-main: #2F822F;
+			--color-hover: #135b13;
+			--text-dark: #343a40;
+			--text-gray: #A0AEC0;
+			--bg-body: #F7F7F7;
+			--bg-light: #f8f9fa;
+			--color-border: #e9e9e9;
+		}
+	
+	</style>
+</head>
+<body>
+<div class="template-1-popupTheme">
+	<div class="modal fade" id="modalLogin" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header d-flex align-items-center justify-content-center flex-column bg-light text-center py-3">
+					<h5 class="modal-title d-block mb-1 w-100 text-center">Đăng nhập tài khoản</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+					<div class="modal-text">
+						Nếu chưa có tài khoản, vui lòng <a href="#modalRegister" class="d-block color-main"
+						                                   data-toggle="modal"
+						                                   data-dismiss="modal">click vào đây để đăng ký</a>
+					</div>
+				</div>
+				<div class="modal-body">
+					<form class="form-effect" action="">
+						<div class="group-effect">
+							<input type="email" id="emailLogin" class="input-effect">
+							<label class="label-effect" for="emailLogin">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
+							       autocomplete="off" required="">
+							<label class="label-effect" for="passwordLogin">
+								<i class="fas fa-lock"></i>
+								<span>Mật khẩu</span>
+							</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="saveLogin">
+							<label class="custom-control-label" for="saveLogin">Nhớ mật khẩu</label>
+						</div>
+						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
+							<button type="submit" class="btn btn-primary template-1-btn">
+								<span>
+									Đăng nhập
+									<i class="fas fa-sign-in-alt"></i>
+								</span>
+							</button>
+							<a href="#modalForgot" data-toggle="modal" data-dismiss="modal"
+							   class="d-inline-block mt-3 text-muted text-09">
+								Quên mật khẩu
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header d-flex align-items-center justify-content-center flex-column bg-light text-center py-3">
+					<h5 class="modal-title d-block mb-1 w-100 text-center">Đăng ký tài khoản</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+					<div class="modal-text">
+						Nếu đã có tài khoản, vui lòng <a href="#modalLogin" class="d-block color-main"
+						                                 data-toggle="modal"
+						                                 data-dismiss="modal">click vào đây để đăng nhập</a>
+					</div>
+				</div>
+				<div class="modal-body">
+					<form class="form-effect" action="">
+						<div class="group-effect">
+							<input type="email" id="emailRegister" class="input-effect">
+							<label class="label-effect" for="emailRegister">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="password" tabindex="1" name="" id="passwordRegister" class="input-effect"
+							       autocomplete="off" required="">
+							<label class="label-effect" for="passwordRegister">
+								<i class="fas fa-lock"></i>
+								<span>Mật khẩu</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="password" tabindex="1" name="" id="passwordConfirmRegister"
+							       class="input-effect"
+							       autocomplete="off" required="">
+							<label class="label-effect" for="passwordConfirmRegister">
+								<i class="fas fa-lock"></i>
+								<span>Nhập lại mật khẩu</span>
+							</label>
+						</div>
+						<div class="row row-5">
+							<div class="col-md-6">
+								<div class="group-effect">
+									<input type="text" id="fullnameRegister" class="input-effect">
+									<label class="label-effect" for="fullnameRegister">
+										<i class="fas fa-address-card"></i>
+										<span>Họ &amp; tên</span>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="group-effect">
+									<input type="tel" id="phoneRegister" class="input-effect">
+									<label class="label-effect" for="phoneRegister">
+										<i class="fas fa-phone-alt"></i>
+										<span>Số điện thoại</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
+							<button type="submit" class="btn btn-primary template-1-btn">
+								<span>
+									Đăng ký
+									<i class="fas fa-sign-out-alt"></i>
+								</span>
+							</button>
+						</div>
+						<div class="divider"></div>
+						<p class="text-muted text-09 text-center">
+							Bằng cách nhập vào Đăng ký, bạn đồng ý với <a href="#" class="text-underline color-main">Điều
+							khoản</a> và <a href="#" class="text-underline color-main">Chính sách bảo mật thông tin</a>
+							của chúng tôi
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header d-flex align-items-center justify-content-center flex-column bg-light text-center py-3">
+					<h5 class="modal-title d-block w-100 text-center">Quên mật khẩu</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="form-effect" action="">
+						<div class="group-effect">
+							<input type="email" id="emailForgot" class="input-effect">
+							<label class="label-effect" for="emailForgot">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</label>
+						</div>
+						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
+							<button type="submit" class="btn btn-primary template-1-btn">
+								<span>
+									Gửi yêu cầu
+									<i class="fas fa-paper-plane"></i>
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="template-1-header bg-white shadow-sm border-bottom position-relative">
+	<div class="top bg-light border-bottom position-relative">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-sm-6 text-center text-sm-left">
+					<div style="display: none !important"
+					     class="d-flex align-items-center justify-content-sm-start justify-content-center">
+						<a href="#modalLogin" data-toggle="modal" class="btn btn-sm btn-success template-1-btnRounded">
+							Đăng nhập / Đăng ký
+						</a>
+					</div>
+					<div class="template-1-login position-relative d-inline-flex d-sm-flex align-items-center justify-content-sm-start justify-content-center">
+						<a href="javascript:void(0)" class="text-dark h6 mb-0">
+							<i class="fas fa-user"></i>
+							Tài khoản
+							<i class="fas fa-angle-down small ml-1"></i>
+						</a>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:void(0)">
+									<span>
+										Thông tin tài khoản
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<span>
+										Đổi mật khẩu
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<span>
+										Đăng xuất
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 mt-2 mt-md-0">
+					<div class="d-flex align-items-center justify-content-sm-end justify-content-center">
+						<a href="javascript:void(0)" class="text-link text-dark h6 mb-0" title="Giỏ hàng">
+							<div class="icons">
+								<i class="fas fa-shopping-bag"></i>
+								Giỏ hàng:
+								<span class="tien">120.000 <sup>đ</sup></span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="header-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="logo d-flex align-items-center justify-content-between">
+						<a href="index.html" class="d-inline-block">
+							<img src="./assets/images/logo.png" alt="">
+						</a>
+						<a href="javascript:void(0)" id="callMenu" class="d-block text-dark h6 mb-0 d-lg-none"><i
+								class="fas fa-bars"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="navigation">
+						<ul id="hasMenu"
+						    class="list-unstyled mb-0 w-100 d-lg-flex align-items-center justify-content-end">
+							<li class="position-relative">
+								<a href="/">
+									<i class="far fa-home-alt"></i> Trang chủ
+								</a>
+							</li>
+							<li class="position-relative">
+								<a href="mua-the-cao.html">
+									Mua thẻ cào
+								</a>
+							</li>
+							<li class="position-relative">
+								<a href="nap-topup.html">
+									Nạp topup
+								</a>
+							</li>
+							<li class="position-relative">
+								<a href="doi-the-cao.html">
+									Đổi thẻ cào
+								</a>
+							</li>
+							<li class="position-relative">
+								<a href="javascript:void(0)">Dịch vụ <i class="fas fa-caret-down"></i></a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="mua-the-cao.html">
+											Mua thẻ cào
+										</a>
+									</li>
+									<li>
+										<a href="nap-topup.html">
+											Nạp topup
+										</a>
+									</li>
+									<li>
+										<a href="doi-the-cao.html">
+											Đổi thẻ cào
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Vé máy bay
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Hoá đơn
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Nạp quỹ
+										</a>
+									</li>
+									<li>
+										<a href="https://golf.vuu.vn/quan-ao-d351.html">
+											Rút quỹ
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="position-relative">
+								<a href="danh-muc-bai-viet.html">
+									Tin tức
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="main">
+	<section class="py-5 bg-white border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<ol class="breadcrumb justify-content-center mb-0 bg-transparent w-100">
+						<li class="breadcrumb-item">
+							<a href="#" class="text-dark">Trang chủ</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a href="#" class="text-muted">Mua thẻ cào</a>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="template-1-heading template-1-minheight">
+						<h4>
+							Nạp cước
+						</h4>
+						<p class="mb-0 text-dark lh-18">
+							Nạp ƯU ĐÃI trả trước, trả sau Vinaphone, Mobifone, Viettel chiết khấu từ 15-20% sau
+							10 phút sẽ thành công (có thể sẽ không có khuyến mãi)
+						</p>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="row">
+						<div class="col-md-8">
+							<ul class="nav nav-tabs" id="tab-chooseCard" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="mobile-tab" data-toggle="tab" href="#mobile">Thẻ điện
+										thoại</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="game-tab" data-toggle="tab" href="#game">Thẻ game</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="tab-contentCard">
+								<div class="tab-pane fade show active" id="mobile" aria-labelledby="mobile-tab">
+									<div class="row row-col-10 mt-4 justify-content-center">
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-viettel.png">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Viettel</h5>
+												</div>
+												<a id="option1-tab" data-toggle="tab" href="#option1"
+												   class="link-cover"></a>
+											</div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-vinaphone.jpeg">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Vinaphone</h5>
+												</div>
+												<a id="option2-tab" data-toggle="tab" href="#option2"
+												   class="link-cover"></a></div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-mobifone.jpeg">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Mobiphone</h5>
+												</div>
+												<a id="option3-tab" data-toggle="tab" href="#option3"
+												   class="link-cover"></a></div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-vietnamobile.jpeg">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Vietnamobile</h5>
+												</div>
+												<a id="option4-tab" data-toggle="tab" href="#option4"
+												   class="link-cover"></a></div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-gmobile.jpg">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ GMobile</h5>
+												</div>
+												<a id="option5-tab" data-toggle="tab" href="#option5"
+												   class="link-cover"></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="game" aria-labelledby="game-tab">
+									<div class="row row-col-10 mt-4 justify-content-center">
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-garena.png">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Garena</h5>
+												</div>
+												<a id="option6-tab" data-toggle="tab" href="#option6"
+												   class="link-cover"></a>
+											</div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-appota.png">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Appota</h5>
+												</div>
+												<a id="option7-tab" data-toggle="tab" href="#option7"
+												   class="link-cover"></a>
+											</div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid" src="./assets/images/logo-card/the-zing.png">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Zing</h5>
+												</div>
+												<a id="option8-tab" data-toggle="tab" href="#option8"
+												   class="link-cover"></a>
+											</div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-vcoin.png">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Vcoin</h5>
+												</div>
+												<a id="option9-tab" data-toggle="tab" href="#option9"
+												   class="link-cover"></a>
+											</div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid" src="./assets/images/logo-card/the-gate.png">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Gate</h5>
+												</div>
+												<a id="option10-tab" data-toggle="tab" href="#option10"
+												   class="link-cover"></a>
+											</div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-ca-rot.jpg">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Carot</h5>
+												</div>
+												<a id="option11-tab" data-toggle="tab" href="#option11"
+												   class="link-cover"></a>
+											</div>
+										</div>
+										<div class="col-lg-4 col-sm-6">
+											<div class="card card-the">
+												<div class="card-header bg-white rounded-0">
+													<img class="img-fluid"
+													     src="./assets/images/logo-card/the-funcard.jpg">
+												</div>
+												<div class="card-body">
+													<h5 class="card-title mb-0">Thẻ Funcard</h5>
+												</div>
+												<a id="option12-tab" data-toggle="tab" href="#option12"
+												   class="link-cover"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mt-5">
+								<h6 class="template-1-heading-small">Chọn số tiền:</h6>
+							</div>
+							<div class="tab-content" id="tab-priceCard">
+								<div class="tab-pane fade active show" id="option1" aria-labelledby="option1-tab">
+									<div class="row row-col-10 mt-4 justify-content-center">
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Viettel 10.000đ" data-value="10000" data-percent=""
+											   data-id="1">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														10.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-viettel.png">
+														</div>
+														<div class="value">
+															Giá: 10.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Viettel 20.000đ" data-value="20000" data-percent=""
+											   data-id="2">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														20.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-viettel.png">
+														</div>
+														<div class="value">
+															Giá: 20.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Viettel 30.000đ" data-value="30000" data-percent="3"
+											   data-id="3">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														30.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-viettel.png">
+														</div>
+														<div class="value">
+															Giá: 30.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Viettel 50.000đ" data-value="50000" data-percent="5"
+											   data-id="4">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														50.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-viettel.png">
+														</div>
+														<div class="value">
+															Giá: 50.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Viettel 100.000đ" data-value="100000" data-percent="10"
+											   data-id="5">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														100.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-viettel.png">
+														</div>
+														<div class="value">
+															Giá: 100.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Viettel 200.000đ" data-value="200000" data-percent="10"
+											   data-id="6">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														200.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-viettel.png">
+														</div>
+														<div class="value">
+															Giá: 200.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Viettel 300.000đ" data-value="300000" data-percent="10"
+											   data-id="7">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														300.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-viettel.png">
+														</div>
+														<div class="value">
+															Giá: 300.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Viettel 500.000đ" data-value="500000" data-percent="10"
+											   data-id="8">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														500.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-viettel.png">
+														</div>
+														<div class="value">
+															Giá: 500.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Viettel 1.000.000đ" data-value="1000000" data-percent="10"
+											   data-id="8">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														1.000.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-viettel.png">
+														</div>
+														<div class="value">
+															Giá: 1.000.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-12">
+											<div class="text-muted text-center">
+												<p>
+													Thẻ viettel có thể <b class="text-dark">nạp tiền cho game</b> nào ?
+												</p>
+												<p>Game thủ có thể dùng thẻ Viettel để nạp cho game Uwin, Tiếu Ngạo
+													Giang Hồ, Thần Kiếm
+													3D, Ongame (game chơi bài), Ngạo Thiên…</p>
+												<p>Sống ở nước ngoài muốn <b class="text-dark">mua thẻ Viettel?</b></p>
+												<p>Website <b class="text-dark">Thedientu.com</b> chuyên cung cấp thẻ
+													Gmobile cho người
+													việt sống ở nước ngoài uy tín, giao dịch nhanh gọn, an toàn.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="option2" aria-labelledby="option2-tab">
+									<div class="row row-col-10 mt-4 justify-content-center">
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Vinaphone 10.000đ" data-value="10000" data-percent=""
+											   data-id="1">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														10.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-vinaphone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 10.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Vinaphone 20.000đ" data-value="20000" data-percent=""
+											   data-id="2">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														20.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-vinaphone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 20.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Vinaphone 30.000đ" data-value="30000" data-percent="3"
+											   data-id="3">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														30.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-vinaphone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 30.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Vinaphone 50.000đ" data-value="50000" data-percent="5"
+											   data-id="4">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														50.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-vinaphone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 50.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Vinaphone 100.000đ" data-value="100000" data-percent="10"
+											   data-id="5">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														100.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-vinaphone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 100.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Vinaphone 200.000đ" data-value="200000" data-percent="10"
+											   data-id="6">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														200.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-vinaphone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 200.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Vinaphone 300.000đ" data-value="300000" data-percent="10"
+											   data-id="7">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														300.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-vinaphone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 300.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Vinaphone 500.000đ" data-value="500000" data-percent="10"
+											   data-id="8">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														500.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-vinaphone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 500.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Vinaphone 1.000.000đ" data-value="1000000" data-percent="10"
+											   data-id="8">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														1.000.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-vinaphone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 1.000.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-12">
+											<div class="text-muted text-center">
+												<p>
+													Thẻ viettel có thể <b class="text-dark">nạp tiền cho game</b> nào ?
+												</p>
+												<p>Game thủ có thể dùng thẻ Viettel để nạp cho game Uwin, Tiếu Ngạo
+													Giang Hồ, Thần Kiếm
+													3D, Ongame (game chơi bài), Ngạo Thiên…</p>
+												<p>Sống ở nước ngoài muốn <b class="text-dark">mua thẻ Viettel?</b></p>
+												<p>Website <b class="text-dark">Thedientu.com</b> chuyên cung cấp thẻ
+													Gmobile cho người
+													việt sống ở nước ngoài uy tín, giao dịch nhanh gọn, an toàn.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="option3" aria-labelledby="option3-tab">
+									<div class="row row-col-10 mt-4 justify-content-center">
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Mobiphone 10.000đ" data-value="10000" data-percent=""
+											   data-id="1">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														10.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-mobifone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 10.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Mobiphone 20.000đ" data-value="20000" data-percent=""
+											   data-id="2">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														20.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-mobifone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 20.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Mobiphone 30.000đ" data-value="30000" data-percent="3"
+											   data-id="3">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														30.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-mobifone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 30.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Mobiphone 50.000đ" data-value="50000" data-percent="5"
+											   data-id="4">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														50.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-mobifone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 50.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Mobiphone 100.000đ" data-value="100000" data-percent="10"
+											   data-id="5">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														100.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-mobifone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 100.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Mobiphone 200.000đ" data-value="200000" data-percent="10"
+											   data-id="6">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														200.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-mobifone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 200.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Mobiphone 300.000đ" data-value="300000" data-percent="10"
+											   data-id="7">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														300.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-mobifone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 300.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Mobiphone 500.000đ" data-value="500000" data-percent="10"
+											   data-id="8">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														500.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-mobifone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 500.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-4 col-sm-6 col-lg-3">
+											<a class="choosePrice" href="javascript:void(0)"
+											   data-title="Mobiphone 1.000.000đ" data-value="1000000" data-percent="10"
+											   data-id="8">
+												<div class="inner border rounded-sm">
+													<div class="image p-2"
+													     style="background-image: url('./assets/images/decor-card.png')">
+														1.000.000 <sup>đ</sup>
+													</div>
+													<div class="content">
+														<div class="image">
+															<img src="./assets/images/logo-card/the-mobifone.jpeg">
+														</div>
+														<div class="value">
+															Giá: 1.000.000 <sup>đ</sup>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-12">
+											<div class="text-muted text-center">
+												<p>
+													Thẻ viettel có thể <b class="text-dark">nạp tiền cho game</b> nào ?
+												</p>
+												<p>Game thủ có thể dùng thẻ Viettel để nạp cho game Uwin, Tiếu Ngạo
+													Giang Hồ, Thần Kiếm
+													3D, Ongame (game chơi bài), Ngạo Thiên…</p>
+												<p>Sống ở nước ngoài muốn <b class="text-dark">mua thẻ Viettel?</b></p>
+												<p>Website <b class="text-dark">Thedientu.com</b> chuyên cung cấp thẻ
+													Gmobile cho người
+													việt sống ở nước ngoài uy tín, giao dịch nhanh gọn, an toàn.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-cart overflow-hidden">
+								<div class="card-header p-2">
+									<div class="card-title mb-0 d-flex align-items-center justify-content-between">
+										Giỏ hàng
+										<span>
+											<i class="fal fa-shopping-basket"></i>
+										</span>
+									</div>
+								</div>
+								<div class="card-body p-2 bg-white">
+									<div class="d-none text-danger h6 font-weight-light text-center mb-0">
+										Giỏ hàng đang trống
+									</div>
+									<form action="" class="template-1-cart">
+										<div class="item">
+											<div class="row row-5 align-items-center">
+												<div class="col-md-4 col-4">
+													<div class="cart-name">
+														Viettel
+													</div>
+													<div class="card-percent text-muted small">
+														Chiết khấu: 0%
+													</div>
+												</div>
+												<div class="col-md-4 col-4">
+													<div class="cart-quantity">
+														<button class="button-quantity" disabled data-type="0">
+															<i class="fal fa-minus"></i>
+														</button>
+														<input type="text" class="input-quantity" min="1"
+														       value="1" id="quantity">
+														<button class="button-quantity" data-type="1">
+															<i class="fal fa-plus"></i>
+														</button>
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="cart-price">
+														1.000.000đ
+													</div>
+												</div>
+												<div class="col-1">
+													<a href="javascript:void(0)" class="cart-delete delCart">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="row row-5 align-items-center">
+												<div class="col-md-4 col-4">
+													<div class="cart-name">
+														Viettel
+													</div>
+													<div class="card-percent text-muted small">
+														Chiết khấu: 0%
+													</div>
+												</div>
+												<div class="col-md-4 col-4">
+													<div class="cart-quantity">
+														<button class="button-quantity" disabled data-type="0">
+															<i class="fal fa-minus"></i>
+														</button>
+														<input type="text" class="input-quantity" min="1"
+														       value="1" id="quantity">
+														<button class="button-quantity" data-type="1">
+															<i class="fal fa-plus"></i>
+														</button>
+													</div>
+												</div>
+												<div class="col-3">
+													<div class="cart-price">
+														1.000.000đ
+													</div>
+												</div>
+												<div class="col-1">
+													<a href="javascript:void(0)" class="cart-delete delCart">
+														<i class="fal fa-times"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="total">
+											<div class="row row-5 align-items-center">
+												<div class="col-6">
+													<div class="cart-total">
+														Tổng tiền:
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="card-total-value">
+														50.000 đ
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="info">
+											<div class="form-group">
+												<label for="email" class="template-1-label text-dark">Email:</label>
+												<input type="email" class="form-control" id="email"
+												       placeholder="xxxxxxx@gmail.com">
+											</div>
+											<div class="form-group">
+												<label for="code" class="template-1-label text-dark">Phương thức thanh
+													toán</label>
+												<div class="d-flex align-items-center flex-wrap">
+													<div class="custom-control custom-radio custom-control-inline">
+														<input type="radio" id="1" class="custom-control-input">
+														<label class="custom-control-label" for="1">Techcombank</label>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<input type="radio" id="2" class="custom-control-input">
+														<label class="custom-control-label" for="2">Vietcombank</label>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<input type="radio" id="3" class="custom-control-input">
+														<label class="custom-control-label" for="3">BIDV</label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="text-muted">
+													Bằng việc chọn 'Thanh toán', bạn đồng ý với <a href=""
+													                                               class="color-main">chính
+													sách cung cấp, hủy và hoàn trả dịch vụ</a>
+												</div>
+											</div>
+											<div class="form-group mb-0 mt-4">
+												<button class="btn btn-success template-1-btn">
+													Thanh toán
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<footer class="template-1-footer">
+	<div class="top py-5 position-relative">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="footer-inner">
+						<div class="footer-logo">
+							<a href="index.html" class="d-inline-block">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="footer-heading text-dark">
+							CÔNG TY DỊCH VỤ TRỰC TUYẾN AN HƯNG
+						</div>
+						<div class="footer-desc text-muted">
+							Bán thẻ cào, đổi thẻ cào, nạp tiền topup
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6  mt-4 mt-md-0">
+					<div class="footer-inner">
+						<div class="footer-title text-dark">
+							Chính sách
+						</div>
+						<div class="footer-list footer-link">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										Về chúng tôi
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Chính sách bảo mật
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6  mt-4 mt-md-0">
+					<div class="footer-inner">
+						<div class="footer-title text-dark">
+							Hướng dẫn
+						</div>
+						<div class="footer-list footer-link">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">
+										Chính sách bảo mật
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6  mt-4 mt-md-0">
+					<div class="footer-inner">
+						<div class="footer-title mb-3 text-dark">
+							Liên kết mạng xã hội
+						</div>
+						<div class="footer-list footer-social">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="" class="facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="twitter">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="youtube">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="linkedin">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="instagram">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="" class="contact">
+										<i class="fal fa-at"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom bg-light py-3 border-top position-relative">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 text-muted text-center text-md-left">
+					<p class="mb-0">Software by An Hung.,</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-center justify-content-md-end">
+						<li><a href="">English</a></li>
+						<li><a href="">Tiếng Việt</a></li>
+						<li><a href="">中文</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>

@@ -47,87 +47,476 @@
 	</style>
 </head>
 <body>
-
-<header class="template-1-header"></header>
-<div class="main">
-	<section class="template-1-banner bg-white">
-		<div class="swiper-container" id="swiper-banner">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="swiper-image" style="background-image: url('./assets/images/banner/1.jpg')">
-						<a href="#"></a>
+<div class="template-1-popupTheme">
+	<div class="modal fade" id="modalLogin" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header d-flex align-items-center justify-content-center flex-column bg-light text-center py-3">
+					<h5 class="modal-title d-block mb-1 w-100 text-center">Đăng nhập tài khoản</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+					<div class="modal-text">
+						Nếu chưa có tài khoản, vui lòng <a href="#modalRegister" class="d-block color-main"
+						                                   data-toggle="modal"
+						                                   data-dismiss="modal">click vào đây để đăng ký</a>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<div class="swiper-image" style="background-image: url('./assets/images/banner/2.jpg')">
-						<a href="#"></a>
+				<div class="modal-body">
+					<form class="form-effect" action="">
+						<div class="group-effect">
+							<input type="email" id="emailLogin" class="input-effect">
+							<label class="label-effect" for="emailLogin">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
+							       autocomplete="off" required="">
+							<label class="label-effect" for="passwordLogin">
+								<i class="fas fa-lock"></i>
+								<span>Mật khẩu</span>
+							</label>
+						</div>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="saveLogin">
+							<label class="custom-control-label" for="saveLogin">Nhớ mật khẩu</label>
+						</div>
+						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
+							<button type="submit" class="btn btn-primary template-1-btn">
+								<span>
+									Đăng nhập
+									<i class="fas fa-sign-in-alt"></i>
+								</span>
+							</button>
+							<a href="#modalForgot" data-toggle="modal" data-dismiss="modal"
+							   class="d-inline-block mt-3 text-muted text-09">
+								Quên mật khẩu
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header d-flex align-items-center justify-content-center flex-column bg-light text-center py-3">
+					<h5 class="modal-title d-block mb-1 w-100 text-center">Đăng ký tài khoản</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+					<div class="modal-text">
+						Nếu đã có tài khoản, vui lòng <a href="#modalLogin" class="d-block color-main"
+						                                 data-toggle="modal"
+						                                 data-dismiss="modal">click vào đây để đăng nhập</a>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<div class="swiper-image" style="background-image: url('./assets/images/banner/1.jpg')">
-						<a href="#"></a>
+				<div class="modal-body">
+					<form class="form-effect" action="">
+						<div class="group-effect">
+							<input type="email" id="emailRegister" class="input-effect">
+							<label class="label-effect" for="emailRegister">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="password" tabindex="1" name="" id="passwordRegister" class="input-effect"
+							       autocomplete="off" required="">
+							<label class="label-effect" for="passwordRegister">
+								<i class="fas fa-lock"></i>
+								<span>Mật khẩu</span>
+							</label>
+						</div>
+						<div class="group-effect">
+							<input type="password" tabindex="1" name="" id="passwordConfirmRegister"
+							       class="input-effect"
+							       autocomplete="off" required="">
+							<label class="label-effect" for="passwordConfirmRegister">
+								<i class="fas fa-lock"></i>
+								<span>Nhập lại mật khẩu</span>
+							</label>
+						</div>
+						<div class="row row-5">
+							<div class="col-md-6">
+								<div class="group-effect">
+									<input type="text" id="fullnameRegister" class="input-effect">
+									<label class="label-effect" for="fullnameRegister">
+										<i class="fas fa-address-card"></i>
+										<span>Họ &amp; tên</span>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="group-effect">
+									<input type="tel" id="phoneRegister" class="input-effect">
+									<label class="label-effect" for="phoneRegister">
+										<i class="fas fa-phone-alt"></i>
+										<span>Số điện thoại</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
+							<button type="submit" class="btn btn-primary template-1-btn">
+								<span>
+									Đăng ký
+									<i class="fas fa-sign-out-alt"></i>
+								</span>
+							</button>
+						</div>
+						<div class="divider"></div>
+						<p class="text-muted text-09 text-center">
+							Bằng cách nhập vào Đăng ký, bạn đồng ý với <a href="#" class="text-underline color-main">Điều
+							khoản</a> và <a href="#" class="text-underline color-main">Chính sách bảo mật thông tin</a>
+							của chúng tôi
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content rounded-0 border-0">
+				<div class="modal-header d-flex align-items-center justify-content-center flex-column bg-light text-center py-3">
+					<h5 class="modal-title d-block w-100 text-center">Quên mật khẩu</h5>
+					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="form-effect" action="">
+						<div class="group-effect">
+							<input type="email" id="emailForgot" class="input-effect">
+							<label class="label-effect" for="emailForgot">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</label>
+						</div>
+						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
+							<button type="submit" class="btn btn-primary template-1-btn">
+								<span>
+									Gửi yêu cầu
+									<i class="fas fa-paper-plane"></i>
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="template-1-header bg-white shadow-sm border-bottom position-relative">
+	<div class="top bg-light border-bottom position-relative">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-sm-6 text-center text-sm-left">
+					<div style="display: none !important"
+					     class="d-flex align-items-center justify-content-sm-start justify-content-center">
+						<a href="#modalLogin" data-toggle="modal" class="btn btn-sm btn-success template-1-btnRounded">
+							Đăng nhập / Đăng ký
+						</a>
+					</div>
+					<div class="template-1-login position-relative d-inline-flex d-sm-flex align-items-center justify-content-sm-start justify-content-center">
+						<a href="javascript:void(0)" class="text-dark h6 mb-0">
+							<i class="fas fa-user"></i>
+							Tài khoản
+							<i class="fas fa-angle-down small ml-1"></i>
+						</a>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:void(0)">
+									<span>
+										Thông tin tài khoản
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<span>
+										Đổi mật khẩu
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<span>
+										Đăng xuất
+									</span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<div class="swiper-image" style="background-image: url('./assets/images/banner/2.jpg')">
-						<a href="#"></a>
+				<div class="col-sm-6 mt-2 mt-md-0">
+					<div class="d-flex align-items-center justify-content-sm-end justify-content-center">
+						<a href="javascript:void(0)" class="text-link text-dark h6 mb-0" title="Giỏ hàng">
+							<div class="icons">
+								<i class="fas fa-shopping-bag"></i>
+								Giỏ hàng:
+								<span class="tien">120.000 <sup>đ</sup></span>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
 		</div>
-	</section>
-	<section class="py-5 bg-white border-bottom">
+	</div>
+	<div class="bottom">
+		<div class="header-overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="card rounded-0 bg-white border-0 card-gioithieu">
-						<div class="card-header bg-transparent position-relative border-bottom-0 rounded-0">
-							<span>
-								<i class="far fa-mobile"></i>
-							</span>
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">
-								Kiểm tra tự động
-							</h5>
-							<div class="card-text">
-								Nghi ngờ đang phải trả phí cho các dịch vụ mình không đăng ký dùng?
+				<div class="col-lg-3">
+					<div class="logo d-flex align-items-center justify-content-between">
+						<a href="index.html" class="d-inline-block">
+							<img src="./assets/images/logo.png" alt="">
+						</a>
+						<a href="javascript:void(0)" id="callMenu" class="d-block text-dark h6 mb-0 d-lg-none"><i
+								class="fas fa-bars"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="navigation">
+						<ul id="hasMenu"
+						    class="list-unstyled mb-0 w-100 d-lg-flex align-items-center justify-content-end">
+							<li class="position-relative">
+								<a href="/">
+									<i class="far fa-home-alt"></i> Trang chủ
+								</a>
+							</li>
+							<li class="position-relative">
+								<a href="mua-the-cao.html">
+									Mua thẻ cào
+								</a>
+							</li>
+							<li class="position-relative">
+								<a href="nap-topup.html">
+									Nạp topup
+								</a>
+							</li>
+							<li class="position-relative">
+								<a href="doi-the-cao.html">
+									Đổi thẻ cào
+								</a>
+							</li>
+							<li class="position-relative">
+								<a href="javascript:void(0)">Dịch vụ <i class="fas fa-caret-down"></i></a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="mua-the-cao.html">
+											Mua thẻ cào
+										</a>
+									</li>
+									<li>
+										<a href="nap-topup.html">
+											Nạp topup
+										</a>
+									</li>
+									<li>
+										<a href="doi-the-cao.html">
+											Đổi thẻ cào
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Vé máy bay
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Hoá đơn
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Nạp quỹ
+										</a>
+									</li>
+									<li>
+										<a href="https://golf.vuu.vn/quan-ao-d351.html">
+											Rút quỹ
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="position-relative">
+								<a href="danh-muc-bai-viet.html">
+									Tin tức
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="main">
+	<section class="py-5 bg-white">
+		<div class="container">
+			<div class="row row-col-10">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-menu border-0 overflow-hidden position-relative">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/bannerjp.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<h6 class="card-title position-relative mb-0 text-white">
+									Mua thẻ cào
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Chiết khấu đến</small>
+									<span>
+										10 <sup>%</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="card rounded-0 bg-white border-0 card-gioithieu">
-						<div class="card-header bg-transparent position-relative border-bottom-0 rounded-0">
-							<span>
-								<i class="far fa-money-bill"></i>
-							</span>
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">
-								Thống kê
-							</h5>
-							<div class="card-text">
-								<b>Nencer</b> sẽ tính toán ngay ra số tiền hàng tháng, thống kê cuộc gọi dài nhất...
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-menu border-0 overflow-hidden position-relative">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/bannerjp.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<h6 class="card-title position-relative mb-0 text-white">
+									Mua thẻ cào
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Chiết khấu đến</small>
+									<span>
+										10 <sup>%</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="card rounded-0 bg-white border-0 card-gioithieu">
-						<div class="card-header bg-transparent position-relative border-bottom-0 rounded-0">
-							<span>
-								<i class="far fa-cogs"></i>
-							</span>
+				<div class="col-lg-6 col-md-4 col-sm-6">
+					<div class="card card-menu border-0 overflow-hidden position-relative">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/bannerjp.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<h6 class="card-title position-relative mb-0 text-white">
+									Mua thẻ cào
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Chiết khấu đến</small>
+									<span>
+										10 <sup>%</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
 						</div>
-						<div class="card-body">
-							<h5 class="card-title">
-								Tiện ích
-							</h5>
-							<div class="card-text">
-								Trợ lý đắc lực trong những tình huống khó khăn như khi sim hết tiền và cần gọi gấp...
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="card card-menu border-0 overflow-hidden position-relative">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/bannerjp.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<h6 class="card-title position-relative mb-0 text-white">
+									Mua thẻ cào
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Chiết khấu đến</small>
+									<span>
+										10 <sup>%</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="card card-menu border-0 overflow-hidden position-relative">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/bannerjp.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<h6 class="card-title position-relative mb-0 text-white">
+									Mua thẻ cào
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Chiết khấu đến</small>
+									<span>
+										10 <sup>%</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="card card-menu border-0 overflow-hidden position-relative">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/bannerjp.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<h6 class="card-title position-relative mb-0 text-white">
+									Mua thẻ cào
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Chiết khấu đến</small>
+									<span>
+										10 <sup>%</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="card card-menu border-0 overflow-hidden position-relative">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/bannerjp.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<h6 class="card-title position-relative mb-0 text-white">
+									Mua thẻ cào
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Chiết khấu đến</small>
+									<span>
+										10 <sup>%</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -151,173 +540,173 @@
 					</div>
 				</div>
 			</div>
-			<div class="row row-col-10">
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+			<div class="row row-col-10 justify-content-center">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-viettel.png">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Viettel</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-vinaphone.jpeg">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Vinaphone</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-mobifone.jpeg">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Mobiphone</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-vietnamobile.jpeg">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Vietnamobile</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-gmobile.jpg">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ GMobile</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-garena.png">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Garena</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-appota.png">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Appota</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-zing.png">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Zing</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-vcoin.png">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Vcoin</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-gate.png">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Gate</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-ca-rot.jpg">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Carot</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="card shadow-sm rounded-0 card-the">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="card card-the">
 						<div class="card-header bg-white rounded-0">
 							<img class="img-fluid" src="./assets/images/logo-card/the-funcard.jpg">
 						</div>
 						<div class="card-body">
 							<h5 class="card-title mb-0">Thẻ Funcard</h5>
-							<div class="card-icon rounded-circle bg-light border position-absolute">
-								<i class="fas fa-info"></i>
+							<div class="card-text">
+								Chiết khấu: <span>6%</span>
 							</div>
 						</div>
-						<a href="chi-tiet-mua-the.html" class="link-cover"></a>
+						<a href="mua-the-cao.html" class="link-cover"></a>
 					</div>
 				</div>
 			</div>
@@ -388,7 +777,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 mt-4 mt-md-0">
 					<div class="row">
 						<div class="col-12">
 							<div class="template-1-heading template-1-minheight">
@@ -672,7 +1061,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-3 col-sm-6  mt-4 mt-md-0">
 					<div class="footer-inner">
 						<div class="footer-title text-dark">
 							Chính sách
@@ -693,7 +1082,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-3 col-sm-6  mt-4 mt-md-0">
 					<div class="footer-inner">
 						<div class="footer-title text-dark">
 							Hướng dẫn
@@ -709,7 +1098,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-3 col-sm-6  mt-4 mt-md-0">
 					<div class="footer-inner">
 						<div class="footer-title mb-3 text-dark">
 							Liên kết mạng xã hội
@@ -756,11 +1145,11 @@
 	<div class="bottom bg-light py-3 border-top position-relative">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-6 text-muted">
+				<div class="col-12 col-md-6 text-muted text-center text-md-left">
 					<p class="mb-0">Software by An Hung.,</p>
 				</div>
 				<div class="col-12 col-md-6">
-					<ul class="list-unstyled mb-0 d-md-flex align-items-center justify-content-end">
+					<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-center justify-content-md-end">
 						<li><a href="">English</a></li>
 						<li><a href="">Tiếng Việt</a></li>
 						<li><a href="">中文</a></li>
