@@ -458,7 +458,7 @@ textarea:focus {
 .template-1-heading {
     max-width: 768px;
     text-align: center;
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
     position: relative;
 }
 
@@ -542,8 +542,13 @@ textarea:focus {
 }
 
 .template-1-header .top {
-    padding: 5px 0;
+    padding: 8px 0;
     background: var(--color-main);
+}
+
+.template-1-header .top .h6 {
+    font-weight: 500 !important;
+    font-size: 1em !important;
 }
 
 .template-1-header .top .template-1-login > ul {
@@ -605,6 +610,10 @@ textarea:focus {
     top: calc(100% + 5px);
     opacity: 1;
     visibility: visible;
+}
+
+.template-1-header .top .template-1-btnRounded {
+    padding: 3px 15px;
 }
 
 .template-1-header .logo > a {
@@ -804,7 +813,7 @@ textarea:focus {
 
     .template-1-header .navigation {
         max-width: 480px;
-        width: 90vw;
+        width: 80vw;
         position: fixed;
         z-index: 1022;
         right: -200%;
