@@ -212,56 +212,75 @@
 	</div>
 </div>
 <header class="template-1-header bg-white shadow-sm border-bottom position-relative">
-	<div class="top bg-light border-bottom position-relative">
+	<div class="top border-bottom position-relative">
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-sm-6 text-center text-sm-left">
-					<div style="display: none !important"
-					     class="d-flex align-items-center justify-content-sm-start justify-content-center">
-						<a href="#modalLogin" data-toggle="modal" class="btn btn-sm btn-success template-1-btnRounded">
-							Đăng nhập / Đăng ký
+			<div class="row no-gutters align-items-center">
+				<div class="col-md-6 text-center text-sm-left">
+					<div class="d-flex align-items-center justify-content-sm-start justify-content-center">
+						<a href="tel:0333851195" class="text-link text-white h6 mb-0">
+							<div class="icons">
+								<span class="d-block d-sm-inline-block mb-2 mb-sm-0">
+									<i class="fas fa-mobile mr-2"></i>Số điện thoại:
+								</span>
+								0333.851.195
+							</div>
 						</a>
-					</div>
-					<div class="template-1-login position-relative d-inline-flex d-sm-flex align-items-center justify-content-sm-start justify-content-center">
-						<a href="javascript:void(0)" class="text-dark h6 mb-0">
-							<i class="fas fa-user"></i>
-							Tài khoản
-							<i class="fas fa-angle-down small ml-1"></i>
+						<a href="mailto:thtan0407@gmail.com" class="text-link text-white h6 mb-0  ml-3">
+							<div class="icons">
+								<span class="d-block d-sm-inline-block  mb-2 mb-sm-0">
+									<i class="fas fa-envelope mr-2"></i>Mail:
+								</span>
+								thtan0407@gmail.com
+							</div>
 						</a>
-						<ul class="list-unstyled mb-0">
-							<li>
-								<a href="javascript:void(0)">
-									<span>
-										Thông tin tài khoản
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">
-									<span>
-										Đổi mật khẩu
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">
-									<span>
-										Đăng xuất
-									</span>
-								</a>
-							</li>
-						</ul>
 					</div>
 				</div>
-				<div class="col-sm-6 mt-2 mt-md-0">
-					<div class="d-flex align-items-center justify-content-sm-end justify-content-center">
-						<a href="javascript:void(0)" class="text-link text-dark h6 mb-0" title="Giỏ hàng">
+				<div class="col-md-6 mt-3 mt-md-0">
+					<div class="d-flex align-items-center justify-content-md-end justify-content-center">
+						<a href="javascript:void(0)" class="text-link text-white h6 mb-0" title="Giỏ hàng">
 							<div class="icons">
 								<i class="fas fa-shopping-bag"></i>
 								Giỏ hàng:
 								<span class="tien">120.000 <sup>đ</sup></span>
 							</div>
 						</a>
+						<div class="ml-3 d-flex align-items-center justify-content-sm-start justify-content-center">
+							<a href="#modalLogin" data-toggle="modal"
+							   class="btn btn-sm btn-success template-1-btnRounded">
+								Đăng nhập / Đăng ký
+							</a>
+						</div>
+						<div style="display: none !important"
+						     class="ml-3 template-1-login position-relative d-inline-flex d-sm-flex align-items-center justify-content-sm-start justify-content-center">
+							<a href="javascript:void(0)" class="text-white h6 mb-0">
+								<i class="fas fa-user"></i>
+								Tài khoản
+								<i class="fas fa-angle-down small ml-1"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+									<span>
+										Thông tin tài khoản
+									</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+									<span>
+										Đổi mật khẩu
+									</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+									<span>
+										Đăng xuất
+									</span>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -387,7 +406,7 @@
 				<div class="col-12">
 					<div class="bg-light rounded-sm border p-4">
 						<form action="">
-							<div class="inner" id="form-expand">
+							<div class="inner" id="form-expandCart">
 								<div class="row">
 									<div class="col-md-3 mb-3">
 										<div class="form-group">
@@ -631,6 +650,45 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="col-12 mt-5">
+					<h6 class="template-1-heading-small">Lịch sử mua thẻ cào:</h6>
+				</div>
+				<div class="col-12">
+					<div class="table-responsive">
+						<table class="table table-bordered template-1-table">
+							<thead>
+							<tr class="bg-theme">
+								<th class="text-center">STT</th>
+								<th class="text-center">Mệnh giá</th>
+								<th class="text-center">Số lượng</th>
+								<th class="text-center">Chiết khấu</th>
+								<th class="text-center">Ngày mua</th>
+							</tr>
+							</thead>
+							<tr>
+								<td class="text-center">1</td>
+								<td class="text-center">10.000 đ</td>
+								<td class="text-center">1 thẻ</td>
+								<td class="text-center">2</td>
+								<td class="text-center">15-03-2021</td>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td class="text-center">10.000 đ</td>
+								<td class="text-center">1 thẻ</td>
+								<td class="text-center">2</td>
+								<td class="text-center">15-03-2021</td>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td class="text-center">10.000 đ</td>
+								<td class="text-center">1 thẻ</td>
+								<td class="text-center">2</td>
+								<td class="text-center">15-03-2021</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>

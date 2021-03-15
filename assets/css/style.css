@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
 
 body {
     background-color: var(--bg-body);
     font-size: 14px;
     overflow-x: hidden;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a, a:hover, a:focus {
@@ -388,6 +388,12 @@ textarea:focus {
     font-weight: 600;
 }
 
+@media screen and (max-width: 425px) {
+    .template-1-btnRounded {
+        padding: 5px 12px;
+    }
+}
+
 .template-1-btn {
     color: #fff;
     font-size: 1em;
@@ -736,6 +742,22 @@ textarea:focus {
 
 .template-1-header.header-sticky .navigation > ul > li > a {
     padding: 15px 10px;
+}
+
+@media screen and (max-width: 475px) {
+    .template-1-header .top * {
+        font-size: 1em !important;
+    }
+
+    .template-1-header .top .template-1-login > ul {
+        left: unset;
+        right: 0;
+    }
+
+    .template-1-header .top .template-1-login > ul:before, .template-1-header .top .template-1-login > ul:after {
+        right: 15px;
+        left: unset;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -1643,6 +1665,7 @@ textarea:focus {
     color: var(--danger);
     font-size: 1.3em;
 }
+
 .template-1-table {
     font-size: 1em;
 }
