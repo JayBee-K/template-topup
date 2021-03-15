@@ -137,7 +137,7 @@ $(document).ready(function () {
 		$('#form-expandCecharge').append(html)
 	})
 	
-	$('#form-expand .createRow').click(function () {
+	$('#form-expandCart .createRow').click(function () {
 		html = `<div class="row">
 									<div class="col-md-3 mb-3">
 										<div class="form-group">
@@ -187,7 +187,7 @@ $(document).ready(function () {
 										</a>
 									</div>
 								</div>`;
-		$('#form-expand').append(html)
+		$('#form-expandCart').append(html)
 	});
 	
 	$(document).on('click', '.deleteRow', function () {
