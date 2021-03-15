@@ -420,7 +420,7 @@
 							<a href="#" class="text-dark">Trang chủ</a>
 						</li>
 						<li class="breadcrumb-item">
-							<a href="#" class="text-muted">Nạp quỹ</a>
+							<a href="#" class="text-muted">Chuyển quỹ</a>
 						</li>
 					</ol>
 				</div>
@@ -429,55 +429,56 @@
 				<div class="col-12">
 					<div class="template-1-heading template-1-minheight">
 						<h4>
-							Nạp quỹ
+							Chuyển quỹ
 						</h4>
-						<p class="mb-0 text-danger lh-18">
-							Sai nội dung hoàn lại ATM gửi đến trừ 5-10%, lợi dụng chức năng để nhận tiền người khác, lừa
-							đảo, rủa tiền khóa vv
-						</p>
 					</div>
 				</div>
 				<div class="col-12">
 					<div class="row">
 						<div class="col-md-6">
-							<h6 class="template-1-heading-small">Tạo yêu cầu nạp tiền:</h6>
+							<h6 class="template-1-heading-small">Tạo yêu cầu chuyển tiền:</h6>
 							<div class="bg-light rounded-sm border p-4">
 								<form action="">
 									<div class="inner">
-										<div class="form-text h6 mb-5">
-											<span class="mr-2"><i
-													class="fas fa-wallet text-muted mr-1"></i> Số dư:</span> <b
-												class="color-main">111,823 VND</b>
-										</div>
-										<div class="form-group mb-4">
-											<label for="price" class="template-1-label template-1-tooltip text-dark">
-												Số tiền nạp:
-												<button type="button" class="btn btn-secondary" data-toggle="tooltip"
-												        data-html="true"
-												        title="Tối thiểu 30,000 VND , Tối đa 2,000,000 VND">
-													<i class="fas fa-question"></i>
-												</button>
+										<div class="form-group mb-3">
+											<label for="wallet" class="template-1-label text-dark">
+												Chọn quỹ:
 											</label>
-											<input type="text" class="form-control" id="price"
-											       placeholder="Số tiền muốn nạp">
-										</div>
-										<div class="form-group mb-4">
-											<label for="network" class="template-1-label text-dark">Phương thức thanh
-												toán:</label>
-											<select class="form-control" id="network">
-												<option name="vietcombank">Vietcombank - Ngân hàng TMCP Ngoại thương
-													Việt Nam
-												</option>
-												<option name="vinaphone">Vietinbank - Ngân hàng TMCP Công thương Việt
-													Nam
-												</option>
-												<option name="techcombank">Techcombank - Ngân hàng TMCP Kỹ thương Việt
-													Nam
-												</option>
-												<option name="momo">Ví Momo</option>
+											<select class="form-control" id="wallet">
+												<option value="1" selected>Tài khoản quỹ VND - 111.823đ</option>
+												<option value="2">Tài khoản quỹ VND - 151.823đ</option>
 											</select>
 										</div>
-										<div class="form-group mb-0 mt-5">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group mb-3">
+													<label for="account" class="template-1-label text-dark">
+														Tài khoản nhận
+													</label>
+													<input type="text" class="form-control" id="account"
+													       placeholder="Nhập email, username hoặc số điện thoại">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group mb-3">
+													<label for="name" class="template-1-label text-dark">
+														Tên người nhận
+													</label>
+													<input type="text" class="form-control" id="name" readonly>
+												</div>
+											</div>
+										</div>
+										<div class="form-group mb-3">
+											<label for="price" class="template-1-label text-dark">
+												Số tiền
+											</label>
+											<input type="text" class="form-control" id="price">
+										</div>
+										<div class="form-group mb-3">
+											<label for="mess" class="template-1-label text-dark">Nội dung</label>
+											<textarea class="form-control" id="mess" rows="1"></textarea>
+										</div>
+										<div class="form-group mb-0 mt-4">
 											<button class="btn btn-success template-1-btn px-5">
 												Gửi thẻ cào
 											</button>
@@ -487,66 +488,39 @@
 							</div>
 						</div>
 						<div class="col-md-6 mt-md-0 mt-4">
-							<h6 class="template-1-heading-small">Hạn mức và biểu phí:</h6>
-							<div class="table-responsive">
-								<table class="table table-bordered template-1-table">
-									<thead>
-									<tr>
-										<td class="bg-light">Tổng hạn mức ngày</td>
-										<td class="font-weight-bold">2,000,000 VND</td>
-									</tr>
-									<tr>
-										<td class="bg-light">Số tiền tối thiểu</td>
-										<td class="font-weight-bold">30,000 VND</td>
-									</tr>
-									<tr>
-										<td class="bg-light">Số tiền tối đa</td>
-										<td class="font-weight-bold">2,000,000 VND</td>
-									</tr>
-									</thead>
-								</table>
-							</div>
-							<div class="mt-5">
-								<h6 class="template-1-heading-small">Cổng thanh toán:</h6>
-							</div>
+							<h6 class="template-1-heading-small">Phí chuyển tiền:</h6>
 							<div class="table-responsive">
 								<table class="table table-bordered template-1-table">
 									<thead>
 									<tr class="bg-theme">
-										<th>Tên cổng thanh toán</th>
-										<th class="text-center">Phí cố định</th>
-										<th class="text-center">Phí %</th>
+										<th>Loại</th>
+										<th>VNĐ</th>
 									</tr>
 									<tr>
-										<td>
-											Vietcombank - Ngân hàng TMCP Ngoại thương
-											Việt Nam
-										</td>
-										<td class="text-center">0 VND</td>
-										<td class="text-center">0 %</td>
+										<td>Phí cố định</td>
+										<td class="font-weight-bold">100 VND</td>
 									</tr>
 									<tr>
-										<td>
-											Vietinbank - Ngân hàng TMCP Công thương Việt
-											Nam
-										</td>
-										<td class="text-center">0 VND</td>
-										<td class="text-center">0 %</td>
+										<td>Phí %</td>
+										<td class="font-weight-bold">0</td>
 									</tr>
 									<tr>
-										<td>
-											Techcombank - Ngân hàng TMCP Kỹ thương Việt
-											Nam
+										<td>Tổng chuyển tối đa trong ngày</td>
+										<td class="font-weight-bold">
+											Không giới hạn
 										</td>
-										<td class="text-center">0 VND</td>
-										<td class="text-center">0 %</td>
 									</tr>
 									<tr>
-										<td>
-											Ví Momo
+										<td>Số tiền chuyển tối thiểu</td>
+										<td class="font-weight-bold">
+											10,000 VND
 										</td>
-										<td class="text-center">0 VND</td>
-										<td class="text-center">1 %</td>
+									</tr>
+									<tr>
+										<td>Số tiền chuyển tối đa</td>
+										<td class="font-weight-bold">
+											20,000,000 VND
+										</td>
 									</tr>
 									</thead>
 								</table>
@@ -564,41 +538,34 @@
 								<thead>
 								<tr class="bg-theme">
 									<th>Đơn hàng</th>
-									<th class="text-center">Nạp vào quỹ</th>
 									<th class="text-center">Số tiền</th>
-									<th>Cổng thanh toán</th>
+									<th>Tài khoản gửi/nhận</th>
 									<th>Ngày tạo</th>
 									<th class="text-center">Trạng thái</th>
-									<th class="text-center">Hành động</th>
+									<th>Nội dung</th>
 								</tr>
 								<tr>
 									<td class="font-weight-bold">D603CEED5892C5</td>
-									<td class="text-center">VND</td>
-									<td class="text-center">+350,200đ</td>
-									<td>Ví Momo</td>
-									<td>2021-03-01 20:40:37</td>
+									<td class="text-center">350.000</td>
+									<td>Hoàng Tấn</td>
+									<td>2021-03-15 20:40:37</td>
 									<td class="text-center">
-										<div class="badge badge-secondary template-1-badge">Nháp</div>
+										<div class="badge badge-success template-1-badge">Đã nhận</div>
 									</td>
 									<td class="text-center">
-										<a href="javascript:void(0)" class="btn btn-success template-1-btn btn-sm">
-											chi tiết <i class="fal fa-external-link-alt ml-1"></i>
-										</a>
+										Không có nội dung
 									</td>
 								</tr>
 								<tr>
 									<td class="font-weight-bold">D603CEED5892C5</td>
-									<td class="text-center">VND</td>
-									<td class="text-center">+350,200đ</td>
-									<td>Ví Momo</td>
-									<td>2021-03-01 20:40:37</td>
+									<td class="text-center">350.000</td>
+									<td>Hoàng Tấn</td>
+									<td>2021-03-15 20:40:37</td>
 									<td class="text-center">
-										<div class="badge badge-secondary template-1-badge">Nháp</div>
+										<div class="badge badge-danger template-1-badge">Đã huỷ</div>
 									</td>
 									<td class="text-center">
-										<a href="javascript:void(0)" class="btn btn-success template-1-btn btn-sm">
-											chi tiết <i class="fal fa-external-link-alt ml-1"></i>
-										</a>
+										Không có nội dung
 									</td>
 								</tr>
 								</thead>

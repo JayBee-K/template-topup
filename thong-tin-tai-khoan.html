@@ -420,7 +420,7 @@
 							<a href="#" class="text-dark">Trang chủ</a>
 						</li>
 						<li class="breadcrumb-item">
-							<a href="#" class="text-muted">Nạp quỹ</a>
+							<a href="#" class="text-muted">Thông tin tài khoản</a>
 						</li>
 					</ol>
 				</div>
@@ -429,127 +429,163 @@
 				<div class="col-12">
 					<div class="template-1-heading template-1-minheight">
 						<h4>
-							Nạp quỹ
+							Thông tin tài khoản
 						</h4>
-						<p class="mb-0 text-danger lh-18">
-							Sai nội dung hoàn lại ATM gửi đến trừ 5-10%, lợi dụng chức năng để nhận tiền người khác, lừa
-							đảo, rủa tiền khóa vv
-						</p>
 					</div>
 				</div>
 				<div class="col-12">
 					<div class="row">
-						<div class="col-md-6">
-							<h6 class="template-1-heading-small">Tạo yêu cầu nạp tiền:</h6>
+						<div class="col-md-9">
+							<h6 class="template-1-heading-small">Cập nhật thông tin:</h6>
 							<div class="bg-light rounded-sm border p-4">
 								<form action="">
 									<div class="inner">
-										<div class="form-text h6 mb-5">
-											<span class="mr-2"><i
-													class="fas fa-wallet text-muted mr-1"></i> Số dư:</span> <b
-												class="color-main">111,823 VND</b>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group mb-3">
+													<label for="username" class="template-1-label text-dark">
+														Tên đăng nhập:
+													</label>
+													<input type="text" class="form-control" id="account"
+													       value="hotronet" disabled>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group mb-3">
+													<label for="name" class="template-1-label text-dark">
+														Họ & tên
+													</label>
+													<input type="text" class="form-control" id="name"
+													       value="Nguyễn Neo">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group mb-3">
+													<label for="email" class="template-1-label text-dark">
+														Email
+													</label>
+													<input type="email" class="form-control" id="email"
+													       value="hotronet@gmail.com">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group mb-3">
+													<label for="phone" class="template-1-label text-dark">
+														Số điện thoại
+													</label>
+													<input type="text" class="form-control" id="phone"
+													       value="0943793984">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group mb-3">
+													<label for="group" class="template-1-label text-dark mb-0">
+														Nhóm:
+													</label>
+													<input type="text" class="form-control" id="group"
+													       value="Thành viên" disabled>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group d-flex align-items-center mb-3">
+													<label for="group" class="template-1-label text-dark mb-0">
+														Xác thực điện thoại:
+													</label>
+													<div class="badge badge-success template-1-badge ml-2">
+														Đã xác nhận
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group d-flex align-items-center mb-3">
+													<label for="group" class="template-1-label text-dark mb-0">
+														Xác thực email:
+													</label>
+													<div class="badge badge-danger template-1-badge ml-2">
+														Chưa xác nhận
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group d-flex align-items-center mb-3">
+													<label for="group" class="template-1-label text-dark">
+														Xác thực giấy tờ:
+													</label>
+													<div class="badge badge-danger template-1-badge ml-2">
+														Chưa xác nhận
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group mb-3">
+													<label for="dateRegister" class="template-1-label text-dark">
+														Ngày đăng ký:
+													</label>
+													<input type="text" class="form-control" id="dateRegister"
+													       value="2018-11-01 15:30:25" disabled>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group mb-3">
+													<label for="wallet" class="template-1-label text-dark">
+														Ví điện tử:
+													</label>
+													<input type="text" class="form-control" id="wallet"
+													       value="0071070849" disabled>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group mb-3">
+													<label for="price" class="template-1-label text-dark">
+														Số dư:
+													</label>
+													<input type="text" class="form-control" id="price"
+													       value="111,823 VNĐ" disabled>
+												</div>
+											</div>
 										</div>
-										<div class="form-group mb-4">
-											<label for="price" class="template-1-label template-1-tooltip text-dark">
-												Số tiền nạp:
-												<button type="button" class="btn btn-secondary" data-toggle="tooltip"
-												        data-html="true"
-												        title="Tối thiểu 30,000 VND , Tối đa 2,000,000 VND">
-													<i class="fas fa-question"></i>
-												</button>
-											</label>
-											<input type="text" class="form-control" id="price"
-											       placeholder="Số tiền muốn nạp">
-										</div>
-										<div class="form-group mb-4">
-											<label for="network" class="template-1-label text-dark">Phương thức thanh
-												toán:</label>
-											<select class="form-control" id="network">
-												<option name="vietcombank">Vietcombank - Ngân hàng TMCP Ngoại thương
-													Việt Nam
-												</option>
-												<option name="vinaphone">Vietinbank - Ngân hàng TMCP Công thương Việt
-													Nam
-												</option>
-												<option name="techcombank">Techcombank - Ngân hàng TMCP Kỹ thương Việt
-													Nam
-												</option>
-												<option name="momo">Ví Momo</option>
-											</select>
-										</div>
-										<div class="form-group mb-0 mt-5">
+										<div class="form-group mb-0 mt-4">
 											<button class="btn btn-success template-1-btn px-5">
-												Gửi thẻ cào
+												Cập nhật thông tin
 											</button>
 										</div>
 									</div>
 								</form>
 							</div>
 						</div>
-						<div class="col-md-6 mt-md-0 mt-4">
-							<h6 class="template-1-heading-small">Hạn mức và biểu phí:</h6>
-							<div class="table-responsive">
-								<table class="table table-bordered template-1-table">
-									<thead>
-									<tr>
-										<td class="bg-light">Tổng hạn mức ngày</td>
-										<td class="font-weight-bold">2,000,000 VND</td>
-									</tr>
-									<tr>
-										<td class="bg-light">Số tiền tối thiểu</td>
-										<td class="font-weight-bold">30,000 VND</td>
-									</tr>
-									<tr>
-										<td class="bg-light">Số tiền tối đa</td>
-										<td class="font-weight-bold">2,000,000 VND</td>
-									</tr>
-									</thead>
-								</table>
-							</div>
-							<div class="mt-5">
-								<h6 class="template-1-heading-small">Cổng thanh toán:</h6>
-							</div>
-							<div class="table-responsive">
-								<table class="table table-bordered template-1-table">
-									<thead>
-									<tr class="bg-theme">
-										<th>Tên cổng thanh toán</th>
-										<th class="text-center">Phí cố định</th>
-										<th class="text-center">Phí %</th>
-									</tr>
-									<tr>
-										<td>
-											Vietcombank - Ngân hàng TMCP Ngoại thương
-											Việt Nam
-										</td>
-										<td class="text-center">0 VND</td>
-										<td class="text-center">0 %</td>
-									</tr>
-									<tr>
-										<td>
-											Vietinbank - Ngân hàng TMCP Công thương Việt
-											Nam
-										</td>
-										<td class="text-center">0 VND</td>
-										<td class="text-center">0 %</td>
-									</tr>
-									<tr>
-										<td>
-											Techcombank - Ngân hàng TMCP Kỹ thương Việt
-											Nam
-										</td>
-										<td class="text-center">0 VND</td>
-										<td class="text-center">0 %</td>
-									</tr>
-									<tr>
-										<td>
-											Ví Momo
-										</td>
-										<td class="text-center">0 VND</td>
-										<td class="text-center">1 %</td>
-									</tr>
-									</thead>
-								</table>
+						<div class="col-md-3 mt-md-0 mt-4">
+							<h6 class="template-1-heading-small">Đổi mật khẩu:</h6>
+							<div class="bg-light rounded-sm border p-4">
+								<form action="">
+									<div class="inner">
+										<div class="form-group mb-3">
+											<label for="password-old" class="template-1-label text-dark">
+												Mật khẩu cũ:
+											</label>
+											<input type="password" class="form-control" id="password-old"
+											       value="********">
+										</div>
+										<div class="form-group mb-3">
+											<label for="password-new" class="template-1-label text-dark">
+												Mật khẩu mới:
+											</label>
+											<input type="password" class="form-control" id="password-new"
+											       value="">
+										</div>
+										<div class="form-group mb-3">
+											<label for="password-renew" class="template-1-label text-dark">
+												Nhập lại mật khẩu mới:
+											</label>
+											<input type="password" class="form-control" id="password-renew"
+											       value="">
+										</div>
+										<div class="form-group mb-0 mt-4">
+											<button class="btn btn-success template-1-btn px-5">
+												Đổi mật khẩu
+											</button>
+										</div>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -558,49 +594,36 @@
 			<div class="mt-5">
 				<div class="row">
 					<div class="col-12">
-						<h6 class="template-1-heading-small">Lịch sử nạp tiền:</h6>
+						<h6 class="template-1-heading-small">Lịch sử đăng nhập:</h6>
 						<div class="table-responsive">
 							<table class="table table-bordered template-1-table">
 								<thead>
 								<tr class="bg-theme">
-									<th>Đơn hàng</th>
-									<th class="text-center">Nạp vào quỹ</th>
-									<th class="text-center">Số tiền</th>
-									<th>Cổng thanh toán</th>
-									<th>Ngày tạo</th>
-									<th class="text-center">Trạng thái</th>
-									<th class="text-center">Hành động</th>
+									<th>Địa chỉ IP</th>
+									<th class="text-center">Ngày tạo</th>
+									<th>Trình duyệt</th>
 								</tr>
 								<tr>
-									<td class="font-weight-bold">D603CEED5892C5</td>
-									<td class="text-center">VND</td>
-									<td class="text-center">+350,200đ</td>
-									<td>Ví Momo</td>
-									<td>2021-03-01 20:40:37</td>
-									<td class="text-center">
-										<div class="badge badge-secondary template-1-badge">Nháp</div>
-									</td>
-									<td class="text-center">
-										<a href="javascript:void(0)" class="btn btn-success template-1-btn btn-sm">
-											chi tiết <i class="fal fa-external-link-alt ml-1"></i>
-										</a>
-									</td>
+									<td class="font-weight-bold">123.28.164.28</td>
+									<td class="text-center">2021-03-15 20:56:31	</td>
+									<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36</td>
 								</tr>
 								<tr>
-									<td class="font-weight-bold">D603CEED5892C5</td>
-									<td class="text-center">VND</td>
-									<td class="text-center">+350,200đ</td>
-									<td>Ví Momo</td>
-									<td>2021-03-01 20:40:37</td>
-									<td class="text-center">
-										<div class="badge badge-secondary template-1-badge">Nháp</div>
-									</td>
-									<td class="text-center">
-										<a href="javascript:void(0)" class="btn btn-success template-1-btn btn-sm">
-											chi tiết <i class="fal fa-external-link-alt ml-1"></i>
-										</a>
-									</td>
+									<td class="font-weight-bold">123.28.164.28</td>
+									<td class="text-center">2021-03-15 20:56:31	</td>
+									<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36</td>
 								</tr>
+								<tr>
+									<td class="font-weight-bold">123.28.164.28</td>
+									<td class="text-center">2021-03-15 20:56:31	</td>
+									<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36</td>
+								</tr>
+								<tr>
+									<td class="font-weight-bold">123.28.164.28</td>
+									<td class="text-center">2021-03-15 20:56:31	</td>
+									<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36</td>
+								</tr>
+								
 								</thead>
 							</table>
 						</div>
