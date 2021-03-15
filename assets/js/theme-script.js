@@ -80,13 +80,13 @@ $(document).ready(function () {
 	
 	$('#form-expandCecharge .createRow').click(function () {
 		html = `<div class="row">
-									<div class="col-md-4 mb-3">
+									<div class="col-md-3 mb-3">
 										<div class="form-group">
 											<label for="phone" class="template-1-label text-dark">Số điện thoại</label>
 											<input type="text" class="form-control" id="phone" placeholder="0909xxxxxx">
 										</div>
 									</div>
-									<div class="col-md-4 mb-3">
+									<div class="col-md-2 mb-3">
 										<div class="form-group">
 											<label for="network" class="template-1-label text-dark">Nhà mạng</label>
 											<select class="form-control" id="network">
@@ -98,7 +98,7 @@ $(document).ready(function () {
 											</select>
 										</div>
 									</div>
-									<div class="col-md-4 mb-3">
+									<div class="col-md-2 mb-3">
 										<div class="form-group">
 											<label for="price" class="template-1-label text-dark">Mệnh giá</label>
 											<select class="form-control" id="price">
@@ -115,13 +115,13 @@ $(document).ready(function () {
 											</select>
 										</div>
 									</div>
-									<div class="col-md-4 mb-3">
+									<div class="col-md-2 mb-3">
 										<div class="form-group">
 											<label for="code" class="template-1-label text-dark">Chiết khấu</label>
 											<input type="text" class="form-control" id="code" placeholder="">
 										</div>
 									</div>
-									<div class="col-md-7 col-9 mb-3">
+									<div class="col-md-2 col-9 mb-3">
 										<div class="form-group">
 											<label for="mess" class="template-1-label text-dark">Ghi chú</label>
 											<textarea class="form-control" id="mess" rows="1"></textarea>
@@ -193,4 +193,6 @@ $(document).ready(function () {
 	$(document).on('click', '.deleteRow', function () {
 		$(this).closest('.row').remove();
 	});
+	
+	$('[data-toggle="tooltip"]').tooltip();
 })

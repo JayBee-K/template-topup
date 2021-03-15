@@ -210,7 +210,8 @@
 			</div>
 		</div>
 	</div>
-</div><header class="template-1-header bg-white shadow-sm border-bottom position-relative">
+</div>
+<header class="template-1-header bg-white shadow-sm border-bottom position-relative">
 	<div class="top border-bottom position-relative">
 		<div class="container">
 			<div class="row no-gutters align-items-center">
@@ -243,14 +244,14 @@
 								<span class="tien">120.000 <sup>đ</sup></span>
 							</div>
 						</a>
-						<div class="ml-3 d-flex align-items-center justify-content-sm-start justify-content-center">
+						<div style="display: none !important"
+						     class="ml-3 d-flex align-items-center justify-content-sm-start justify-content-center">
 							<a href="#modalLogin" data-toggle="modal"
 							   class="btn btn-sm btn-success template-1-btnRounded">
 								Đăng nhập / Đăng ký
 							</a>
 						</div>
-						<div style="display: none !important"
-						     class="ml-3 template-1-login position-relative d-inline-flex d-sm-flex align-items-center justify-content-sm-start justify-content-center">
+						<div class="ml-3 template-1-login position-relative d-inline-flex d-sm-flex align-items-center justify-content-sm-start justify-content-center">
 							<a href="javascript:void(0)" class="text-white h6 mb-0">
 								<i class="fas fa-user"></i>
 								Tài khoản
@@ -258,10 +259,24 @@
 							</a>
 							<ul class="list-unstyled mb-0">
 								<li>
-									<a href="javascript:void(0)">
+									<a href="thong-tin-tai-khoan.html">
 									<span>
 										Thông tin tài khoản
 									</span>
+									</a>
+								</li>
+								<li>
+									<a href="nap-quy.html">
+										<span>
+											Nạp quỹ
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="chuyen-quy.html">
+										<span>
+											Chuyển quỹ
+										</span>
 									</a>
 								</li>
 								<li>
@@ -396,7 +411,7 @@
 	</div>
 </header>
 <div class="main">
-	<section class="py-5 bg-light border-bottom">
+	<section class="py-5 bg-white border-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -405,239 +420,189 @@
 							<a href="#" class="text-dark">Trang chủ</a>
 						</li>
 						<li class="breadcrumb-item">
-							<a href="#" class="text-muted">Tin tức</a>
+							<a href="#" class="text-muted">Nạp cước</a>
 						</li>
 					</ol>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<div class="template-1-heading">
+					<div class="template-1-heading template-1-minheight">
 						<h4>
-							Tin tức & sự kiện
+							Nạp quỹ
 						</h4>
-						<p class="mb-0 text-dark lh-18">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iure maiores molestias
-							repellendus reprehenderit sunt vitae. Debitis harum quibusdam voluptates.
+						<p class="mb-0 text-danger lh-18">
+							Sai nội dung hoàn lại ATM gửi đến trừ 5-10%, lợi dụng chức năng để nhận tiền người khác, lừa
+							đảo, rủa tiền khóa vv
 						</p>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-col-10">
-						<div class="col">
-							<div class="card rounded-0 card-tintuc">
-								<a href="chi-tiet-bai-viet.html"
-								   class="link-cover"></a>
-								<div class="card-header rounded-0">
-							<span class="card-image"
-							      style="background-image:url('./assets/images/Top215123.jpg')">
-							</span>
-								</div>
-								<div class="card-body">
-									<div class="card-meta text-muted">
-										<i class="fal fa-calendar-alt"></i>
-										13-02-2021
+				<div class="col-12">
+					<div class="row">
+						<div class="col-md-6">
+							<h6 class="template-1-heading-small">Tạo yêu cầu nạp tiền:</h6>
+							<div class="bg-light rounded-sm border p-4">
+								<form action="">
+									<div class="inner">
+										<div class="form-text h6 mb-5">
+											<span class="mr-2"><i
+													class="fas fa-wallet text-muted mr-1"></i> Số dư:</span> <b
+												class="color-main">111,823 VND</b>
+										</div>
+										<div class="form-group mb-4">
+											<label for="price" class="template-1-label template-1-tooltip text-dark">
+												Số tiền nạp:
+												<button type="button" class="btn btn-secondary" data-toggle="tooltip"
+												        data-html="true"
+												        title="Tối thiểu 30,000 VND , Tối đa 2,000,000 VND">
+													<i class="fas fa-question"></i>
+												</button>
+											</label>
+											<input type="text" class="form-control" id="phone"
+											       placeholder="Số tiền muốn nạp">
+										</div>
+										<div class="form-group mb-4">
+											<label for="network" class="template-1-label text-dark">Phương thức thanh
+												toán:</label>
+											<select class="form-control" id="network">
+												<option name="vietcombank">Vietcombank - Ngân hàng TMCP Ngoại thương
+													Việt Nam
+												</option>
+												<option name="vinaphone">Vietinbank - Ngân hàng TMCP Công thương Việt
+													Nam
+												</option>
+												<option name="techcombank">Techcombank - Ngân hàng TMCP Kỹ thương Việt
+													Nam
+												</option>
+												<option name="momo">Ví Momo</option>
+											</select>
+										</div>
+										<div class="form-group mb-0 mt-5">
+											<button class="btn btn-success template-1-btn px-5">
+												Gửi thẻ cào
+											</button>
+										</div>
 									</div>
-									<h5 class="card-title">
-										Top những tựa game mobile 2021
-									</h5>
-								</div>
+								</form>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card rounded-0 card-tintuc">
-								<a href="chi-tiet-bai-viet.html"
-								   class="link-cover"></a>
-								<div class="card-header rounded-0">
-							<span class="card-image"
-							      style="background-image:url('./assets/images/Top215123.jpg')">
-							</span>
-								</div>
-								<div class="card-body">
-									<div class="card-meta text-muted">
-										<i class="fal fa-calendar-alt"></i>
-										13-02-2021
-									</div>
-									<h5 class="card-title">
-										Top những tựa game mobile 2021 hay nhất không thể không chơi
-									</h5>
-								</div>
+						<div class="col-md-6 mt-md-0 mt-4">
+							<h6 class="template-1-heading-small">Hạn mức và biểu phí:</h6>
+							<div class="table-responsive">
+								<table class="table table-bordered template-1-table">
+									<thead>
+									<tr>
+										<td class="bg-light">Tổng hạn mức ngày</td>
+										<td class="font-weight-bold">2,000,000 VND</td>
+									</tr>
+									<tr>
+										<td class="bg-light">Số tiền tối thiểu</td>
+										<td class="font-weight-bold">30,000 VND</td>
+									</tr>
+									<tr>
+										<td class="bg-light">Số tiền tối đa</td>
+										<td class="font-weight-bold">2,000,000 VND</td>
+									</tr>
+									</thead>
+								</table>
 							</div>
-						</div>
-						<div class="col">
-							<div class="card rounded-0 card-tintuc">
-								<a href="chi-tiet-bai-viet.html"
-								   class="link-cover"></a>
-								<div class="card-header rounded-0">
-							<span class="card-image"
-							      style="background-image:url('./assets/images/Top215123.jpg')">
-							</span>
-								</div>
-								<div class="card-body">
-									<div class="card-meta text-muted">
-										<i class="fal fa-calendar-alt"></i>
-										13-02-2021
-									</div>
-									<h5 class="card-title">
-										Top những tựa game mobile 2021 hay nhất không thể không chơi
-									</h5>
-								</div>
+							<div class="mt-5">
+								<h6 class="template-1-heading-small">Cổng thanh toán:</h6>
 							</div>
-						</div>
-						<div class="col">
-							<div class="card rounded-0 card-tintuc">
-								<a href="chi-tiet-bai-viet.html"
-								   class="link-cover"></a>
-								<div class="card-header rounded-0">
-							<span class="card-image"
-							      style="background-image:url('./assets/images/Top215123.jpg')">
-							</span>
-								</div>
-								<div class="card-body">
-									<div class="card-meta text-muted">
-										<i class="fal fa-calendar-alt"></i>
-										13-02-2021
-									</div>
-									<h5 class="card-title">
-										Top những tựa game mobile 2021 hay nhất không thể không chơi
-									</h5>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card rounded-0 card-tintuc">
-								<a href="chi-tiet-bai-viet.html"
-								   class="link-cover"></a>
-								<div class="card-header rounded-0">
-							<span class="card-image"
-							      style="background-image:url('./assets/images/Top215123.jpg')">
-							</span>
-								</div>
-								<div class="card-body">
-									<div class="card-meta text-muted">
-										<i class="fal fa-calendar-alt"></i>
-										13-02-2021
-									</div>
-									<h5 class="card-title">
-										Top những tựa game mobile 2021 hay nhất không thể không chơi
-									</h5>
-								</div>
+							<div class="table-responsive">
+								<table class="table table-bordered template-1-table">
+									<thead>
+									<tr class="bg-theme">
+										<th>Tên cổng thanh toán</th>
+										<th class="text-center">Phí cố định</th>
+										<th class="text-center">Phí %</th>
+									</tr>
+									<tr>
+										<td>
+											Vietcombank - Ngân hàng TMCP Ngoại thương
+											Việt Nam
+										</td>
+										<td class="text-center">0 VND</td>
+										<td class="text-center">0 %</td>
+									</tr>
+									<tr>
+										<td>
+											Vietinbank - Ngân hàng TMCP Công thương Việt
+											Nam
+										</td>
+										<td class="text-center">0 VND</td>
+										<td class="text-center">0 %</td>
+									</tr>
+									<tr>
+										<td>
+											Techcombank - Ngân hàng TMCP Kỹ thương Việt
+											Nam
+										</td>
+										<td class="text-center">0 VND</td>
+										<td class="text-center">0 %</td>
+									</tr>
+									<tr>
+										<td>
+											Ví Momo
+										</td>
+										<td class="text-center">0 VND</td>
+										<td class="text-center">1 %</td>
+									</tr>
+									</thead>
+								</table>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="template-1-sidebar">
-						<div class="item">
-							<div class="heading">
-								Tin tức mới
-							</div>
-							<div class="list">
-								<ul class="articles list-unstyled mb-0">
-									<li>
-										<div class="card rounded-0 border-0 p-0 flex-row">
-											<a href="chi-tiet-bai-viet.html"
-											   class="link-cover"></a>
-											<div class="card-header rounded-0 position-absolute border-0 bg-white p-0 overflow-hidden flex-shrink-0">
-													<span class="card-image"
-													      style="background-image:url('./assets/images/Top215123.jpg')">
-													</span>
-											</div>
-											<div class="card-body">
-												<div class="card-meta text-muted">
-													<i class="fal fa-calendar-alt"></i>
-													13-02-2021
-												</div>
-												<h5 class="card-title">
-													Top game mobile 2021
-												</h5>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="card rounded-0 border-0 p-0 flex-row">
-											<a href="chi-tiet-bai-viet.html"
-											   class="link-cover"></a>
-											<div class="card-header rounded-0 position-absolute border-0 bg-white p-0 overflow-hidden flex-shrink-0">
-													<span class="card-image"
-													      style="background-image:url('./assets/images/Top215123.jpg')">
-													</span>
-											</div>
-											<div class="card-body">
-												<div class="card-meta text-muted">
-													<i class="fal fa-calendar-alt"></i>
-													13-02-2021
-												</div>
-												<h5 class="card-title">
-													Top những tựa game mobile hay nhất mọi thời đại
-												</h5>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="card rounded-0 border-0 p-0 flex-row">
-											<a href="chi-tiet-bai-viet.html"
-											   class="link-cover"></a>
-											<div class="card-header rounded-0 position-absolute border-0 bg-white p-0 overflow-hidden flex-shrink-0">
-													<span class="card-image"
-													      style="background-image:url('./assets/images/Top215123.jpg')">
-													</span>
-											</div>
-											<div class="card-body">
-												<div class="card-meta text-muted">
-													<i class="fal fa-calendar-alt"></i>
-													13-02-2021
-												</div>
-												<h5 class="card-title">
-													Top những tựa game mobile 2021
-												</h5>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="card rounded-0 border-0 p-0 flex-row">
-											<a href="chi-tiet-bai-viet.html"
-											   class="link-cover"></a>
-											<div class="card-header rounded-0 position-absolute border-0 bg-white p-0 overflow-hidden flex-shrink-0">
-													<span class="card-image"
-													      style="background-image:url('./assets/images/Top215123.jpg')">
-													</span>
-											</div>
-											<div class="card-body">
-												<div class="card-meta text-muted">
-													<i class="fal fa-calendar-alt"></i>
-													13-02-2021
-												</div>
-												<h5 class="card-title">
-													Top những tựa game mobile 2021
-												</h5>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="card rounded-0 border-0 p-0 flex-row">
-											<a href="chi-tiet-bai-viet.html"
-											   class="link-cover"></a>
-											<div class="card-header rounded-0 position-absolute border-0 bg-white p-0 overflow-hidden flex-shrink-0">
-													<span class="card-image"
-													      style="background-image:url('./assets/images/Top215123.jpg')">
-													</span>
-											</div>
-											<div class="card-body">
-												<div class="card-meta text-muted">
-													<i class="fal fa-calendar-alt"></i>
-													13-02-2021
-												</div>
-												<h5 class="card-title">
-													Top những tựa game mobile 2021
-												</h5>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
+			</div>
+			<div class="mt-5">
+				<div class="row">
+					<div class="col-12">
+						<h6 class="template-1-heading-small">Lịch sử nạp tiền:</h6>
+						<div class="table-responsive">
+							<table class="table table-bordered template-1-table">
+								<thead>
+								<tr class="bg-theme">
+									<th>Đơn hàng</th>
+									<th class="text-center">Nạp vào quỹ</th>
+									<th class="text-center">Số tiền</th>
+									<th>Cổng thanh toán</th>
+									<th>Ngày tạo</th>
+									<th class="text-center">Trạng thái</th>
+									<th class="text-center">Hành động</th>
+								</tr>
+								<tr>
+									<td class="font-weight-bold">D603CEED5892C5</td>
+									<td class="text-center">VND</td>
+									<td class="text-center">+350,200đ</td>
+									<td>Ví Momo</td>
+									<td>2021-03-01 20:40:37</td>
+									<td class="text-center">
+										<div class="badge badge-secondary template-1-badge">Nháp</div>
+									</td>
+									<td class="text-center">
+										<a href="javascript:void(0)" class="btn btn-success template-1-btn btn-sm">
+											chi tiết <i class="fal fa-external-link-alt ml-1"></i>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="font-weight-bold">D603CEED5892C5</td>
+									<td class="text-center">VND</td>
+									<td class="text-center">+350,200đ</td>
+									<td>Ví Momo</td>
+									<td>2021-03-01 20:40:37</td>
+									<td class="text-center">
+										<div class="badge badge-secondary template-1-badge">Nháp</div>
+									</td>
+									<td class="text-center">
+										<a href="javascript:void(0)" class="btn btn-success template-1-btn btn-sm">
+											chi tiết <i class="fal fa-external-link-alt ml-1"></i>
+										</a>
+									</td>
+								</tr>
+								</thead>
+							</table>
 						</div>
 					</div>
 				</div>

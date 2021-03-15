@@ -215,7 +215,7 @@
 	<div class="top border-bottom position-relative">
 		<div class="container">
 			<div class="row no-gutters align-items-center">
-				<div class="col-md-6 text-center text-sm-left">
+				<div class="col-md-6 d-none d-md-block text-center text-sm-left">
 					<div class="d-flex align-items-center justify-content-sm-start justify-content-center">
 						<a href="tel:0333851195" class="text-link text-white h6 mb-0">
 							<div class="icons">
@@ -235,7 +235,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-6 mt-3 mt-md-0">
+				<div class="col-md-6">
 					<div class="d-flex align-items-center justify-content-md-end justify-content-center">
 						<a href="javascript:void(0)" class="text-link text-white h6 mb-0" title="Giỏ hàng">
 							<div class="icons">
@@ -244,14 +244,14 @@
 								<span class="tien">120.000 <sup>đ</sup></span>
 							</div>
 						</a>
-						<div class="ml-3 d-flex align-items-center justify-content-sm-start justify-content-center">
+						<div style="display: none !important"
+						     class="ml-3 d-flex align-items-center justify-content-sm-start justify-content-center">
 							<a href="#modalLogin" data-toggle="modal"
 							   class="btn btn-sm btn-success template-1-btnRounded">
 								Đăng nhập / Đăng ký
 							</a>
 						</div>
-						<div style="display: none !important"
-						     class="ml-3 template-1-login position-relative d-inline-flex d-sm-flex align-items-center justify-content-sm-start justify-content-center">
+						<div class="ml-3 template-1-login position-relative d-inline-flex d-sm-flex align-items-center justify-content-sm-start justify-content-center">
 							<a href="javascript:void(0)" class="text-white h6 mb-0">
 								<i class="fas fa-user"></i>
 								Tài khoản
@@ -259,10 +259,24 @@
 							</a>
 							<ul class="list-unstyled mb-0">
 								<li>
-									<a href="javascript:void(0)">
+									<a href="thong-tin-tai-khoan.html">
 									<span>
 										Thông tin tài khoản
 									</span>
+									</a>
+								</li>
+								<li>
+									<a href="nap-quy.html">
+										<span>
+											Nạp quỹ
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="chuyen-quy.html">
+										<span>
+											Chuyển quỹ
+										</span>
 									</a>
 								</li>
 								<li>
@@ -369,6 +383,27 @@
 								</a>
 							</li>
 						</ul>
+						<div class="navigation-info d-block d-lg-none">
+							<p class="text-muted">Thông tin liên hệ:</p>
+							<a href="tel:0333851195"
+							   class="text-link text-dark d-flex align-items-center justify-content-start h6 mb-0">
+								<div class="icons mr-3">
+									<i class="fas fa-mobile"></i>
+								</div>
+								<span class="d-block">
+									Số điện thoại: 0333.851.195
+								</span>
+							</a>
+							<a href="mailto:thtan0407@gmail.com"
+							   class="text-link text-dark d-flex align-items-center justify-content-start h6 mb-0">
+								<div class="icons mr-3">
+									<i class="fas fa-envelope"></i>
+								</div>
+								<span class="d-block">
+									Mail:thtan0407@gmail.com
+								</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -543,7 +578,7 @@
 			</div>
 		</div>
 	</section>
-	<div class="py-5 border-bottom bg-light">
+	<section class="py-5 border-bottom bg-light">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -810,25 +845,28 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<section class="py-5 border-bottom bg-white">
 		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="template-1-heading">
-						<h4>
-							Mua mã thẻ
-						</h4>
-						<p class="mb-0 text-dark lh-18">
-							Các loại thẻ cào điện thoại, thẻ game trực tuyến, hỗ trợ thanh toán bằng ví điện tử, các
-							ngân hàng của Việt Nam, thẻ Visa/Master, Paypal, Coins, PM, Webmoney. Sau khi thanh toán
-							thành công, thẻ sẽ đc trả ngay lập tức trên website và gửi vào điện chỉ email của bạn.
-						</p>
-					</div>
-				</div>
-			</div>
 			<div class="row row-10">
 				<div class="col-md-8">
+					<div class="row">
+						<div class="col-12">
+							<div class="template-1-heading">
+								<h4>
+									Mua mã thẻ
+								</h4>
+								<p class="mb-0 text-dark lh-18">
+									Các loại thẻ cào điện thoại, thẻ game trực tuyến, hỗ trợ thanh toán bằng ví điện tử,
+									các
+									ngân hàng của Việt Nam, thẻ Visa/Master, Paypal, Coins, PM, Webmoney. Sau khi thanh
+									toán
+									thành công, thẻ sẽ đc trả ngay lập tức trên website và gửi vào điện chỉ email của
+									bạn.
+								</p>
+							</div>
+						</div>
+					</div>
 					<div class="row row-col-10 justify-content-center">
 						<div class="col-md-4 col-sm-6">
 							<div class="card card-the">
@@ -1000,81 +1038,99 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 mt-md-2 mt-4">
-					<div class="bg-light rounded-sm border p-3">
-						<form action="">
-							<div class="form-group">
-								<label for="phone" class="template-1-label text-dark">Số điện thoại</label>
-								<input type="text" class="form-control" id="phone" placeholder="0909xxxxxx">
+				<div class="col-md-4 mt-md-0 mt-4">
+					<div class="row">
+						<div class="col-12">
+							<div class="template-1-heading">
+								<h4>
+									Nạp topup
+								</h4>
+								<p class="mb-0 text-dark lh-18">
+									Các loại thẻ cào điện thoại, thẻ game trực tuyến, hỗ trợ thanh toán bằng ví điện tử,
+									các
+									ngân hàng của Việt Nam, thẻ Visa/Master, Paypal, Coins, PM, Webmoney.
+								</p>
 							</div>
-							<div class="row row-5">
-								<div class="col-md-6">
+						</div>
+					</div>
+					<div class="row mt-2">
+						<div class="col-12">
+							<div class="bg-light rounded-sm border p-3">
+								<form action="">
 									<div class="form-group">
-										<label for="network" class="template-1-label text-dark">Nhà mạng</label>
-										<select class="form-control" id="network">
-											<option name="viettel">Viettel</option>
-											<option name="vinaphone">Vinaphone</option>
-											<option name="mobile">Mobile</option>
-											<option name="gate">Gate</option>
-											<option name="zing">Zing</option>
-										</select>
+										<label for="phone" class="template-1-label text-dark">Số điện thoại</label>
+										<input type="text" class="form-control" id="phone" placeholder="0909xxxxxx">
 									</div>
-								</div>
-								<div class="col-md-6">
+									<div class="row row-5">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="network" class="template-1-label text-dark">Nhà mạng</label>
+												<select class="form-control" id="network">
+													<option name="viettel">Viettel</option>
+													<option name="vinaphone">Vinaphone</option>
+													<option name="mobile">Mobile</option>
+													<option name="gate">Gate</option>
+													<option name="zing">Zing</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="price" class="template-1-label text-dark">Mệnh giá</label>
+												<select class="form-control" id="price">
+													<option name="-1">--- Mệnh giá ---</option>
+													<option name="10000">10.000 đ</option>
+													<option name="20000">20.000 đ</option>
+													<option name="30000">30.000 đ</option>
+													<option name="50000">50.000 đ</option>
+													<option name="100000">100.000 đ</option>
+													<option name="200000">200.000 đ</option>
+													<option name="300000">300.000 đ</option>
+													<option name="500000">500.000 đ</option>
+													<option name="1000000">1.000.000 đ</option>
+												</select>
+											</div>
+										</div>
+									</div>
 									<div class="form-group">
-										<label for="price" class="template-1-label text-dark">Mệnh giá</label>
-										<select class="form-control" id="price">
-											<option name="-1">--- Mệnh giá ---</option>
-											<option name="10000">10.000 đ</option>
-											<option name="20000">20.000 đ</option>
-											<option name="30000">30.000 đ</option>
-											<option name="50000">50.000 đ</option>
-											<option name="100000">100.000 đ</option>
-											<option name="200000">200.000 đ</option>
-											<option name="300000">300.000 đ</option>
-											<option name="500000">500.000 đ</option>
-											<option name="1000000">1.000.000 đ</option>
-										</select>
+										<label for="code" class="template-1-label text-dark">Chiết khấu</label>
+										<input type="text" class="form-control" id="code" placeholder="">
 									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="code" class="template-1-label text-dark">Chiết khấu</label>
-								<input type="text" class="form-control" id="code" placeholder="">
-							</div>
-							<div class="form-group">
-								<div class="form-group">
-									<label for="mess" class="template-1-label text-dark">Ghi chú</label>
-									<textarea class="form-control" id="mess" rows="1"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="code" class="template-1-label text-dark">Phương thức thanh
-									toán</label>
-								<div class="d-flex align-items-center flex-wrap">
-									<div class="custom-control custom-radio custom-control-inline">
-										<input type="radio" id="1"
-										       class="custom-control-input">
-										<label class="custom-control-label" for="1">Techcombank</label>
+									<div class="form-group">
+										<div class="form-group">
+											<label for="mess" class="template-1-label text-dark">Ghi chú</label>
+											<textarea class="form-control" id="mess" rows="1"></textarea>
+										</div>
 									</div>
-									<div class="custom-control custom-radio custom-control-inline">
-										<input type="radio" id="2"
-										       class="custom-control-input">
-										<label class="custom-control-label" for="2">Vietcombank</label>
+									<div class="form-group">
+										<label for="code" class="template-1-label text-dark">Phương thức thanh
+											toán</label>
+										<div class="d-flex align-items-center flex-wrap">
+											<div class="custom-control custom-radio custom-control-inline">
+												<input type="radio" id="1"
+												       class="custom-control-input">
+												<label class="custom-control-label" for="1">Techcombank</label>
+											</div>
+											<div class="custom-control custom-radio custom-control-inline">
+												<input type="radio" id="2"
+												       class="custom-control-input">
+												<label class="custom-control-label" for="2">Vietcombank</label>
+											</div>
+											<div class="custom-control custom-radio custom-control-inline">
+												<input type="radio" id="3"
+												       class="custom-control-input">
+												<label class="custom-control-label" for="3">BIDV</label>
+											</div>
+										</div>
 									</div>
-									<div class="custom-control custom-radio custom-control-inline">
-										<input type="radio" id="3"
-										       class="custom-control-input">
-										<label class="custom-control-label" for="3">BIDV</label>
+									<div class="form-group mb-0 mt-4">
+										<button class="btn btn-success template-1-btn">
+											Gửi thẻ cào
+										</button>
 									</div>
-								</div>
+								</form>
 							</div>
-							<div class="form-group mb-0 mt-4">
-								<button class="btn btn-success template-1-btn">
-									Gửi thẻ cào
-								</button>
-							</div>
-						</form>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -402,6 +402,17 @@ textarea:focus {
     text-transform: uppercase;
 }
 
+.template-1-btn.btn-sm {
+    padding: 4px 12px;
+    font-size: .9em;
+}
+
+.template-1-badge {
+    padding: 8px 15px;
+    font-size: .9em;
+}
+
+
 .template-1-btnRounded:hover,
 .template-1-btnRounded:focus,
 .template-1-btn:hover,
@@ -423,6 +434,25 @@ textarea:focus {
 .template-1-label {
     font-weight: 600;
     font-size: 1.05em;
+}
+
+.template-1-tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.template-1-tooltip button {
+    border-radius: 50%;
+    outline: none;
+    box-shadow: none;
+    height: 20px;
+    width: 20px;
+    font-size: .7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .template-1-heading {
@@ -822,6 +852,36 @@ textarea:focus {
         display: none;
     }
 
+    .template-1-header .navigation .navigation-info {
+        border-top: 2px solid var(--color-border);
+    }
+
+    .template-1-header .navigation .navigation-info > p {
+        padding: 10px 20px;
+        margin-bottom: 0;
+    }
+
+    .template-1-header .navigation .navigation-info > a {
+        padding: 10px 20px;
+    }
+
+    .template-1-header .navigation .navigation-info > a .icons {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        font-size: .9em;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-main);
+        border: 1px solid var(--color-main);
+    }
+
+    .template-1-header .navigation .navigation-info > a span {
+        font-size: .9em;
+        font-weight: 600;
+    }
+
     .show-header-navigation .template-1-header .navigation {
         right: 0;
         visibility: visible;
@@ -1147,7 +1207,7 @@ textarea:focus {
 }
 
 .card-menu .card-img-overlay {
-    transition: all .3s ease;
+    transition: all .2s ease;
     background: transparent;
     z-index: 2;
 }
@@ -1158,7 +1218,7 @@ textarea:focus {
 }
 
 .card-menu .card-img-overlay .card-inner .card-title {
-    transition: all .3s ease;
+    transition: all .2s ease;
     font-size: 1.5em;
 }
 
@@ -1167,7 +1227,7 @@ textarea:focus {
     width: 0;
     height: 1px;
     background: #fff;
-    transition: all .3s ease;
+    transition: all .2s ease;
     margin: 20px 0;
 }
 
@@ -1178,7 +1238,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     font-size: 1.2em;
-    transition: all .3s ease;
+    transition: all .2s ease;
 }
 
 .card-menu .card-img-overlay .card-inner .card-price small {
@@ -1669,7 +1729,7 @@ textarea:focus {
 }
 
 .template-1-table {
-    font-size: 1em;
+    font-size: 1.1em;
     background: #fff;
 }
 
