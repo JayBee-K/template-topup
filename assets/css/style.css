@@ -56,7 +56,7 @@ textarea:focus {
     margin-right: -10px;
 }
 
-.row.row-10 [class*=col] {
+.row.row-10 > [class*=col] {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -891,10 +891,12 @@ textarea:focus {
     .template-1-header .navigation > ul > li > ul::before, .template-1-header .navigation > ul > li > ul::after {
         display: none;
     }
+
     .template-1-header .navigation > ul > li > ul > li > a {
         padding-left: 0;
         padding-right: 0;
     }
+
     .template-1-header .navigation > ul > li > ul > li > a:before {
         display: none;
     }
@@ -1904,13 +1906,14 @@ textarea:focus {
 }
 
 .template-1-table {
-    font-size: 1.1em;
+    font-size: 14px;
     background: #fff;
 }
 
 .template-1-table .bg-theme {
-    background: var(--color-main);
-    color: #fff;
+    /*background: var(--color-main);*/
+    background: #f8f9fa !important;
+    color: #343434;
 }
 
 .template-1-table tr th,
@@ -2134,46 +2137,82 @@ textarea:focus {
 
 .template-1-service .service-list {
     margin-top: 10px;
+    max-height: 420px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-right: -10px;
+}
+
+.template-1-service .service-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+.template-1-service .service-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+/* Handle */
+.template-1-service .service-list::-webkit-scrollbar-thumb {
+    background: #d6d6d6;
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+.template-1-service .service-list::-webkit-scrollbar-thumb:hover {
+    background: #bebebe;
+}
+
+.template-1-service .template-1-heading h4 {
+    font-size: 1.5em;
 }
 
 .template-1-service .service-list .service-item > a {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-weight: 600;
     font-size: 1.05em;
     color: #343a40;
     transition: .3s all ease;
+    padding-left: 15px;
+    position: relative;
+    padding-right: 10px;
 }
 
-.template-1-service .service-list .service-item > a span {
-    height: 45px;
-    width: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    margin-right: 10px;
-    padding: 10px;
-    background: var(--bg-light);
+.template-1-service .service-list .service-item > a i {
+    transition: .3s all ease;
+}
+
+.template-1-service .service-list .service-item > a[aria-expanded=true] i {
+    transform: rotate(180deg);
+}
+
+.template-1-service .service-list .service-item > a:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
-    transition: .3s all ease;
+    background: #e9e9e9;
+    opacity: 1;
+    display: block;
+    content: "";
 }
 
-.template-1-service .service-list .service-item > a img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    display: block;
-    vertical-align: middle;
-    transition: .3s all ease;
+.template-1-service .service-list .service-item .service-inner {
+    padding: 20px 0 0 15px;
+}
+
+.template-1-service .service-list .service-item .service-inner .service-item a {
+    font-weight: 400;
 }
 
 .template-1-service .service-list .service-item > a:hover {
     color: var(--color-main);
-}
-
-.template-1-service .service-list .service-item > a:hover span {
-    background: #EAEDEF;
 }
 
 .template-1-service .service-list .service-item + .service-item {
