@@ -1,3 +1,9 @@
+function handleTouchMove(ev) {
+	if (!$(ev.target).closest('#header').length) {
+		ev.preventDefault();
+	}
+}
+
 $(document).ready(function () {
 	$(window).scroll(function () {
 		var top = $(document).scrollTop();
@@ -12,7 +18,6 @@ $(document).ready(function () {
 	
 	let windowWidth = $(window).width();
 	if (windowWidth < 992) {
-		// $('header .header-navigation > ul').prepend('<li><a href="javascript:void(0)" class="d-flex d-lg-none" id="close-menu"><i class="fas fa-times"></i></a></li>');
 		$(".template-1-header .navigation > ul > li > ul").each(function (index) {
 			$(this).prev().attr({
 				"href": "#subMenu" + index,
@@ -28,29 +33,38 @@ $(document).ready(function () {
 	
 	function callMenu() {
 		if ($('body').hasClass('show-header-navigation')) {
-			$('body').removeClass('show-header-navigation');
+			document.removeEventListener('touchmove', handleTouchMove);
+			$('body').css('overflow', '').removeClass('show-header-navigation');
 		} else {
-			$('body').addClass('show-header-navigation');
+			document.addEventListener('touchmove', handleTouchMove, {passive: false});
+			$('body').css('overflow', 'hidden').addClass('show-header-navigation');
 		}
 	}
 	
-	$(document).on("click", "#callMenu, .header-overlay", function () {
+	$(document).on("click", "#callMenu, .header-overlay, #close-navigation", function () {
 		callMenu();
 	});
 	
 	const myBanner = new Swiper('#swiper-banner', {
 		loop: true,
 		spaceBetween: 50,
-		speed: 1500,
+		speed: 250,
 		effect: 'fade',
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
 		autoplay: {
-			delay: 10000,
+			delay: 1000000,
 			disableOnInteraction: false,
-		}
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			renderBullet: function (index, className) {
+				return `<span class="${className}">${(index + 1) < 10 ? '0' + (index + 1) : (index + 1)}</span>`;
+			},
+		},
 	});
 	
 	const myPartner = new Swiper('#swiper-partner', {
@@ -138,8 +152,8 @@ $(document).ready(function () {
 	})
 	
 	$('#form-expandCart .createRow').click(function () {
-		html = `<div class="row">
-									<div class="col-md-3 mb-3">
+		html = `<div class="row row-10">
+									<div class="col-md-2 mb-3">
 										<div class="form-group">
 											<label for="network" class="template-1-label text-dark">Nhà mạng</label>
 											<select class="form-control" id="network">
@@ -163,7 +177,7 @@ $(document).ready(function () {
 											<input type="text" class="form-control" id="seri" placeholder="">
 										</div>
 									</div>
-									<div class="col-md-2 col-9 mb-3">
+									<div class="col-md-3 col-9 mb-3">
 										<div class="form-group">
 											<label for="price" class="template-1-label text-dark">Mệnh giá</label>
 											<select class="form-control" id="price">
