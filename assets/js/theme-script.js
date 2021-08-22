@@ -68,7 +68,7 @@ $(document).ready(function () {
 	});
 	
 	const myPartner = new Swiper('#swiper-partner', {
-		slidesPerView: 6,
+		slidesPerView: 5,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
@@ -86,7 +86,7 @@ $(document).ready(function () {
 				spaceBetween: 20,
 			},
 			1024: {
-				slidesPerView: 6,
+				slidesPerView: 5,
 				spaceBetween: 20,
 			},
 		}
@@ -152,10 +152,9 @@ $(document).ready(function () {
 	})
 	
 	$('#form-expandCart .createRow').click(function () {
-		html = `<div class="row row-10">
+		html = `<div class="row row-10 align-items-center">
 									<div class="col-md-2 mb-3">
 										<div class="form-group">
-											<label for="network" class="template-1-label text-dark">Nhà mạng</label>
 											<select class="form-control" id="network">
 												<option name="viettel">Viettel</option>
 												<option name="vinaphone">Vinaphone</option>
@@ -167,19 +166,16 @@ $(document).ready(function () {
 									</div>
 									<div class="col-md-3 mb-3">
 										<div class="form-group">
-											<label for="code" class="template-1-label text-dark">Mã thẻ</label>
 											<input type="text" class="form-control" id="code" placeholder="">
 										</div>
 									</div>
 									<div class="col-md-3 mb-3">
 										<div class="form-group">
-											<label for="seri" class="template-1-label text-dark">Mã Seri</label>
 											<input type="text" class="form-control" id="seri" placeholder="">
 										</div>
 									</div>
 									<div class="col-md-3 col-9 mb-3">
 										<div class="form-group">
-											<label for="price" class="template-1-label text-dark">Mệnh giá</label>
 											<select class="form-control" id="price">
 												<option name="-1">--- Mệnh giá ---</option>
 												<option name="10000">10.000 đ</option>
@@ -196,7 +192,7 @@ $(document).ready(function () {
 									</div>
 									<div class="col-md-1 col-3 mb-3">
 										<a href="javascript:void(0)"
-										   class="deleteRow template-1-btn-circle ml-auto mt-33px rounded-circle btn btn-danger template-1-btn">
+										   class="deleteRow template-1-btn-circle ml-auto mb-3 rounded-circle btn btn-danger template-1-btn">
 											<i class="fas fa-times"></i>
 										</a>
 									</div>

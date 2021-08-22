@@ -2181,3 +2181,7 @@ textarea:focus {
     padding-top: 13.5px;
     border-top: 1px dotted rgba(125, 125, 125, .1);
 }
+
+.sidebar-sticky {
+    top: 60px;
+}
