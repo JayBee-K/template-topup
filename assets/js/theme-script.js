@@ -96,13 +96,11 @@ $(document).ready(function () {
 		html = `<div class="row">
 									<div class="col-md-3 mb-3">
 										<div class="form-group">
-											<label for="phone" class="template-1-label text-dark">Số điện thoại</label>
 											<input type="text" class="form-control" id="phone" placeholder="0909xxxxxx">
 										</div>
 									</div>
 									<div class="col-md-2 mb-3">
 										<div class="form-group">
-											<label for="network" class="template-1-label text-dark">Nhà mạng</label>
 											<select class="form-control" id="network">
 												<option name="viettel">Viettel</option>
 												<option name="vinaphone">Vinaphone</option>
@@ -114,7 +112,6 @@ $(document).ready(function () {
 									</div>
 									<div class="col-md-2 mb-3">
 										<div class="form-group">
-											<label for="price" class="template-1-label text-dark">Mệnh giá</label>
 											<select class="form-control" id="price">
 												<option name="-1">--- Mệnh giá ---</option>
 												<option name="10000">10.000 đ</option>
@@ -131,13 +128,11 @@ $(document).ready(function () {
 									</div>
 									<div class="col-md-2 mb-3">
 										<div class="form-group">
-											<label for="code" class="template-1-label text-dark">Chiết khấu</label>
 											<input type="text" class="form-control" id="code" placeholder="">
 										</div>
 									</div>
 									<div class="col-md-2 col-9 mb-3">
 										<div class="form-group">
-											<label for="mess" class="template-1-label text-dark">Ghi chú</label>
 											<textarea class="form-control" id="mess" rows="1"></textarea>
 										</div>
 									</div>
