@@ -47,244 +47,7 @@
 	</style>
 </head>
 <body>
-<div class="template-1-popupTheme">
-	<div class="modal fade" id="modalLogin" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content rounded-0 border-0">
-				<div class="modal-header d-flex align-items-center justify-content-center flex-column bg-light text-center py-3">
-					<h5 class="modal-title d-block mb-1 w-100 text-center">Đăng nhập tài khoản</h5>
-					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
-						<i class="fal fa-times"></i>
-					</button>
-					<div class="modal-text">
-						Nếu chưa có tài khoản, vui lòng <a href="#modalRegister" class="d-block color-main"
-						                                   data-toggle="modal"
-						                                   data-dismiss="modal">click vào đây để đăng ký</a>
-					</div>
-				</div>
-				<div class="modal-body">
-					<form class="form-effect" action="">
-						<div class="group-effect">
-							<input type="email" id="emailLogin" class="input-effect">
-							<label class="label-effect" for="emailLogin">
-								<i class="fas fa-envelope"></i>
-								<span>Email</span>
-							</label>
-						</div>
-						<div class="group-effect">
-							<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
-							       autocomplete="off" required="">
-							<label class="label-effect" for="passwordLogin">
-								<i class="fas fa-lock"></i>
-								<span>Mật khẩu</span>
-							</label>
-						</div>
-						<div class="custom-control custom-checkbox">
-							<input type="checkbox" class="custom-control-input" id="saveLogin">
-							<label class="custom-control-label" for="saveLogin">Nhớ mật khẩu</label>
-						</div>
-						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
-							<button type="submit" class="btn btn-primary template-1-btn">
-								<span>
-									Đăng nhập
-									<i class="fas fa-sign-in-alt"></i>
-								</span>
-							</button>
-							<a href="#modalForgot" data-toggle="modal" data-dismiss="modal"
-							   class="d-inline-block mt-3 text-muted text-09">
-								Quên mật khẩu
-							</a>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="modalRegister" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content rounded-0 border-0">
-				<div class="modal-header d-flex align-items-center justify-content-center flex-column bg-light text-center py-3">
-					<h5 class="modal-title d-block mb-1 w-100 text-center">Đăng ký tài khoản</h5>
-					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
-						<i class="fal fa-times"></i>
-					</button>
-					<div class="modal-text">
-						Nếu đã có tài khoản, vui lòng <a href="#modalLogin" class="d-block color-main"
-						                                 data-toggle="modal"
-						                                 data-dismiss="modal">click vào đây để đăng nhập</a>
-					</div>
-				</div>
-				<div class="modal-body">
-					<form class="form-effect" action="">
-						<div class="group-effect">
-							<input type="email" id="emailRegister" class="input-effect">
-							<label class="label-effect" for="emailRegister">
-								<i class="fas fa-envelope"></i>
-								<span>Email</span>
-							</label>
-						</div>
-						<div class="group-effect">
-							<input type="password" tabindex="1" name="" id="passwordRegister" class="input-effect"
-							       autocomplete="off" required="">
-							<label class="label-effect" for="passwordRegister">
-								<i class="fas fa-lock"></i>
-								<span>Mật khẩu</span>
-							</label>
-						</div>
-						<div class="group-effect">
-							<input type="password" tabindex="1" name="" id="passwordConfirmRegister"
-							       class="input-effect"
-							       autocomplete="off" required="">
-							<label class="label-effect" for="passwordConfirmRegister">
-								<i class="fas fa-lock"></i>
-								<span>Nhập lại mật khẩu</span>
-							</label>
-						</div>
-						<div class="row row-5">
-							<div class="col-md-6">
-								<div class="group-effect">
-									<input type="text" id="fullnameRegister" class="input-effect">
-									<label class="label-effect" for="fullnameRegister">
-										<i class="fas fa-address-card"></i>
-										<span>Họ &amp; tên</span>
-									</label>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="group-effect">
-									<input type="tel" id="phoneRegister" class="input-effect">
-									<label class="label-effect" for="phoneRegister">
-										<i class="fas fa-phone-alt"></i>
-										<span>Số điện thoại</span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
-							<button type="submit" class="btn btn-primary template-1-btn">
-								<span>
-									Đăng ký
-									<i class="fas fa-sign-out-alt"></i>
-								</span>
-							</button>
-						</div>
-						<div class="divider"></div>
-						<p class="text-muted text-09 text-center">
-							Bằng cách nhập vào Đăng ký, bạn đồng ý với <a href="#" class="text-underline color-main">Điều
-							khoản</a> và <a href="#" class="text-underline color-main">Chính sách bảo mật thông tin</a>
-							của chúng tôi
-						</p>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="modalForgot" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content rounded-0 border-0">
-				<div class="modal-header d-flex align-items-center justify-content-center flex-column bg-light text-center py-3">
-					<h5 class="modal-title d-block w-100 text-center">Quên mật khẩu</h5>
-					<button type="button" class="close position-absolute p-0 m-0" data-dismiss="modal">
-						<i class="fal fa-times"></i>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form class="form-effect" action="">
-						<div class="group-effect">
-							<input type="email" id="emailForgot" class="input-effect">
-							<label class="label-effect" for="emailForgot">
-								<i class="fas fa-envelope"></i>
-								<span>Email</span>
-							</label>
-						</div>
-						<div class="form-button text-center d-flex align-items-center justify-content-center flex-column">
-							<button type="submit" class="btn btn-primary template-1-btn">
-								<span>
-									Gửi yêu cầu
-									<i class="fas fa-paper-plane"></i>
-								</span>
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div><header class="template-1-header bg-white shadow-sm border-bottom position-relative">
-	<div class="top border-bottom position-relative">
-		<div class="container">
-			<div class="row no-gutters align-items-center">
-				<div class="col-md-6 d-none d-md-block text-center text-sm-left">
-					<div class="d-flex align-items-center justify-content-sm-start justify-content-center">
-						<a href="tel:0333851195" class="text-link text-white h6 mb-0">
-							<div class="icons">
-								<span class="d-block d-sm-inline-block mb-2 mb-sm-0">
-									<i class="fas fa-mobile mr-2"></i>Số điện thoại:
-								</span>
-								0333.851.195
-							</div>
-						</a>
-						<a href="mailto:thtan0407@gmail.com" class="text-link text-white h6 mb-0  ml-3">
-							<div class="icons">
-								<span class="d-block d-sm-inline-block  mb-2 mb-sm-0">
-									<i class="fas fa-envelope mr-2"></i>Mail:
-								</span>
-								thtan0407@gmail.com
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="d-flex align-items-center justify-content-md-end justify-content-center">
-						<a href="javascript:void(0)" class="text-link text-white h6 mb-0" title="Giỏ hàng">
-							<div class="icons">
-								<i class="fas fa-shopping-bag"></i>
-								Giỏ hàng:
-								<span class="tien">120.000 <sup>đ</sup></span>
-							</div>
-						</a>
-						<div class="ml-3 d-flex align-items-center justify-content-sm-start justify-content-center">
-							<a href="#modalLogin" data-toggle="modal"
-							   class="btn btn-sm btn-success template-1-btnRounded">
-								Đăng nhập / Đăng ký
-							</a>
-						</div>
-						<div style="display: none !important"
-						     class="ml-3 template-1-login position-relative d-inline-flex d-sm-flex align-items-center justify-content-sm-start justify-content-center">
-							<a href="javascript:void(0)" class="text-white h6 mb-0">
-								<i class="fas fa-user"></i>
-								Tài khoản
-								<i class="fas fa-angle-down small ml-1"></i>
-							</a>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="javascript:void(0)">
-									<span>
-										Thông tin tài khoản
-									</span>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">
-									<span>
-										Đổi mật khẩu
-									</span>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">
-									<span>
-										Đăng xuất
-									</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<header class="template-1-header bg-white shadow-sm border-bottom position-relative">
 	<div class="bottom">
 		<div class="header-overlay"></div>
 		<div class="container">
@@ -302,9 +65,37 @@
 					<div class="navigation">
 						<ul id="hasMenu"
 						    class="list-unstyled mb-0 w-100 d-lg-flex align-items-center justify-content-end">
+							<li class="d-block d-lg-none close-navigation">
+								<a href="index.html" class="d-inline-block">
+									<img src="./assets/images/logo.png" alt="" class="img-fluid">
+								</a>
+								<a href="javascript:void(0)" id="close-navigation">
+									<i class="fal fa-times"></i>
+								</a>
+							</li>
+							<li class="d-block d-lg-none navigation-user">
+								<a href="#" class="d-flex">
+									<span class="d-flex align-items-center justify-content-center"><i
+											class="fas fa-sign-in-alt"></i></span>
+									Đăng nhập
+								</a>
+								<a href="#collapse-user" data-toggle="collapse" class="d-none">
+									<span class="d-flex align-items-center justify-content-center"><i
+											class="fas fa-user"></i></span>
+									Tài khoản
+									<i class="fas fa-caret-down ml-auto"></i>
+								</a>
+								<div class="collapse" id="collapse-user" data-parent="#hasMenu">
+									<ul class="list-unstyled mb-0">
+										<li><a href="#">Cập nhật thông tin</a></li>
+										<li><a href="#">Đổi mật khẩu</a></li>
+										<li><a href="#">Đăng xuất</a></li>
+									</ul>
+								</div>
+							</li>
 							<li class="position-relative">
 								<a href="/">
-									<i class="far fa-home-alt"></i> Trang chủ
+									<i class="far fa-home-alt mr-2 mr-lg-0"></i> Trang chủ
 								</a>
 							</li>
 							<li class="position-relative">
@@ -323,7 +114,8 @@
 								</a>
 							</li>
 							<li class="position-relative">
-								<a href="javascript:void(0)">Dịch vụ <i class="fas fa-caret-down"></i></a>
+								<a href="javascript:void(0)">Dịch vụ <i
+										class="fas fa-caret-down ml-lg-0 ml-auto"></i></a>
 								<ul class="list-unstyled mb-0">
 									<li>
 										<a href="mua-the-cao.html">
@@ -368,27 +160,32 @@
 								</a>
 							</li>
 						</ul>
-						<div class="navigation-info d-block d-lg-none">
-							<p class="text-muted">Thông tin liên hệ:</p>
-							<a href="tel:0333851195"
-							   class="text-link text-dark d-flex align-items-center justify-content-start h6 mb-0">
-								<div class="icons mr-3">
-									<i class="fas fa-mobile"></i>
-								</div>
-								<span class="d-block">
-									Số điện thoại: 0333.851.195
-								</span>
+						<div class="account-action d-lg-block d-none">
+							<a href="#" class="d-flex">
+								<span class="d-flex align-items-center justify-content-center"><i
+										class="fas fa-sign-in-alt"></i></span>
+								Đăng nhập
 							</a>
-							<a href="mailto:thtan0407@gmail.com"
-							   class="text-link text-dark d-flex align-items-center justify-content-start h6 mb-0">
-								<div class="icons mr-3">
-									<i class="fas fa-envelope"></i>
-								</div>
-								<span class="d-block">
-									Mail:thtan0407@gmail.com
-								</span>
+							<a href="#" class="d-none">
+								<span class="d-flex align-items-center justify-content-center"><i
+										class="fas fa-user"></i></span>
+								Tài khoản
+								<i class="fal fa-angle-down ml-2"></i>
 							</a>
+							<ul class="list-unstyled mb-0 d-none">
+								<li class="p-2 bg-light">
+									<p class="mb-0 p-2 bg-white rounded-sm text-center border">
+										Xin chào, <b>Name No</b>
+									</p>
+								</li>
+								<li><a href="#">Cập nhật thông tin</a></li>
+								<li><a href="#">Đổi mật khẩu</a></li>
+								<li><a href="#">Đăng xuất</a></li>
+							</ul>
 						</div>
+						<a class="header-bottom_footer d-block d-lg-none" href="tel:0333851195">
+							Hotline: <span class="hotline">0333 851 195</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -396,11 +193,11 @@
 	</div>
 </header>
 <div class="main">
-	<section class="py-5 bg-white border-bottom">
+	<div class="bg-light border-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<ol class="breadcrumb justify-content-center mb-0 bg-transparent w-100">
+					<ol class="breadcrumb mb-0 bg-transparent w-100 pl-0">
 						<li class="breadcrumb-item">
 							<a href="#" class="text-dark">Trang chủ</a>
 						</li>
@@ -410,6 +207,10 @@
 					</ol>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="py-4 bg-white">
+		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="template-1-heading">
@@ -519,99 +320,73 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 </div>
 <footer class="template-1-footer">
-	<div class="top py-5 position-relative">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-sm-6">
-					<div class="footer-inner">
-						<div class="footer-logo">
-							<a href="index.html" class="d-inline-block">
-								<img src="./assets/images/logo.png" alt="">
-							</a>
-						</div>
-						<div class="footer-heading text-dark">
-							CÔNG TY DỊCH VỤ TRỰC TUYẾN AN HƯNG
-						</div>
-						<div class="footer-desc text-muted">
-							Bán thẻ cào, đổi thẻ cào, nạp tiền topup
-						</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<div class="footer-payment footer-item">
+					<h5 class="footer-heading">Payment support</h5>
+					<div class="payment-list">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<img src="./assets/images/payment/stripe_card.webp" alt="">
+							</li>
+							<li>
+								<img src="./assets/images/payment/nvb.webp" alt="">
+							</li>
+							<li>
+								<img src="./assets/images/payment/scb.webp" alt="">
+							</li>
+							<li>
+								<img src="./assets/images/payment/tpb.webp" alt="">
+							</li>
+							<li>
+								<img src="./assets/images/payment/agb.webp" alt="">
+							</li>
+							<li>
+								<img src="./assets/images/payment/vib.webp" alt="">
+							</li>
+							<li>
+								<a href="">
+									<i class="fas fa-ellipsis-h"></i>
+								</a>
+							</li>
+						</ul>
 					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6  mt-4 mt-md-0">
-					<div class="footer-inner">
-						<div class="footer-title text-dark">
-							Chính sách
-						</div>
-						<div class="footer-list footer-link">
+					<div class="footer-nav">
+						<h5 class="footer-heading">© 2021 SEA Gamer Mall Sdn Bhd (1001568-K)</h5>
+						<div class="nav-list">
 							<ul class="list-unstyled mb-0">
 								<li>
-									<a href="#">
+									<a href="">
 										Về chúng tôi
 									</a>
 								</li>
 								<li>
-									<a href="#">
-										Chính sách bảo mật
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6  mt-4 mt-md-0">
-					<div class="footer-inner">
-						<div class="footer-title text-dark">
-							Hướng dẫn
-						</div>
-						<div class="footer-list footer-link">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">
-										Chính sách bảo mật
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6  mt-4 mt-md-0">
-					<div class="footer-inner">
-						<div class="footer-title mb-3 text-dark">
-							Liên kết mạng xã hội
-						</div>
-						<div class="footer-list footer-social">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="" class="facebook">
-										<i class="fab fa-facebook-f"></i>
+									<a href="">
+										Support
 									</a>
 								</li>
 								<li>
-									<a href="" class="twitter">
-										<i class="fab fa-twitter"></i>
+									<a href="">
+										Liên hệ với chúng tôi
 									</a>
 								</li>
 								<li>
-									<a href="" class="youtube">
-										<i class="fab fa-youtube"></i>
+									<a href="">
+										Thành viên
 									</a>
 								</li>
 								<li>
-									<a href="" class="linkedin">
-										<i class="fab fa-linkedin-in"></i>
+									<a href="">
+										Điều khoản sử dụng
 									</a>
 								</li>
 								<li>
-									<a href="" class="instagram">
-										<i class="fab fa-instagram"></i>
-									</a>
-								</li>
-								<li>
-									<a href="" class="contact">
-										<i class="fal fa-at"></i>
+									<a href="">
+										Quyền riêng tư
 									</a>
 								</li>
 							</ul>
@@ -619,20 +394,85 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="bottom bg-light py-3 border-top position-relative">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-6 text-muted text-center text-md-left">
-					<p class="mb-0">Software by An Hung.,</p>
+			<div class="col-lg-5">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="footer-social footer-item">
+							<h5 class="footer-heading">
+								Subscribe
+							</h5>
+							<div class="social-list">
+								<ul class="list-unstyled mb-0">
+									<li class="facebook">
+										<a href="">
+											<i class="fab fa-facebook"></i>
+										</a>
+									</li>
+									<li class="twitter">
+										<a href="">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li class="youtube">
+										<a href="">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</li>
+									<li class="instagram">
+										<a href="">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</li>
+									<li class="linkedin">
+										<a href="">
+											<i class="fab fa-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="footer-app footer-item">
+							<a href="">
+								<div class="text">
+									<h3>SEAGM in your pocket</h3>
+									<p>Tải ứng dụng ngay!</p>
+								</div>
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="col-12 col-md-6">
-					<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-center justify-content-md-end">
-						<li><a href="">English</a></li>
-						<li><a href="">Tiếng Việt</a></li>
-						<li><a href="">中文</a></li>
-					</ul>
+				<div class="row">
+					<div class="col-12">
+						<div class="footer-dropdown d-flex align-items-center justify-content-lg-end">
+							<div class="dropdown dropdown-wrap">
+								<button class="btn btn-dropdown dropdown-toggle" type="button"
+								        id="dropdownCurrency" data-toggle="dropdown">
+									<i class="fas fa-dollar-sign"></i>
+									<span class="px-2">Tiền tệ</span>
+								</button>
+								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownCurrency">
+									<a class="dropdown-item" href="#">Dollars</a>
+									<a class="dropdown-item" href="#">Nhân dân tệ</a>
+									<a class="dropdown-item active" href="#">Vietnam đồng</a>
+								</div>
+							</div>
+							<div class="dropdown dropdown-wrap ml-3">
+								<button class="btn btn-dropdown dropdown-toggle" type="button"
+								        id="dropdownLanguage" data-toggle="dropdown">
+									<i class="fas fa-globe"></i>
+									<span class="px-2">English (En)</span>
+								</button>
+								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLanguage">
+									<a class="dropdown-item" href="#">English</a>
+									<a class="dropdown-item" href="#">China</a>
+									<a class="dropdown-item active" href="#">Tiếng Việt</a>
+									<a class="dropdown-item" href="#">Cambodia</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
