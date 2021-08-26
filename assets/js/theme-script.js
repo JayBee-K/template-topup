@@ -200,4 +200,62 @@ $(document).ready(function () {
 	});
 	
 	$('[data-toggle="tooltip"]').tooltip();
+	
+	const gameSlide = new Swiper('#swiper-games', {
+		loop: true,
+		speed: 1000,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		mousewheelControl: true,
+		keyboardControl: true,
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			renderBullet: function (index, className) {
+				return `<span class="${className}">${(index + 1) < 10 ? '0' + (index + 1) : (index + 1)}</span>`;
+			},
+		},
+		autoplay: {
+			delay: 100000,
+			disableOnInteraction: false,
+		},
+		on: {
+			progress() {
+				var swiper = this;
+				for (var i = 0; i < swiper.slides.length; i++) {
+					var slideProgress = swiper.slides[i].progress;
+					var innerOffset = swiper.width * 0.5;
+					var innerTranslate = slideProgress * innerOffset;
+					swiper.slides[i].querySelector(".slide-item").style.transform =
+						"translate3d(" + innerTranslate + "px, 0, 0)";
+				}
+			},
+			
+			touchStart() {
+				var swiper = this;
+				for (var i = 0; i < swiper.slides.length; i++) {
+					swiper.slides[i].style.transition = "";
+				}
+			},
+			setTransition(templateBanner, speed) {
+				var swiper = this;
+				for (var i = 0; i < swiper.slides.length; i++) {
+					swiper.slides[i].style.transition = speed + "ms";
+					swiper.slides[i].querySelector(".slide-item").style.transition =
+						speed + "ms";
+				}
+			}
+		}
+	});
+	
+	$('#search-collapse').on('show.bs.collapse', function () {
+		$('#expandedSearch').html('Thu gọn');
+	}).on('hide.bs.collapse', function () {
+		$('#expandedSearch').html('Nâng cao');
+	})
 })
