@@ -3328,7 +3328,8 @@ textarea:focus {
 }
 
 .table-games .template-1-table img {
-    height: 140px;
+    height: 80px;
+    width: 80px;
 }
 
 .table-games .template-1-table .fa-check {
@@ -3344,9 +3345,12 @@ textarea:focus {
     font-size: 12px;
 }
 
-.search-games .input-group .input-group-text,
-.search-games .input-group .form-control {
+.search-games .form-group .form-control {
     font-size: 14px;
+}
+
+.search-games .btn {
+    padding: 9.5px 10px;
 }
 
 
@@ -3360,8 +3364,12 @@ textarea:focus {
         padding-right: 15px;
     }
 
-    .detail-alert ul{
+    .detail-alert ul {
         padding-left: 15px;
+    }
+
+    .detail-alert .desc {
+        font-size: 1em;
     }
 
     .block-banner-games .swiper-container {
@@ -3376,4 +3384,9 @@ textarea:focus {
     .dropdown-theme .form-group input {
         width: 180px;
     }
+
+    .search-games .btn {
+        width: 100%;
+    }
+
 }
