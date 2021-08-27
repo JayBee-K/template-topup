@@ -212,6 +212,365 @@
 	<div class="py-4 bg-white">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-9 order-md-2 order-1">
+					<div class="template-1_information">
+						<div class="card rounded-sm bg-white pt-3">
+							<div class="card-header bg-transparent rounded-0 border-0">
+								<div class="template-1-heading">
+									<h4>
+										Thông tin tài khoản
+									</h4>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="information-view" id="informationView">
+									<div class="information-list">
+										<div class="row no-gutters pb-3 mb-3">
+											<div class="col-5 col-md-4">
+												Tên đăng nhập
+											</div>
+											<div class="col-7 text-right text-md-left col-md-8">
+												<b>abcxyz@gmail.com</b>
+											</div>
+										</div>
+										<div class="row no-gutters pb-3 mb-3">
+											<div class="col-5 col-md-4">
+												Họ và tên:
+											</div>
+											<div class="col-7 text-right text-md-left col-md-8">
+												<b>Hoàng Tấn</b>
+											</div>
+										</div>
+										<div class="row no-gutters pb-3 mb-3">
+											<div class="col-5 col-md-4">
+												Email
+											</div>
+											<div class="col-7 text-right text-md-left col-md-8">
+												<b>abcxyz@gmail.com</b>
+											</div>
+										</div>
+										<div class="row no-gutters pb-3 mb-3">
+											<div class="col-5 col-md-4">
+												Nhóm
+											</div>
+											<div class="col-7 text-right text-md-left col-md-8">
+												<b>Thành viên</b>
+											</div>
+										</div>
+										<div class="row no-gutters pb-3 mb-3">
+											<div class="col-5 col-md-4">
+												Xác thực điện thoại:
+											</div>
+											<div class="col-7 text-right text-md-left col-md-8">
+												<label for="" class="badge badge-danger">
+													Chưa xác thực
+												</label>
+											</div>
+										</div>
+										<div class="row no-gutters pb-3 mb-3">
+											<div class="col-5 col-md-4">
+												Xác thực Email:
+											</div>
+											<div class="col-7 text-right text-md-left col-md-8">
+												<label for="" class="badge badge-success">
+													Đã xác thực
+												</label>
+											</div>
+										</div>
+										<div class="row no-gutters pb-3 mb-3">
+											<div class="col-5 col-md-4">
+												Xác thực giấy tờ:
+											</div>
+											<div class="col-7 text-right text-md-left col-md-8">
+												<label for="" class="badge badge-warning">
+													Đang xác thực
+												</label>
+											</div>
+										</div>
+										<div class="row no-gutters pb-3 mb-3">
+											<div class="col-5 col-md-4">
+												Ngày đăng ký:
+											</div>
+											<div class="col-7 text-right text-md-left col-md-8">
+												<b>2021-04-14 17:05:11</b>
+											</div>
+										</div>
+										<div class="row no-gutters pb-3 mb-3">
+											<div class="col-5 col-md-4">
+												Ví điện tử:
+											</div>
+											<div class="col-7 text-right text-md-left col-md-8">
+												<b>0032164008</b>
+												- Số tiền: <b class="color-green">0 <sup>đ</sup></b>
+											</div>
+										</div>
+									</div>
+									<div class="mt-5 pt-4 border-top text-center text-md-left">
+										<button class="btn btn-success template-1-btn btn-sm updateInformation" data-form="0">
+											Sửa thông
+											tin
+										</button>
+										<button class="btn btn-secondary template-1-btn btn-sm updateInformation" data-form="1">Đổi mật
+											khẩu
+										</button>
+									</div>
+								</div>
+								<div class="information-form" style="display: none" id="informationFrom">
+									<form action="">
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="user" class="mb-3 mb-md-0 font-weight-bold">
+													Tên đăng nhập
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<input type="text" readonly class="form-control" id="user"
+													       placeholder="abcxyz@gmail.com">
+												</div>
+											</div>
+										</div>
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="fullname" class="mb-3 mb-md-0 font-weight-bold">
+													Họ & tên
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<input type="text" class="form-control" id="fullname"
+													       placeholder="Hoàng Tấn">
+												</div>
+											</div>
+										</div>
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="email" class="mb-3 mb-md-0 font-weight-bold">
+													Email đăng nhập
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<input type="email" readonly class="form-control" id="email"
+													       placeholder="abcxyz@gmail.com">
+												</div>
+											</div>
+										</div>
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="phone" class="mb-3 mb-md-0 font-weight-bold">
+													Số điện thoại
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<input type="tel" class="form-control" id="phone"
+													       placeholder="">
+												</div>
+											</div>
+										</div>
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="" class="mb-3 mb-md-0 font-weight-bold">
+													Giới tính
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<div class="custom-control custom-radio custom-control-inline">
+														<input type="radio" id="sex01" name="sex"
+														       class="custom-control-input">
+														<label class="custom-control-label" for="sex01">Nam</label>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<input type="radio" id="sex02" name="sex"
+														       class="custom-control-input">
+														<label class="custom-control-label" for="sex02">Nữ</label>
+													</div>
+													<div class="custom-control custom-radio custom-control-inline">
+														<input type="radio" id="sex03" name="sex"
+														       class="custom-control-input">
+														<label class="custom-control-label" for="sex03">Không khai
+															báo</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="language" class="mb-3 mb-md-0 font-weight-bold">
+													Ngôn ngữ
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<select name="" class="form-control" id="language">
+														<option value="">--- Chọn ngôn ngữ ---</option>
+														<option value="">Tiếng việt</option>
+														<option value="">Tiếng Anh</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="country" class="mb-3 mb-md-0 font-weight-bold">
+													Quốc gia
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<select name="" class="form-control" id="country">
+														<option value="" selected>Việt Nam</option>
+														<option value="">Nhật Bản</option>
+														<option value="">Trung Quốc</option>
+														<option value="">Nhật Bản</option>
+														<option value="">Trung Quốc</option>
+														<option value="">Nhật Bản</option>
+														<option value="">Trung Quốc</option>
+														<option value="">Nhật Bản</option>
+														<option value="">Trung Quốc</option>
+														<option value="">Nhật Bản</option>
+														<option value="">Trung Quốc</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="password02" class="mb-3 mb-md-0 font-weight-bold">
+													Mạt khẩu cấp 2
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<input type="password" class="form-control" id="password02"
+													       placeholder="">
+												</div>
+											</div>
+										</div>
+										<div class="mt-5 pt-4 border-top text-center text-md-left">
+											<button class="btn btn-success template-1-btn btn-sm">Cập nhật thông tin</button>
+											<button type="reset" class="btn btn-secondary template-1-btn btn-sm">Nhập lại</button>
+											<button type="button"
+											        class="float-md-right text-muted btn btn-link btn-sm updateInformation"
+											        data-form="2">Quay lại
+											</button>
+										</div>
+									</form>
+								</div>
+								<div class="information-form" style="display: none" id="passwordFrom">
+									<form action="">
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="passwordold" class="mb-3 mb-md-0 font-weight-bold">
+													Mạt khẩu cũ
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<input type="password" class="form-control" id="passwordold"
+													       placeholder="">
+												</div>
+											</div>
+										</div>
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="passwordnew" class="mb-3 mb-md-0 font-weight-bold">
+													Mật khẩu mới
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<input type="password" class="form-control" id="passwordnew"
+													       placeholder="">
+												</div>
+											</div>
+										</div>
+										<div class="row align-items-center no-gutters pb-3 mb-3">
+											<div class="col-md-4">
+												<label for="confirmpasswordnew" class="mb-3 mb-md-0 font-weight-bold">
+													Nhập lại mật khẩu mới
+												</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group mb-0">
+													<input type="password" class="form-control" id="confirmpasswordnew"
+													       placeholder="">
+												</div>
+											</div>
+										</div>
+										<div class="mt-5 pt-4 border-top text-center text-md-left">
+											<button class="btn btn-success btn-sm template-1-btn">Cập nhật mật khẩu</button>
+											<button type="reset" class="btn btn-secondary btn-sm template-1-btn">Nhập lại</button>
+											<button type="button"
+											        class="float-md-right text-muted btn btn-link outline btn-sm updateInformation"
+											        data-form="2">Quay lại
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="loading-pure" style="display: none">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+					<div class="mt-4">
+						<div class="row">
+							<div class="col-12">
+								<div class="template-1-heading">
+									<h4>Lịch sử đăng nhập:</h4>
+								</div>
+								<div class="table-responsive">
+									<table class="table table-bordered template-1-table">
+										<thead>
+										<tr class="bg-theme">
+											<th>Địa chỉ IP</th>
+											<th class="text-center">Ngày tạo</th>
+											<th>Trình duyệt</th>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">123.28.164.28</td>
+											<td class="text-center">2021-03-15 20:56:31</td>
+											<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+												Chrome/89.0.4389.82 Safari/537.36
+											</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">123.28.164.28</td>
+											<td class="text-center">2021-03-15 20:56:31</td>
+											<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+												Chrome/89.0.4389.82 Safari/537.36
+											</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">123.28.164.28</td>
+											<td class="text-center">2021-03-15 20:56:31</td>
+											<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+												Chrome/89.0.4389.82 Safari/537.36
+											</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">123.28.164.28</td>
+											<td class="text-center">2021-03-15 20:56:31</td>
+											<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+												Chrome/89.0.4389.82 Safari/537.36
+											</td>
+										</tr>
+										
+										</thead>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row d-none">
 				<div class="col-12">
 					<div class="template-1-heading">
 						<h4>
@@ -429,7 +788,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="mt-3">
+			<div class="mt-3 d-none">
 				<div class="row">
 					<div class="col-12">
 						<h6 class="template-1-heading-small">Lịch sử đăng nhập:</h6>

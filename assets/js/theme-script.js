@@ -4,6 +4,30 @@ function handleTouchMove(ev) {
 	}
 }
 
+
+var fnUpdateInformation = function (form) {
+	// form == 0 : form cập nhật thông tin tài hoản
+	// form == 1 : form đổi mật khẩu
+	$('.template-1_information .card .loading-pure').show();
+	setTimeout(function () {
+		if (form == 0) {
+			$('.template-1_information .card .card-header .template-1-heading h4').text('Cập nhật thông tin tài khoản');
+			$('#informationView').hide();
+			$('#informationFrom').show();
+		} else if (form == 1) {
+			$('.template-1_information .card .card-header .template-1-heading h4').text('Đổi mật khẩu');
+			$('#informationView').hide();
+			$('#passwordFrom').show();
+		} else {
+			$('.template-1_information .card .card-header .template-1-heading h4').text('Thông tin tài khoản');
+			$('#informationFrom').hide();
+			$('#passwordFrom').hide();
+			$('#informationView').show();
+		}
+		$('.template-1_information .card .loading-pure').hide();
+	}, 1000);
+}
+
 $(document).ready(function () {
 	$(window).scroll(function () {
 		var top = $(document).scrollTop();
@@ -253,9 +277,8 @@ $(document).ready(function () {
 		}
 	});
 	
-	$('#search-collapse').on('show.bs.collapse', function () {
-		$('#expandedSearch').html('Thu gọn');
-	}).on('hide.bs.collapse', function () {
-		$('#expandedSearch').html('Nâng cao');
-	})
+	
+	$('.updateInformation').click(function () {
+		fnUpdateInformation($(this).data('form'));
+	});
 })
