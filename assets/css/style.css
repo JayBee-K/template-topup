@@ -3541,4 +3541,21 @@ textarea:focus {
         width: 100%;
     }
 
+    .table-filter {
+        white-space: nowrap;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .table-filter .row{
+        flex-wrap: nowrap;
+    }
+
+    .table-filter .row .form-group{
+        margin-bottom: 3px;
+    }
+
+    .table-filter .form-control{
+        min-width: 150px;
+    }
 }
