@@ -281,4 +281,55 @@ $(document).ready(function () {
 	$('.updateInformation').click(function () {
 		fnUpdateInformation($(this).data('form'));
 	});
-})
+	
+	$('[name=select-item_radio]').change(function (e) {
+		let elm = $(this),
+			price = $(this).attr('data-price'),
+			credit = $(this).attr('data-credit'),
+			percent = $(this).attr('data-percent'),
+			priceDiscount = $(this).attr('data-pricediscount');
+		// PC
+		$('#totalPrice').html(price);
+		$('#credit').html(credit);
+		$('#discount').html(priceDiscount);
+		$('#percent').html(percent);
+		
+		// Mobile
+		$('#totalPricePopup').html(price);
+		$('#creditPopup').html(credit);
+		$('#discountPopup').html(priceDiscount);
+		$('#percentPopup').html(percent);
+	});
+	
+	$('.scrollPage').click(function () {
+		$('body').animate({
+			'scrollTop': $('#' + $(this).attr('data-id')).offset().top - 100
+		}, 500)
+	});
+	
+	const swiperReview = new Swiper('#swiper-review', {
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		spaceBetween: 10,
+		breakpoints: {
+			320: {
+				slidesPerView: 1.2,
+			},
+			600: {
+				slidesPerView: 2.2,
+			},
+		}
+	});
+	
+	$('#callPopupOrder, #closePopupOrder').click(function () {
+		if ($('#popupOrder').hasClass('show')) {
+			$('body').css('overflow', '');
+			$('#popupOrder').removeClass('show');
+		} else {
+			$('body').css('overflow', 'hidden');
+			$('#popupOrder').addClass('show');
+		}
+	});
+});
