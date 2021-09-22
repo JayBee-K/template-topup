@@ -332,4 +332,9 @@ $(document).ready(function () {
 			$('#popupOrder').addClass('show');
 		}
 	});
+	
+	$('.changeTabOnline').click(function (e) {
+		let _name = $(this).attr('data-name');
+		$('.online-price #name').html(_name);
+	})
 });
