@@ -39,7 +39,7 @@
 			--color-hover: #135b13;
 			--text-dark: #343a40;
 			--text-gray: #A0AEC0;
-			--bg-body: #F7F7F7;
+			--bg-body: #fbfcff;
 			--bg-light: #f8f9fa;
 			--color-border: #e9e9e9;
 		}
@@ -193,370 +193,601 @@
 	</div>
 </header>
 <div class="main">
-	<div class="bg-light border-bottom">
+	<div class="mt-4">
 		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<ol class="breadcrumb mb-0 bg-transparent w-100 pl-0">
-						<li class="breadcrumb-item">
-							<a href="#" class="text-dark">Trang chủ</a>
-						</li>
-						<li class="breadcrumb-item">
-							<a href="#" class="text-muted">Nạp cước</a>
-						</li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="page-direct bg-white">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="direct-bar">
-						<div class="row align-items-center">
-							<div class="col-md-4 col-lg-5">
-								<h1 class="mb-0 title d-inline-block">Browse Direct Top Up</h1>
-								<a href="#collapse-search" class="d-block text-dark h5 mb-0 pt-1 float-right d-md-none" data-toggle="collapse"><i class="fas fa-sliders-h"></i></a>
+			<div class="row row-10">
+				<div class="col-md-3 order-2 order-md-1">
+					<section class="py-3 py-md-0">
+						<div class="template-1-service bg-white rounded-sm border p-3">
+							<div class="service-list">
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/atm.svg" alt="">
+										Rút tiền
+									</a>
+								</div>
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/bank-transfer.svg" alt="">
+										Nạp tiền
+									</a>
+								</div>
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/mobile-payment.svg" alt="">
+										Chuyển tiền
+									</a>
+								</div>
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/sim-card.svg" alt="">
+										Mua thẻ cào
+									</a>
+								</div>
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/gamepad.svg" alt="">
+										Mua thẻ game
+									</a>
+								</div>
 							</div>
-							<div class="col-md-8 col-lg-7">
-								<div id="collapse-search" class="collapse d-md-block">
-									<form action="" class="pt-3 pt-md-0 px-1 mb-0">
-										<div class="row row-5">
-											<div class="col-md-3 col-6">
-												<div class="form-group mb-md-0">
-													<span><i class="fas fa-globe-americas"></i></span>
-													<select name="" id="" class="form-control">
-														<option value="">All Regions</option>
-														<option value="">Global</option>
-														<option value="">Euro</option>
-														<option value="">South East Asia</option>
-														<option value="">Argentina</option>
-														<option value="">Asia</option>
-														<option value="">Australia</option>
-														<option value="">Austria</option>
-														<option value="">Euro</option>
-														<option value="">South East Asia</option>
-														<option value="">Argentina</option>
-														<option value="">Asia</option>
-														<option value="">Australia</option>
-														<option value="">Austria</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-md-3 col-6">
-												<div class="form-group mb-md-0">
-													<span><i class="fas fa-shapes"></i></span>
-													<select name="" id="" class="form-control">
-														<option value="">All types</option>
-														<option value="">Game Direct Top Up</option>
-														<option value="">China Direct Top Up</option>
-														<option value="">Live Streaming</option>
-														<option value="">Video Streaming</option>
-														<option value="">Entertainment</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group mb-md-0">
-													<input type="text" placeholder="Search game top up"
-													       class="form-control">
-													<button class="direct-bar_button"><i class="fas fa-search"></i>
-													</button>
-												</div>
-											</div>
+						</div>
+						<div class="template-1-contact bg-white rounded-sm border mt-4">
+							<div class="contact-inner p-3">
+								<div class="contact-item">
+									<a href="">
+										<span>
+											<i class="fas fa-phone-alt"></i>
+										</span>
+										Hotline tư vấn:
+										<b>0909.090.909</b>
+									</a>
+								</div>
+								<div class="contact-item">
+									<a href="">
+										<span>
+											<i class="fas fa-phone-rotary"></i>
+										</span>
+										Hỗ trợ kỹ thuật:
+										<b>0909.090.909</b>
+									</a>
+								</div>
+								<div class="contact-item">
+									<a href="">
+										<span>
+											<i class="fas fa-phone-square-alt"></i>
+										</span>
+										Chăm sóc KH:
+										<b>0909.090.909</b>
+									</a>
+								</div>
+								<div class="contact-item">
+									<a href="">
+										<span>
+											<i class="fas fa-envelope"></i>
+										</span>
+										Email:
+										<b>example@gmail.com</b>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="template-1-faq bg-white rounded-sm border mt-4">
+							<h6 class="template-1-heading-small heading-new mx-3 pt-3 mb-2">
+								<i class="far fa-question-circle mr-1"></i>
+								FAQ:
+							</h6>
+							<div class="faq-inner" id="faq-main">
+								<div class="faq-collapse">
+									<a href="#faq-collapse1" aria-expanded="true" data-toggle="collapse">
+										Câu hỏi số 1
+									</a>
+									<div class="collapse show" id="faq-collapse1" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam
+											quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
 										</div>
-									</form>
+									</div>
+								</div>
+								<div class="faq-collapse">
+									<a href="#faq-collapse2" aria-expanded="false" data-toggle="collapse">
+										Câu hỏi số 2
+									</a>
+									<div class="collapse" id="faq-collapse2" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam
+											quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
+										</div>
+									</div>
+								</div>
+								<div class="faq-collapse">
+									<a href="#faq-collapse3" aria-expanded="false" data-toggle="collapse">
+										Câu hỏi số 3
+									</a>
+									<div class="collapse" id="faq-collapse3" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam
+											quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
+										</div>
+									</div>
+								</div>
+								<div class="faq-collapse">
+									<a href="#faq-collapse4" aria-expanded="false" data-toggle="collapse">
+										Câu hỏi số 4
+									</a>
+									<div class="collapse" id="faq-collapse4" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam
+											quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
+										</div>
+									</div>
+								</div>
+								<div class="faq-collapse">
+									<a href="#faq-collapse5" aria-expanded="false" data-toggle="collapse">
+										Câu hỏi số 5
+									</a>
+									<div class="collapse" id="faq-collapse5" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam
+											quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum. <br>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam
+											quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="direct-main">
-						<div class="row row-cols-lg-6 row-cols-2 row-cols-md-4">
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/631.webp" alt="">
+						<div class="template-1-article bg-white rounded-sm border px-3 pt-3 pb-2 mt-4">
+							<h6 class="template-1-heading-small heading-new mb-3">
+								<i class="far fa-newspaper mr-1"></i>
+								Tin tức nổi bật
+							</h6>
+							<div class="row row-col-10 justify-content-center mt-2">
+								<div class="col-12">
+									<div class="card rounded-0 flex-row card-tintuc">
+										<a href="chi-tiet-bai-viet.html"
+										   class="link-cover"></a>
+										<div class="card-header rounded-0">
+											<span class="card-image"
+											      style="background-image:url('./assets/images/Top215123.jpg')">
+											</span>
+										</div>
+										<div class="card-body">
+											<div class="card-meta text-muted">
+												<i class="fal fa-calendar-alt"></i>
+												13-02-2021
+											</div>
+											<h5 class="card-title">
+												Top những tựa game mobile 2021
+											</h5>
+										</div>
 									</div>
-									<h2 class="direct-title mb-0">
-										QQ Coin Q币直充 (CN)
-									</h2>
-									<a href="#"></a>
 								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/632.webp" alt="">
+								<div class="col-12">
+									<div class="card rounded-0 flex-row card-tintuc">
+										<a href="chi-tiet-bai-viet.html"
+										   class="link-cover"></a>
+										<div class="card-header rounded-0">
+											<span class="card-image"
+											      style="background-image:url('./assets/images/Top215123.jpg')">
+											</span>
+										</div>
+										<div class="card-body">
+											<div class="card-meta text-muted">
+												<i class="fal fa-calendar-alt"></i>
+												13-02-2021
+											</div>
+											<h5 class="card-title">
+												Top những tựa game mobile 2021 hay nhất không thể không chơi
+											</h5>
+										</div>
 									</div>
-									<h2 class="direct-title mb-0">
-										金山一卡通直充
-									</h2>
-									<a href="#"></a>
 								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/635.webp" alt="">
+								<div class="col-12">
+									<div class="card rounded-0 flex-row card-tintuc">
+										<a href="chi-tiet-bai-viet.html"
+										   class="link-cover"></a>
+										<div class="card-header rounded-0">
+											<span class="card-image"
+											      style="background-image:url('./assets/images/Top215123.jpg')">
+											</span>
+										</div>
+										<div class="card-body">
+											<div class="card-meta text-muted">
+												<i class="fal fa-calendar-alt"></i>
+												13-02-2021
+											</div>
+											<h5 class="card-title">
+												Top những tựa game mobile 2021 hay nhất không thể không chơi
+											</h5>
+										</div>
 									</div>
-									<h2 class="direct-title mb-0">
-										盛大直通车(盛大点券)
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/643.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										Tencent QQ VIP/SVIP/Yellow Diamond Membership Direct Top Up
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/670.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										Kitty Live Coins
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/742.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										MICO Chat Coins
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/631.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										QQ Coin Q币直充 (CN)
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/632.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										金山一卡通直充
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/635.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										盛大直通车(盛大点券)
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/643.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										Tencent QQ VIP/SVIP/Yellow Diamond Membership Direct Top Up
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/670.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										Kitty Live Coins
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/742.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										MICO Chat Coins
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/631.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										QQ Coin Q币直充 (CN)
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/632.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										金山一卡通直充
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/635.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										盛大直通车(盛大点券)
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/643.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										Tencent QQ VIP/SVIP/Yellow Diamond Membership Direct Top Up
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/670.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										Kitty Live Coins
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/742.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										MICO Chat Coins
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/631.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										QQ Coin Q币直充 (CN)
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/632.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										金山一卡通直充
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/635.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										盛大直通车(盛大点券)
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/643.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										Tencent QQ VIP/SVIP/Yellow Diamond Membership Direct Top Up
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/670.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										Kitty Live Coins
-									</h2>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="direct-item mb-3">
-									<div class="direct-avatar">
-										<img src="./assets/images/direct/742.webp" alt="">
-									</div>
-									<h2 class="direct-title mb-0">
-										MICO Chat Coins
-									</h2>
-									<a href="#"></a>
 								</div>
 							</div>
 						</div>
-						<div class="row mt-4">
-							<div class="col-12">
-								<nav class="mb-0 template-pagination">
-									<ul class="pagination justify-content-center">
-										<li class="page-item">
-											<a class="page-link" href="#">
-												<span>«</span>
-											</a>
-										</li>
-										<li class="page-item active"><a class="page-link" href="#">1</a></li>
-										<li class="page-item"><a class="page-link" href="#">2</a></li>
-										<li class="page-item"><a class="page-link" href="#">3</a></li>
-										<li class="page-item">
-											<a class="page-link">
-												<span>»</span>
-											</a>
-										</li>
-									</ul>
-								</nav>
+					</section>
+				</div>
+				<div class="col-md-9 order-1 order-md-2">
+					<div class="rounded-sm border">
+						<div class="bg-light border-bottom">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<ol class="breadcrumb mb-0 bg-transparent w-100 pl-0">
+											<li class="breadcrumb-item">
+												<a href="#" class="text-dark">Trang chủ</a>
+											</li>
+											<li class="breadcrumb-item">
+												<a href="#" class="text-muted">Nạp cước</a>
+											</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-direct">
+							<div class="direct-bar px-3">
+								<div class="row align-items-center">
+									<div class="col-md-4 col-lg-5">
+										<h1 class="mb-0 title d-inline-block">Browse Direct Top Up</h1>
+										<a href="#collapse-search"
+										   class="d-block text-dark h5 mb-0 pt-1 float-right d-md-none"
+										   data-toggle="collapse"><i class="fas fa-sliders-h"></i></a>
+									</div>
+									<div class="col-md-8 col-lg-7">
+										<div id="collapse-search" class="collapse d-md-block">
+											<form action="" class="pt-3 pt-md-0 px-1 mb-0">
+												<div class="row row-5">
+													<div class="col-md-3 col-6">
+														<div class="form-group mb-md-0">
+															<span><i
+																	class="fas fa-globe-americas"></i></span>
+															<select name="" id="" class="form-control">
+																<option value="">All Regions</option>
+																<option value="">Global</option>
+																<option value="">Euro</option>
+																<option value="">South East Asia</option>
+																<option value="">Argentina</option>
+																<option value="">Asia</option>
+																<option value="">Australia</option>
+																<option value="">Austria</option>
+																<option value="">Euro</option>
+																<option value="">South East Asia</option>
+																<option value="">Argentina</option>
+																<option value="">Asia</option>
+																<option value="">Australia</option>
+																<option value="">Austria</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-3 col-6">
+														<div class="form-group mb-md-0">
+															<span><i class="fas fa-shapes"></i></span>
+															<select name="" id="" class="form-control">
+																<option value="">All types</option>
+																<option value="">Game Direct Top Up</option>
+																<option value="">China Direct Top Up
+																</option>
+																<option value="">Live Streaming</option>
+																<option value="">Video Streaming</option>
+																<option value="">Entertainment</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group mb-md-0">
+															<input type="text"
+															       placeholder="Search game top up"
+															       class="form-control">
+															<button class="direct-bar_button"><i
+																	class="fas fa-search"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="direct-main px-3">
+								<div class="row row-cols-lg-5 row-cols-2 row-cols-md-3">
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/631.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												QQ Coin Q币直充 (CN)
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/632.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												金山一卡通直充
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/635.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												盛大直通车(盛大点券)
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/643.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												Tencent QQ VIP/SVIP/Yellow Diamond Membership Direct Top Up
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/670.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												Kitty Live Coins
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/742.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												MICO Chat Coins
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/631.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												QQ Coin Q币直充 (CN)
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/632.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												金山一卡通直充
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/635.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												盛大直通车(盛大点券)
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/643.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												Tencent QQ VIP/SVIP/Yellow Diamond Membership Direct Top Up
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/670.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												Kitty Live Coins
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/742.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												MICO Chat Coins
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/631.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												QQ Coin Q币直充 (CN)
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/632.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												金山一卡通直充
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/635.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												盛大直通车(盛大点券)
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/643.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												Tencent QQ VIP/SVIP/Yellow Diamond Membership Direct Top Up
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/670.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												Kitty Live Coins
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/742.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												MICO Chat Coins
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/631.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												QQ Coin Q币直充 (CN)
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/632.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												金山一卡通直充
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/635.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												盛大直通车(盛大点券)
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/643.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												Tencent QQ VIP/SVIP/Yellow Diamond Membership Direct Top Up
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/670.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												Kitty Live Coins
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="col">
+										<div class="direct-item mb-3">
+											<div class="direct-avatar">
+												<img src="./assets/images/direct/742.webp" alt="">
+											</div>
+											<h2 class="direct-title mb-0">
+												MICO Chat Coins
+											</h2>
+											<a href="#"></a>
+										</div>
+									</div>
+								</div>
+								<div class="row mt-4">
+									<div class="col-12">
+										<nav class="mb-0 template-pagination">
+											<ul class="pagination justify-content-center">
+												<li class="page-item">
+													<a class="page-link" href="#">
+														<span>«</span>
+													</a>
+												</li>
+												<li class="page-item active"><a class="page-link"
+												                                href="#">1</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">2</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">3</a>
+												</li>
+												<li class="page-item">
+													<a class="page-link">
+														<span>»</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
