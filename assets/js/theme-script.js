@@ -352,6 +352,13 @@ $(document).ready(function () {
 		mousewheelControl: true,
 		keyboardControl: true,
 		slidesPerView: 1,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			renderBullet: function (index, className) {
+				return `<span class="${className}">${(index + 1) < 10 ? '0' + (index + 1) : (index + 1)}</span>`;
+			},
+		},
 		autoplay: {
 			delay: 10000,
 			disableOnInteraction: false,
