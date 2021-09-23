@@ -5457,6 +5457,10 @@ textarea:focus {
         visibility: visible;
         pointer-events: auto;
     }
+
+    .section-partner {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -5492,6 +5496,10 @@ textarea:focus {
     .header-topup .header-topup_top .top-user > ul,
     .header-topup .header-topup_top .top-contact > ul {
         justify-content: center;
+    }
+
+    .header-topup .header-topup_top .top-contact {
+        display: none;
     }
 
     .heading-new.template-1-heading h4 {
