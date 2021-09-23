@@ -4,6 +4,11 @@ function handleTouchMove(ev) {
 	}
 }
 
+function handleTouchMoveTopUO(ev) {
+	if (!$(ev.target).closest('#header-topup').length) {
+		ev.preventDefault();
+	}
+}
 
 var fnUpdateInformation = function (form) {
 	// form == 0 : form cập nhật thông tin tài hoản
@@ -336,5 +341,75 @@ $(document).ready(function () {
 	$('.changeTabOnline').click(function (e) {
 		let _name = $(this).attr('data-name');
 		$('.online-price #name').html(_name);
-	})
+	});
+	
+	
+	const bannerSlide = new Swiper('#banner-slide', {
+		loop: true,
+		speed: 1000,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		mousewheelControl: true,
+		keyboardControl: true,
+		slidesPerView: 1,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		on: {
+			progress() {
+				var swiper = this;
+				for (var i = 0; i < swiper.slides.length; i++) {
+					var slideProgress = swiper.slides[i].progress;
+					var innerOffset = swiper.width * 0.5;
+					var innerTranslate = slideProgress * innerOffset;
+					swiper.slides[i].querySelector(".banner-item").style.transform =
+						"translate3d(" + innerTranslate + "px, 0, 0)";
+				}
+			},
+			
+			touchStart() {
+				var swiper = this;
+				for (var i = 0; i < swiper.slides.length; i++) {
+					swiper.slides[i].style.transition = "";
+				}
+			},
+			setTransition(templateBanner, speed) {
+				var swiper = this;
+				for (var i = 0; i < swiper.slides.length; i++) {
+					swiper.slides[i].style.transition = speed + "ms";
+					swiper.slides[i].querySelector(".banner-item").style.transition =
+						speed + "ms";
+				}
+			}
+		}
+	});
+	
+	if (windowWidth < 992) {
+		$(".header-topup .header-topup_bottom .bottom-navigation > ul > li > ul").each(function (index) {
+			$(this).prev().attr({
+				"href": "#subMenuTopUp" + index,
+				"data-toggle": "collapse"
+			});
+			$(this).attr({
+				"id": "subMenuTopUp" + index,
+				"class": "collapse list-unstyled mb-0",
+				"data-parent": "#hasMenuTopUp"
+			});
+		})
+	}
+	
+	function callMenuTopUp() {
+		if ($('body').hasClass('show-menu')) {
+			document.removeEventListener('touchmove', handleTouchMoveTopUO);
+			$('body').css('overflow', '').removeClass('show-menu');
+		} else {
+			document.addEventListener('touchmove', handleTouchMoveTopUO, {passive: false});
+			$('body').css('overflow', 'hidden').addClass('show-menu');
+		}
+	}
+	
+	$(document).on("click", "#callMenuTopUp, .header-topup_overlay, #close-header_topup", function () {
+		callMenuTopUp();
+	});
 });
