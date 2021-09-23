@@ -5148,8 +5148,15 @@ textarea:focus {
 
 .sec-banner .swiper-container .swiper-pagination {
     text-align: left;
-    padding-left: 30px;
+    padding-left: 20px;
     bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .sec-banner .swiper-container .swiper-pagination {
+        padding-left: 10px;
+        bottom: 10px;
+    }
 }
 
 .sec-banner .swiper-container .swiper-pagination-bullet {
