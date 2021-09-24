@@ -5506,3 +5506,16 @@ textarea:focus {
         font-size: 1.4em;
     }
 }
+
+.table-games .template-1-table .btn {
+    padding: 6px 20px;
+    white-space: nowrap;
+}
+
+.block-service_new.block-service .service-item {
+    height: 202px;
+}
+
+.template-1-btn.btn-sm.updateInformation {
+    padding-top: 7px;
+}

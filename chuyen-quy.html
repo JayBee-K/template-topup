@@ -193,7 +193,7 @@
 	</div>
 </header>
 <div class="main">
-	<div class="bg-light border-bottom">
+	<div class="pb-1">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -209,153 +209,302 @@
 			</div>
 		</div>
 	</div>
-	<div class="py-4 bg-white">
+	<div class="pb-4">
 		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="template-1-heading">
-						<h4>
-							Chuyển quỹ
-						</h4>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="row">
-						<div class="col-md-6">
-							<h6 class="template-1-heading-small">Tạo yêu cầu chuyển tiền:</h6>
-							<div class="bg-light rounded-sm border p-4">
-								<form action="">
-									<div class="inner">
-										<div class="form-group mb-3">
-											<label for="wallet" class="template-1-label text-dark">
-												Chọn quỹ:
-											</label>
-											<select class="form-control" id="wallet">
-												<option value="1" selected>Tài khoản quỹ VND - 111.823đ</option>
-												<option value="2">Tài khoản quỹ VND - 151.823đ</option>
-											</select>
-										</div>
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group mb-3">
-													<label for="account" class="template-1-label text-dark">
-														Tài khoản nhận
-													</label>
-													<input type="text" class="form-control" id="account"
-													       placeholder="Nhập email, username hoặc số điện thoại">
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group mb-3">
-													<label for="name" class="template-1-label text-dark">
-														Tên người nhận
-													</label>
-													<input type="text" class="form-control" id="name" readonly>
-												</div>
-											</div>
-										</div>
-										<div class="form-group mb-3">
-											<label for="price" class="template-1-label text-dark">
-												Số tiền
-											</label>
-											<input type="text" class="form-control" id="price">
-										</div>
-										<div class="form-group mb-3">
-											<label for="mess" class="template-1-label text-dark">Nội dung</label>
-											<textarea class="form-control" id="mess" rows="1"></textarea>
-										</div>
-										<div class="form-group mb-0 mt-4">
-											<button class="btn btn-success template-1-btn px-5">
-												Gửi thẻ cào
-											</button>
+			<div class="row row-10">
+				<div class="col-md-4 col-lg-3 mt-2 mt-md-0 order-2 order-md-1">
+					<section class="py-3 py-md-0">
+						<div class="template-1-service bg-white rounded-sm border p-3">
+							<div class="service-list">
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/atm.svg" alt="">
+										Rút tiền
+									</a>
+								</div>
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/bank-transfer.svg" alt="">
+										Nạp tiền
+									</a>
+								</div>
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/mobile-payment.svg" alt="">
+										Chuyển tiền
+									</a>
+								</div>
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/sim-card.svg" alt="">
+										Mua thẻ cào
+									</a>
+								</div>
+								<div class="service-item">
+									<a href="">
+										<img src="./assets/images/service/gamepad.svg" alt="">
+										Mua thẻ game
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="template-1-contact contact-new bg-white rounded-sm border mt-4">
+							<div class="contact-inner p-3">
+								<div class="contact-item">
+									<a href="">
+										<span>
+											<i class="fas fa-phone-alt"></i>
+										</span>
+										Hotline tư vấn:
+										<b>0909.090.909</b>
+									</a>
+								</div>
+								<div class="contact-item">
+									<a href="">
+										<span>
+											<i class="fas fa-phone-rotary"></i>
+										</span>
+										Hỗ trợ kỹ thuật:
+										<b>0909.090.909</b>
+									</a>
+								</div>
+								<div class="contact-item">
+									<a href="">
+										<span>
+											<i class="fas fa-phone-square-alt"></i>
+										</span>
+										Chăm sóc KH:
+										<b>0909.090.909</b>
+									</a>
+								</div>
+								<div class="contact-item">
+									<a href="">
+										<span>
+											<i class="fas fa-envelope"></i>
+										</span>
+										Email:
+										<b>example@gmail.com</b>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="template-1-faq bg-white rounded-sm border mt-4">
+							<h6 class="template-1-heading-small heading-new mx-3 pt-3 mb-2">
+								<i class="far fa-question-circle mr-1"></i>
+								FAQ:
+							</h6>
+							<div class="faq-inner" id="faq-main">
+								<div class="faq-collapse">
+									<a href="#faq-collapse1" aria-expanded="true" data-toggle="collapse">
+										Câu hỏi số 1
+									</a>
+									<div class="collapse show" id="faq-collapse1" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
 										</div>
 									</div>
-								</form>
+								</div>
+								<div class="faq-collapse">
+									<a href="#faq-collapse2" aria-expanded="false" data-toggle="collapse">
+										Câu hỏi số 2
+									</a>
+									<div class="collapse" id="faq-collapse2" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
+										</div>
+									</div>
+								</div>
+								<div class="faq-collapse">
+									<a href="#faq-collapse3" aria-expanded="false" data-toggle="collapse">
+										Câu hỏi số 3
+									</a>
+									<div class="collapse" id="faq-collapse3" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
+										</div>
+									</div>
+								</div>
+								<div class="faq-collapse">
+									<a href="#faq-collapse4" aria-expanded="false" data-toggle="collapse">
+										Câu hỏi số 4
+									</a>
+									<div class="collapse" id="faq-collapse4" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
+										</div>
+									</div>
+								</div>
+								<div class="faq-collapse">
+									<a href="#faq-collapse5" aria-expanded="false" data-toggle="collapse">
+										Câu hỏi số 5
+									</a>
+									<div class="collapse" id="faq-collapse5" data-parent="#faq-main">
+										<div class="border-bottom faq-content">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum. <br>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo numquam quis
+											reprehenderit repudiandae. Labore nobis odit soluta unde voluptatum.
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-md-6 mt-md-0 mt-4">
-							<h6 class="template-1-heading-small">Phí chuyển tiền:</h6>
-							<div class="table-responsive">
-								<table class="table table-bordered template-1-table">
-									<thead>
-									<tr class="bg-theme">
-										<th>Loại</th>
-										<th>VNĐ</th>
-									</tr>
-									<tr>
-										<td>Phí cố định</td>
-										<td class="font-weight-bold">100 VND</td>
-									</tr>
-									<tr>
-										<td>Phí %</td>
-										<td class="font-weight-bold">0</td>
-									</tr>
-									<tr>
-										<td>Tổng chuyển tối đa trong ngày</td>
-										<td class="font-weight-bold">
-											Không giới hạn
-										</td>
-									</tr>
-									<tr>
-										<td>Số tiền chuyển tối thiểu</td>
-										<td class="font-weight-bold">
-											10,000 VND
-										</td>
-									</tr>
-									<tr>
-										<td>Số tiền chuyển tối đa</td>
-										<td class="font-weight-bold">
-											20,000,000 VND
-										</td>
-									</tr>
-									</thead>
-								</table>
-							</div>
-						</div>
-					</div>
+					</section>
 				</div>
-			</div>
-			<div class="mt-5">
-				<div class="row">
-					<div class="col-12">
-						<h6 class="template-1-heading-small">Lịch sử nạp tiền:</h6>
-						<div class="table-responsive">
-							<table class="table table-bordered template-1-table">
-								<thead>
-								<tr class="bg-theme">
-									<th>Đơn hàng</th>
-									<th class="text-center">Số tiền</th>
-									<th>Tài khoản gửi/nhận</th>
-									<th>Ngày tạo</th>
-									<th class="text-center">Trạng thái</th>
-									<th>Nội dung</th>
-								</tr>
-								<tr>
-									<td class="font-weight-bold">D603CEED5892C5</td>
-									<td class="text-center">350.000</td>
-									<td>Hoàng Tấn</td>
-									<td>2021-03-15 20:40:37</td>
-									<td class="text-center">
-										<div class="badge badge-success template-1-badge">Đã nhận</div>
-									</td>
-									<td class="text-center">
-										Không có nội dung
-									</td>
-								</tr>
-								<tr>
-									<td class="font-weight-bold">D603CEED5892C5</td>
-									<td class="text-center">350.000</td>
-									<td>Hoàng Tấn</td>
-									<td>2021-03-15 20:40:37</td>
-									<td class="text-center">
-										<div class="badge badge-danger template-1-badge">Đã huỷ</div>
-									</td>
-									<td class="text-center">
-										Không có nội dung
-									</td>
-								</tr>
-								</thead>
-							</table>
+				<div class="col-md-8 col-lg-9 order-1 order-md-2">
+					<div class="p-md-4 p-3 bg-white rounded-sm border">
+						<div class="row">
+							<div class="col-12">
+								<div class="template-1-heading">
+									<h4>
+										Chuyển quỹ
+									</h4>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-md-6">
+										<h6 class="template-1-heading-small">Tạo yêu cầu chuyển tiền:</h6>
+										<div class="bg-light rounded-sm border p-3">
+											<form action="">
+												<div class="inner">
+													<div class="form-group mb-3">
+														<label for="wallet" class="template-1-label text-dark">
+															Chọn quỹ:
+														</label>
+														<select class="form-control" id="wallet">
+															<option value="1" selected>Tài khoản quỹ VND - 111.823đ</option>
+															<option value="2">Tài khoản quỹ VND - 151.823đ</option>
+														</select>
+													</div>
+													<div class="row">
+														<div class="col-md-6">
+															<div class="form-group mb-3">
+																<label for="account" class="template-1-label text-dark">
+																	Tài khoản nhận
+																</label>
+																<input type="text" class="form-control" id="account"
+																       placeholder="Nhập email, username hoặc số điện thoại">
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="form-group mb-3">
+																<label for="name" class="template-1-label text-dark">
+																	Tên người nhận
+																</label>
+																<input type="text" class="form-control" id="name" readonly>
+															</div>
+														</div>
+													</div>
+													<div class="form-group mb-3">
+														<label for="price" class="template-1-label text-dark">
+															Số tiền
+														</label>
+														<input type="text" class="form-control" id="price">
+													</div>
+													<div class="form-group mb-3">
+														<label for="mess" class="template-1-label text-dark">Nội dung</label>
+														<textarea class="form-control" id="mess" rows="1"></textarea>
+													</div>
+													<div class="form-group mb-0 mt-4">
+														<button class="btn btn-success template-1-btn px-5">
+															Gửi thẻ cào
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="col-md-6 mt-md-0 mt-4">
+										<h6 class="template-1-heading-small">Phí chuyển tiền:</h6>
+										<div class="table-responsive">
+											<table class="table table-bordered template-1-table">
+												<thead>
+												<tr class="bg-theme">
+													<th>Loại</th>
+													<th>VNĐ</th>
+												</tr>
+												<tr>
+													<td>Phí cố định</td>
+													<td class="font-weight-bold">100 VND</td>
+												</tr>
+												<tr>
+													<td>Phí %</td>
+													<td class="font-weight-bold">0</td>
+												</tr>
+												<tr>
+													<td>Tổng chuyển tối đa trong ngày</td>
+													<td class="font-weight-bold">
+														Không giới hạn
+													</td>
+												</tr>
+												<tr>
+													<td>Số tiền chuyển tối thiểu</td>
+													<td class="font-weight-bold">
+														10,000 VND
+													</td>
+												</tr>
+												<tr>
+													<td>Số tiền chuyển tối đa</td>
+													<td class="font-weight-bold">
+														20,000,000 VND
+													</td>
+												</tr>
+												</thead>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mt-md-5 mt-4">
+							<div class="row">
+								<div class="col-12">
+									<h6 class="template-1-heading-small">Lịch sử nạp tiền:</h6>
+									<div class="table-responsive">
+										<table class="table table-bordered template-1-table">
+											<thead>
+											<tr class="bg-theme">
+												<th>Đơn hàng</th>
+												<th class="text-center">Số tiền</th>
+												<th>Tài khoản gửi/nhận</th>
+												<th>Ngày tạo</th>
+												<th class="text-center">Trạng thái</th>
+												<th>Nội dung</th>
+											</tr>
+											<tr>
+												<td class="font-weight-bold">D603CEED5892C5</td>
+												<td class="text-center">350.000</td>
+												<td>Hoàng Tấn</td>
+												<td>2021-03-15 20:40:37</td>
+												<td class="text-center">
+													<div class="badge badge-success template-1-badge">Đã nhận</div>
+												</td>
+												<td class="text-center">
+													Không có nội dung
+												</td>
+											</tr>
+											<tr>
+												<td class="font-weight-bold">D603CEED5892C5</td>
+												<td class="text-center">350.000</td>
+												<td>Hoàng Tấn</td>
+												<td>2021-03-15 20:40:37</td>
+												<td class="text-center">
+													<div class="badge badge-danger template-1-badge">Đã huỷ</div>
+												</td>
+												<td class="text-center">
+													Không có nội dung
+												</td>
+											</tr>
+											</thead>
+										</table>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
