@@ -34,16 +34,40 @@ var fnUpdateInformation = function (form) {
 }
 
 $(document).ready(function () {
+	// Update mới 13/10/2021
 	$(window).scroll(function () {
 		var top = $(document).scrollTop();
 		var height = 0;
+		var heightCart = $('#shopping-cart-wrapper').offset().top - $('#shopping-cart-wrapper').innerHeight();
 		
 		if (top > height) {
 			$('.template-1-header').addClass('header-sticky');
 		} else {
 			$('.template-1-header').removeClass('header-sticky');
 		}
+		
+		if (top >= heightCart) {
+			$('.fixedCart').removeClass('show');
+		} else {
+			$('.fixedCart').addClass('show');
+		}
 	});
+	
+	// Giỏ hàng mua mã thẻ
+	
+	$('.choosePrice').click(function (e) {
+		if ($('.choosePrice.checked').length > 0) {
+			$('.fixedCart').addClass('show');
+		}
+	});
+	
+	$('.scrollCart').click(function (e) {
+		$('body').animate({
+			'scrollTop': $('#shopping-cart-wrapper').offset().top - 60
+		}, 250)
+	});
+	// End update
+	
 	
 	let windowWidth = $(window).width();
 	if (windowWidth < 992) {
@@ -418,5 +442,10 @@ $(document).ready(function () {
 	
 	$(document).on("click", "#callMenuTopUp, .header-topup_overlay, #close-header_topup", function () {
 		callMenuTopUp();
+	});
+	
+	$('.card-the [data-toggle=tab]').on('shown.bs.tab', function () {
+		$('.card-the [data-toggle=tab]').removeClass('active');
+		$(this).addClass('active');
 	});
 });

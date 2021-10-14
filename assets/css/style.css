@@ -5519,3 +5519,163 @@ textarea:focus {
 .template-1-btn.btn-sm.updateInformation {
     padding-top: 7px;
 }
+
+.fixedCart {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    #tab-chooseCard li a {
+        white-space: nowrap;
+    }
+
+    .fixedCart {
+        width: 100%;
+        display: flex;
+        position: fixed;
+        bottom: -300px;
+        transition: .3s all ease;
+        z-index: 100;
+        background: var(--white);
+        padding: 10px 30px;
+        box-shadow: 0 -.125rem .25rem rgba(0, 0, 0, .075) !important;
+    }
+
+    .fixedCart.show {
+        bottom: 0;
+    }
+
+    .fixedCart > a {
+        width: 100%;
+        border-radius: 20px;
+        background-color: #ff8c00;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 24px;
+        border: 0;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 1.1em;
+        transition: .3s all ease-in-out;
+    }
+}
+
+.wrapForm {
+    border-radius: 4px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 10px 1px #cccccc;
+    padding: 48px 56px 36px;
+}
+
+.wrapForm .wrapForm-header {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.wrapForm .wrapForm-body .form-group {
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    display: flex;
+    display: -webkit-flex;
+    border-bottom: 1px solid #a5a2a2;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.wrapForm .wrapForm-body .form-group label {
+    flex-basis: 12%;
+    border: none;
+    text-align: center;
+    color: #cccccc;
+    font-size: 19px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapForm .wrapForm-body .form-group input {
+    border: 0;
+    border-radius: 0;
+    font-size: 15px;
+    padding-left: 15px;
+    -webkit-flex-basis: 90%;
+    flex-basis: 90%;
+    width: 100%;
+    color: #000;
+    border-left: 1px solid #a5a2a2;
+    outline: none;
+    -webkit-appearance: none;
+    background: transparent;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.wrapForm .wrapForm-body .form-group:focus-within {
+    border-bottom: 1px solid var(--color-main);
+}
+
+.wrapForm .wrapForm-body .form-group:focus-within label {
+    color: var(--color-main);
+}
+
+.wrapForm-right {
+    padding: 50px 0;
+}
+
+.wrapForm-right .wrapForm-header {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapForm-right .wrapForm-description {
+    text-align: center;
+    font-size: 15px;
+    color: #676767;
+    margin-bottom: 6px;
+}
+
+.wrapForm-right .wrapForm-image {
+    text-align: center;
+    padding: 50px 0 30px;
+}
+
+.divider-form {
+    margin: 40px 0;
+    border-bottom: 1px solid #e9e9e9;
+    position: relative;
+}
+
+.divider-form span {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: -8px;
+    transform: translateX(-50%);
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fff;
+    font-size: .9em;
+    color: #787878;
+}
