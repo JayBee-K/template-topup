@@ -5570,7 +5570,7 @@ textarea:focus {
     padding: 48px 56px 36px;
 }
 
-.wrapForm .wrapForm-header {
+.wrapForm-header {
     margin-bottom: 30px;
     font-size: 22px;
     font-weight: bold;
@@ -5696,5 +5696,21 @@ textarea:focus {
 }
 
 .wrapShadow .wrapForm-right {
-    padding: 60px 0;
+    padding: 55px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapShadow {
+        box-shadow: none;
+        padding: 12px 15px 0px;
+    }
+
+    .wrapForm {
+        padding: 12px 15px 0px;
+    }
+
+    .wrapShadow .wrapForm {
+        padding: 0;
+    }
+
 }
