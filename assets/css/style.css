@@ -5683,7 +5683,7 @@ textarea:focus {
 }
 
 .wrapShadow {
-    box-shadow: 0 0 10px #eee;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 48px 56px 36px;
 }
 
