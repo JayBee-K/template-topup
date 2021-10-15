@@ -5617,6 +5617,7 @@ textarea:focus {
     font-size: 15px;
     padding-top: 6px;
     padding-bottom: 6px;
+    margin-left: -5px;
     height: auto;
     padding-left: 0;
     -webkit-flex-basis: 90%;
