@@ -5642,10 +5642,6 @@ textarea:focus {
     color: var(--color-main);
 }
 
-.wrapForm-right {
-    padding: 50px 0;
-}
-
 .wrapForm-right .wrapForm-header {
     margin-bottom: 20px;
     font-size: 18px;
@@ -5695,9 +5691,6 @@ textarea:focus {
     padding: 0;
 }
 
-.wrapShadow .wrapForm-right {
-    padding: 55px 0 0;
-}
 
 @media screen and (max-width: 768px) {
     .wrapShadow {
