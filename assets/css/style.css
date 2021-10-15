@@ -5685,3 +5685,16 @@ textarea:focus {
     font-size: .9em;
     color: #787878;
 }
+
+.wrapShadow {
+    box-shadow: 0 0 10px #eee;
+    padding: 48px 56px 36px;
+}
+
+.wrapShadow .wrapForm {
+    padding: 0;
+}
+
+.wrapShadow .wrapForm-right {
+    padding: 10px 0;
+}
