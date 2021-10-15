@@ -5567,7 +5567,6 @@ textarea:focus {
     border-radius: 4px;
     text-align: center;
     background: #fff;
-    box-shadow: 0 0 10px 1px #cccccc;
     padding: 48px 56px 36px;
 }
 
