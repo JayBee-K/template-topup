@@ -5581,10 +5581,13 @@ textarea:focus {
 
 .wrapForm .wrapForm-body .form-group {
     margin-bottom: 30px;
-    padding-bottom: 5px;
+    /*padding-bottom: 5px;*/
+    /*border-bottom: 1px solid #a5a2a2;*/
+    padding: 4px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
     display: flex;
     display: -webkit-flex;
-    border-bottom: 1px solid #a5a2a2;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -5596,7 +5599,7 @@ textarea:focus {
     border: none;
     text-align: center;
     color: #cccccc;
-    font-size: 19px;
+    font-size: 16px;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -5612,12 +5615,15 @@ textarea:focus {
     border: 0;
     border-radius: 0;
     font-size: 15px;
-    padding-left: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: auto;
+    padding-left: 0;
     -webkit-flex-basis: 90%;
     flex-basis: 90%;
     width: 100%;
     color: #000;
-    border-left: 1px solid #a5a2a2;
+    /*border-left: 1px solid #ced4da;*/
     outline: none;
     -webkit-appearance: none;
     background: transparent;
@@ -5629,7 +5635,7 @@ textarea:focus {
 }
 
 .wrapForm .wrapForm-body .form-group:focus-within {
-    border-bottom: 1px solid var(--color-main);
+    border: 1px solid var(--color-main);
 }
 
 .wrapForm .wrapForm-body .form-group:focus-within label {
