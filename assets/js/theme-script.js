@@ -33,18 +33,97 @@ var fnUpdateInformation = function (form) {
 	}, 1000);
 }
 
+const paramPopupOrder = function (target, name, cPrice, sku = '') {
+	$('#product-title').html(name);
+	$('#current-price').html(cPrice);
+	$('#sku').html(sku);
+	$(target).modal('show');
+}
+
+
+const callSelectCurrent = function (e) {
+	$('.call-selectCurrent').click(function () {
+		$(this).parent().toggleClass('open');
+	});
+	
+	$('body').mouseup(function (e) {
+		if (!$('.call-selectCurrent').is(e.target)) {
+			$('.group-select').removeClass('open');
+		}
+	});
+}
+
+const selectCurrent = function (e) {
+	$('.selectCurrent').click(function (e) {
+		if ($(this).hasClass('active')) {
+			$('.call-selectCurrent').removeClass('open');
+		} else {
+			let _image = $(this).attr('data-image'),
+				_title = $(this).attr('data-title'),
+				_htmlRender = `<img src="${_image}"> ${_title}`;
+			
+			$('.selectCurrent').removeClass('active');
+			$(this).addClass('active');
+			$(this).parent().prev('.call-selectCurrent').html(_htmlRender);
+			$('.call-selectCurrent').removeClass('open');
+		}
+	});
+}
+
+const callSelectBank = function (e) {
+	$('#clickedBank').click(function () {
+		$(this).parent().toggleClass('open');
+	});
+	
+	$('body').mouseup(function (e) {
+		if (!$('#clickedBank').is(e.target)) {
+			$('.call-selectBank').removeClass('open');
+		}
+	});
+}
+const selectBanker = function (e) {
+	$('.selectBank').click(function (e) {
+		if ($(this).hasClass('active')) {
+			$('#clickedBank').removeClass('open');
+		} else {
+			let _title = $(this).attr('data-title');
+			
+			$('.selectBank').removeClass('active');
+			$(this).addClass('active');
+			$('#valueBank').val(_title);
+			$('#clickedBank').html(_title).removeClass('open');
+		}
+	});
+}
+
 $(document).ready(function () {
-	// Update mới 13/10/2021
+	// Update mới 27/10/2021
+	callSelectCurrent();
+	selectCurrent();
+	callSelectBank();
+	selectBanker();
+	$('.call-popupOrder').click(function (e) {
+		e.stopPropagation();
+		let target = $(this).attr('data-target'),
+			name = $(this).attr('data-name'),
+			cPrice = $(this).attr('data-cPrice'),
+			sku = $(this).attr('data-sku');
+		
+		paramPopupOrder(target, name, cPrice, sku)
+	});
+	// End update
+	
 	$(window).scroll(function () {
 		var top = $(document).scrollTop();
 		var height = 0;
+		if($('#shopping-cart-wrapper').length > 0) {
 		var heightCart = $('#shopping-cart-wrapper').offset().top - $('#shopping-cart-wrapper').innerHeight();
 		
 		if (top > height) {
 			$('.template-1-header').addClass('header-sticky');
 		} else {
 			$('.template-1-header').removeClass('header-sticky');
-		}
+		}}
 		
 		if (top >= heightCart) {
 			$('.fixedCart').removeClass('show');
@@ -52,8 +131,6 @@ $(document).ready(function () {
 			$('.fixedCart').addClass('show');
 		}
 	});
-	
-	// Giỏ hàng mua mã thẻ
 	
 	$('.choosePrice').click(function (e) {
 		if ($('.choosePrice.checked').length > 0) {
@@ -66,7 +143,6 @@ $(document).ready(function () {
 			'scrollTop': $('#shopping-cart-wrapper').offset().top - 60
 		}, 250)
 	});
-	// End update
 	
 	
 	let windowWidth = $(window).width();
