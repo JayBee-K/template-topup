@@ -561,101 +561,127 @@
 										<div class="money-send">
 											<div class="money-send_inner">
 												<div class="row">
-													<div class="col-md-6"><div class="inner-form">
-														<label for="">
-															Số tiền muốn tặng
-														</label>
-														<div class="inner-form_group">
-															<input type="number" value="5,000,000" min="5000000"
-															       max="100000000" step="100000"
-															       class="group-input">
-															<div class="group-select">
-																<div class="call-selectCurrent selected">
-																	<img src="./assets/images/current/usa.png" alt="">
-																	USD
-																</div>
-																<div class="group-dropdown">
-																	<div data-image="./assets/images/current/usa.png"
-																	     data-title="USD"
-																	     class="group-dropdown_item selectCurrent active">
-																		<img src="./assets/images/current/usa.png" alt="">
-																		USD
-																	</div>
-																	<div data-image="./assets/images/current/japan.png"
-																	     data-title="Yên"
-																	     class="group-dropdown_item selectCurrent">
-																		<img src="./assets/images/current/japan.png" alt="">
-																		Yên
-																	</div>
-																	<div data-image="./assets/images/current/korea.png"
-																	     data-title="Won"
-																	     class="group-dropdown_item selectCurrent">
-																		<img src="./assets/images/current/korea.png" alt="">
-																		Won
+													<div class="col-md-6">
+														<div class="inner-form">
+															<label for="">
+																Số tiền muốn tặng
+															</label>
+															<div class="mb-0">
+																<input class="inner-form_input" type="number" value="5,000,000" min="5000000"
+																       max="100000000" step="100000"
+																       class="group-input">
+															</div>
+															<div class="label-waring">
+																Tối đa 10.000.000 VNĐ
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="inner-form">
+															<label for="">
+																Ngân hàng nước ngoài
+															</label>
+															<div class="inner-form_group">
+																<input type="hidden" value="Techcombank"
+																       class="group-input valueBank">
+																<div class="call-selectBank selected-bank">
+																	<span class="clickedBank">Techcombank</span>
+																	<div class="group-dropdown">
+																		<div data-title="Techcombank"
+																		     class="group-dropdown_item selectBank active">
+																			Techcombank
+																		</div>
+																		<div data-title="BIDV"
+																		     class="group-dropdown_item selectBank">
+																			BIDV
+																		</div>
+																		<div data-title="Sacombank"
+																		     class="group-dropdown_item selectBank">
+																			Sacombank
+																		</div>
+																		<div data-title="ACB"
+																		     class="group-dropdown_item selectBank">
+																			ACB
+																		</div>
+																		<div data-title="Vietcombank"
+																		     class="group-dropdown_item selectBank">
+																			Vietcombank
+																		</div>
+																		<div data-title="TPBank"
+																		     class="group-dropdown_item selectBank">
+																			TPBank
+																		</div>
+																		<div data-title="MBBank"
+																		     class="group-dropdown_item selectBank">
+																			MBBank
+																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
-														<div class="label-waring">
-															Tối đa 10.000.000 VNĐ
+													</div>
+													<div class="col-md-4">
+														<div class="inner-form">
+															<label for="">
+																Số tài khoản người nhận
+															</label>
+															<input type="text" placeholder="XXXX - XXXX - XXXX"
+															       class="inner-form_input">
 														</div>
-													</div></div>
-													<div class="col-md-6"><div class="inner-form">
-														<label for="">
-															Ngân hàng thanh toán
-														</label>
-														<div class="inner-form_group">
-															<input type="hidden" value="Techcombank" id="valueBank"
-															       class="group-input">
-															<div class="call-selectBank selected-bank">
-																<span id="clickedBank">Techcombank</span>
-																<div class="group-dropdown">
-																	<div data-title="Techcombank"
-																	     class="group-dropdown_item selectBank active">
-																		Techcombank
-																	</div>
-																	<div data-title="BIDV"
-																	     class="group-dropdown_item selectBank">
-																		BIDV
-																	</div>
-																	<div data-title="Sacombank"
-																	     class="group-dropdown_item selectBank">
-																		Sacombank
-																	</div>
-																	<div data-title="ACB"
-																	     class="group-dropdown_item selectBank">
-																		ACB
-																	</div>
-																	<div data-title="Vietcombank"
-																	     class="group-dropdown_item selectBank">
-																		Vietcombank
-																	</div>
-																	<div data-title="TPBank"
-																	     class="group-dropdown_item selectBank">
-																		TPBank
-																	</div>
-																	<div data-title="MBBank"
-																	     class="group-dropdown_item selectBank">
-																		MBBank
+													</div>
+													<div class="col-md-4">
+														<div class="inner-form">
+															<label for="">
+																Ngân hàng Việt Nam
+															</label>
+															<div class="inner-form_group">
+																<input type="hidden" value="Techcombank"
+																       class="group-input valueBank">
+																<div class="call-selectBank selected-bank">
+																	<span class="clickedBank">Techcombank</span>
+																	<div class="group-dropdown">
+																		<div data-title="Techcombank"
+																		     class="group-dropdown_item selectBank active">
+																			Techcombank
+																		</div>
+																		<div data-title="BIDV"
+																		     class="group-dropdown_item selectBank">
+																			BIDV
+																		</div>
+																		<div data-title="Sacombank"
+																		     class="group-dropdown_item selectBank">
+																			Sacombank
+																		</div>
+																		<div data-title="ACB"
+																		     class="group-dropdown_item selectBank">
+																			ACB
+																		</div>
+																		<div data-title="Vietcombank"
+																		     class="group-dropdown_item selectBank">
+																			Vietcombank
+																		</div>
+																		<div data-title="TPBank"
+																		     class="group-dropdown_item selectBank">
+																			TPBank
+																		</div>
+																		<div data-title="MBBank"
+																		     class="group-dropdown_item selectBank">
+																			MBBank
+																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
-													</div></div>
-													<div class="col-md-6"><div class="inner-form">
-														<label for="">
-															Số tài khoản người nhận
-														</label>
-														<input type="text" placeholder="XXXX - XXXX - XXXX"
-														       class="inner-form_input">
-													</div></div>
-													<div class="col-md-6"><div class="inner-form">
-														<label for="">
-															Tên người nhận
-														</label>
-														<input type="text" placeholder="Nguyễn Văn A"
-														       class="inner-form_input">
-													</div></div>
+													</div>
+													<div class="col-md-4">
+														<div class="inner-form">
+															<label for="">
+																Tên người nhận
+															</label>
+															<input type="text" placeholder="Nguyễn Văn A"
+															       class="inner-form_input">
+														</div>
+													</div>
 												</div>
 												<div class="text-center mt-4">
 													<button class="btn btn-success template-1-btn">
@@ -670,66 +696,6 @@
 									</form>
 								</div>
 							</div>
-						</div>
-					</div>
-				</section>
-				<section class="sec-category p-3 mt-4 bg-white rounded-sm border">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="template-1-heading heading-new">
-								<h4>
-									Danh mục sản phẩm
-								</h4>
-								<p class="mb-0 text-dark lh-18">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<ul class="list-unstyled mb-0 category-list">
-								<li>
-									<a href="">
-										<img src="./assets/images/category/flower.png" alt="">
-										Flowers
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="./assets/images/category/cakes.png" alt="">
-										Cakes
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="./assets/images/category/combo.png" alt="">
-										Combos
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="./assets/images/category/plants.png" alt="">
-										Plants
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="./assets/images/category/gifts.png" alt="">
-										Gifts
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="./assets/images/category/personalised.png" alt="">
-										Personalised
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="./assets/images/category/chocolates.png" alt="">
-										Chocolates
-									</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</section>
