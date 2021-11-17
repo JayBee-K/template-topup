@@ -518,7 +518,8 @@ $(document).ready(function () {
 	});
 	
 	$('.card-the [data-toggle=tab]').on('shown.bs.tab', function () {
-		$('.card-the [data-toggle=tab]').removeClass('active');
+		$('.card-the, .card-the [data-toggle=tab]').removeClass('active');
 		$(this).addClass('active');
+		$(this).parent().addClass('active');
 	});
 });
