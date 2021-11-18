@@ -1892,6 +1892,7 @@ textarea:focus {
     width: calc(100% - 30px);
     bottom: -10px;
     left: 15px;
+    display: none;
 }
 
 @media screen and (min-width: 991px) {
@@ -1925,10 +1926,11 @@ textarea:focus {
 }
 
 .template-1-footer .footer-top_item .footer-top_title {
-    font-size: 1.1em;
+    font-size: 1.15em;
     margin-bottom: 1em;
     font-weight: 700;
-    color: rgba(0, 0, 0, .75);
+    /*color: rgba(0, 0, 0, .75);*/
+    color: var(--color-main);
 }
 
 .template-1-footer .footer-top_item .footer-top_contact,
@@ -2251,7 +2253,7 @@ textarea:focus {
     padding-bottom: 4px !important;
     padding-top: 4px !important;
     color: #232323;
-    border-bottom: 1px solid #cfc6cf;
+    /*border-bottom: 1px solid #cfc6cf;*/
     transition: .3s all ease;
 }
 
